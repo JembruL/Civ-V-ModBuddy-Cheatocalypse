@@ -33,7 +33,7 @@ GameEvents.PlayerDoTurn.Add(function(playerID)
 
 						local plot = Map.GetPlot(ux + dx, uy + dy)
 						if plot then
-							plot:SetRevealed(teamID, true, false, -1)
+							plot:SetRevealed(teamID, true, -1)
 						end
 
 					end
