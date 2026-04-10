@@ -113,19 +113,20 @@ function System_CheatoAura(playerID)
         if IsCheatUnit(unit) then
 
             local plot = unit:GetPlot()
-
-            for i = 0, 5 do
-				local adjPlot = Map.PlotDirection(plot:GetX(), plot:GetY(), i)
-				if adjPlot then
-					local count = adjPlot:GetNumUnits()
-					for n = 0, count - 1 do
-						local adjUnit = adjPlot:GetUnit(n)
-						if adjUnit and adjUnit:GetOwner() == playerID and IsCheatUnit(adjUnit) then
-							adjUnit:SetHasPromotion(GameInfoTypes.PROMOTION_CHEATO_UNIT_BUFF1, true)
+            if plot then
+                for i = 0, 5 do
+					local adjPlot = Map.PlotDirection(plot:GetX(), plot:GetY(), i)
+					if adjPlot then
+						local count = adjPlot:GetNumUnits()
+						for n = 0, count - 1 do
+							local adjUnit = adjPlot:GetUnit(n)
+							if adjUnit and adjUnit:GetOwner() == playerID and IsCheatUnit(adjUnit) then
+								adjUnit:SetHasPromotion(GameInfoTypes.PROMOTION_CHEATO_UNIT_BUFF1, true)
+							end
 						end
 					end
 				end
-			end
+            end
 
         end
     end

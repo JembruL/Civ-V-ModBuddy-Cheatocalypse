@@ -14,6 +14,7 @@ GameEvents.PlayerDoTurn.Add(function(playerID)
 
 	local pPlayer = Players[playerID]
 	if not pPlayer then return end
+	local teamID = pPlayer:GetTeam()
 
 	-- HARD FILTER: HUMAN ONLY
 	if not pPlayer:IsHuman() then return end
@@ -32,8 +33,7 @@ GameEvents.PlayerDoTurn.Add(function(playerID)
 
 						local plot = Map.GetPlot(ux + dx, uy + dy)
 						if plot then
-							-- FIX: gunakan SetVisible untuk buka FOW aktif
-							plot:SetVisible(playerID, true)
+							plot:SetRevealed(teamID, true, false, -1)
 						end
 
 					end
