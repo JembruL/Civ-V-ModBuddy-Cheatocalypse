@@ -12,6 +12,12 @@ local function PlotKey(x, y)
     return tostring(x) .. "," .. tostring(y)
 end
 
+local function ParsePlotKey(key)
+    local sx, sy = string.match(key, "([^,]+),([^,]+)")
+    if not sx or not sy then return nil, nil end
+    return tonumber(sx), tonumber(sy)
+end
+
 local function RestoreEngineerMoves(unit)
     if not unit then return end
     local maxMoves = unit:MaxMoves()
@@ -19,6 +25,39 @@ local function RestoreEngineerMoves(unit)
         unit:SetMoves(maxMoves)
         if unit:GetMoves() < maxMoves then
             unit:ChangeMoves(maxMoves)
+        end
+    end
+end
+
+local function TryRestorePending(playerID)
+    local pPlayer = Players[playerID]
+    if not pPlayer or not pPlayer:IsHuman() then return end
+
+    local trackedPlots = pendingRestore[playerID]
+    if not trackedPlots then return end
+
+    local currentTurn = Game.GetGameTurn()
+    for key, turnMarked in pairs(trackedPlots) do
+        if turnMarked == currentTurn then
+            local x, y = ParsePlotKey(key)
+            if x and y then
+                for unit in pPlayer:Units() do
+                    if unit:GetUnitType() == iUnitEngineer
+                    and unit:IsHasPromotion(promoMaster)
+                    and unit:GetX() == x
+                    and unit:GetY() == y then
+                        if unit:GetMoves() <= 0 then
+                            RestoreEngineerMoves(unit)
+                        end
+                        trackedPlots[key] = nil
+                        break
+                    end
+                end
+            else
+                trackedPlots[key] = nil
+            end
+        else
+            trackedPlots[key] = nil
         end
     end
 end
@@ -67,7 +106,17 @@ GameEvents.UnitSetXY.Add(function(playerID, unitID, x, y)
     trackedPlots[key] = nil
 end)
 
+if Events and Events.SerialEventUnitInfoDirty then
+    Events.SerialEventUnitInfoDirty.Add(function()
+        local activePlayerID = Game.GetActivePlayer()
+        if activePlayerID and activePlayerID >= 0 then
+            TryRestorePending(activePlayerID)
+        end
+    end)
+end
+
 GameEvents.PlayerDoTurn.Add(function(playerID)
+    TryRestorePending(playerID)
     if pendingRestore[playerID] then
         pendingRestore[playerID] = nil
     end
