@@ -12,6 +12,7 @@
 -- ===========================================================================
 
 local promoParadrop      = GameInfoTypes.PROMOTION_PARADROP
+local promoExtParadrop   = GameInfoTypes.PROMOTION_EXTENDED_PARADROP
 local promoFlag          = GameInfoTypes.PROMOTION_CHEATO_PARADROP_FLAG
 local promoMaster        = GameInfoTypes.PROMOTION_CHEATO_MASTER_FLAG
 local promoBlitz         = GameInfoTypes.PROMOTION_BLITZ
@@ -43,9 +44,14 @@ function ParadropOverride(playerID, unitID, x, y)
     local unit = player:GetUnitByID(unitID)
     if not unit then return end
 
+    local hasParadropHook = unit:IsHasPromotion(promoParadrop)
+    if promoExtParadrop then
+        hasParadropHook = hasParadropHook or unit:IsHasPromotion(promoExtParadrop)
+    end
+
     -- FILTER LAYER (WAJIB DUA-DUANYA ADA + MASTER FLAG)
     if not unit:IsHasPromotion(promoMaster) then return end
-    if not unit:IsHasPromotion(promoParadrop) then return end
+    if not hasParadropHook then return end
     if not unit:IsHasPromotion(promoFlag) then return end
 
     -- ambil posisi sebelumnya
@@ -56,9 +62,10 @@ function ParadropOverride(playerID, unitID, x, y)
     local prev = lastPositions[playerID][unitID]
     local prevX = prev.x
     local prevY = prev.y
+    local distance = Map.PlotDistance(prevX, prevY, x, y)
 
-    if distance >= 5
-	and unit:IsHasPromotion(promoParadrop)
+    if distance and distance >= 5
+	and hasParadropHook
 	and unit:IsHasPromotion(promoFlag)
 	and unit:IsHasPromotion(promoMaster)
 	and unit:GetMoves() == 0 then

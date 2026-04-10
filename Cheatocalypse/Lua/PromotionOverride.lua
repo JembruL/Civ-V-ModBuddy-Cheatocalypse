@@ -16,7 +16,10 @@ end
 -- PROMOTION REGISTRY (CENTRAL CONTROL)
 -- =========================================================
 local PROMO = {
-    MASTER_FLAG    = GameInfoTypes.PROMOTION_CHEATO_MASTER_FLAG
+    MASTER_FLAG    = GameInfoTypes.PROMOTION_CHEATO_MASTER_FLAG,
+    UNIT_BUFF1     = GameInfoTypes.PROMOTION_CHEATO_UNIT_BUFF1,
+    UNIT_BUFF2     = GameInfoTypes.PROMOTION_CHEATO_UNIT_BUFF2,
+    UNIT_BUFF3     = GameInfoTypes.PROMOTION_CHEATO_UNIT_BUFF3
 }
 
 -- =========================================================
@@ -44,6 +47,12 @@ function IsCheatoPromotion(promoType)
     return string.find(promoType, "PROMOTION_CHEATO_") ~= nil
 end
 
+local AURA_PROMOS = {
+    "PROMOTION_CHEATO_UNIT_BUFF1",
+    "PROMOTION_CHEATO_UNIT_BUFF2",
+    "PROMOTION_CHEATO_UNIT_BUFF3"
+}
+
 -- =========================================================
 -- SOFT PURGE (ANTI-AI ABUSE)
 -- =========================================================
@@ -54,22 +63,23 @@ function PurgeAI(playerID)
     if player:IsHuman() then return end
 
     for unit in player:Units() do
-
-        -- only if unit own Cheatocalypse system
-        if unit:IsHasPromotion(PROMO.MASTER_FLAG) then
-
-            for promo in GameInfo.UnitPromotions() do
-                if IsCheatoPromotion(promo.Type) 
-				and promo.Type ~= "PROMOTION_CHEATO_MASTER_FLAG"
-				and promo.Type ~= "PROMOTION_CHEATO_STATUE_BUFF"   
-				and promo.Type ~= "PROMOTION_CHEATO_PARADROP_FLAG" 
-				then
+        for promo in GameInfo.UnitPromotions() do
+            if IsCheatoPromotion(promo.Type)
+            and promo.Type ~= "PROMOTION_CHEATO_MASTER_FLAG" then
+                local isProtectedPromo = (
+                    promo.Type == "PROMOTION_CHEATO_STATUE_BUFF"
+                    or promo.Type == "PROMOTION_CHEATO_PARADROP_FLAG"
+                )
+                if unit:IsHasPromotion(PROMO.MASTER_FLAG) then
+                    if not isProtectedPromo and unit:IsHasPromotion(promo.ID) then
+                        unit:SetHasPromotion(promo.ID, false)
+                    end
+                else
                     if unit:IsHasPromotion(promo.ID) then
                         unit:SetHasPromotion(promo.ID, false)
                     end
                 end
             end
-
         end
     end
 end
@@ -88,17 +98,10 @@ function System_CheatoAura(playerID)
     for unit in player:Units() do
         if IsCheatUnit(unit) then
 
-            for promo in GameInfo.UnitPromotions() do
-                if IsCheatoPromotion(promo.Type)
-                and promo.Type ~= "PROMOTION_CHEATO_MASTER_FLAG" 
-				and promo.Type ~= "PROMOTION_CHEATO_STATUE_BUFF"   
-				and promo.Type ~= "PROMOTION_CHEATO_PARADROP_FLAG"
-				then
-
-                    if unit:IsHasPromotion(promo.ID) then
-                        unit:SetHasPromotion(promo.ID, false)
-                    end
-
+            for _, promoType in ipairs(AURA_PROMOS) do
+                local promoID = GameInfoTypes[promoType]
+                if promoID and unit:IsHasPromotion(promoID) then
+                    unit:SetHasPromotion(promoID, false)
                 end
             end
 
