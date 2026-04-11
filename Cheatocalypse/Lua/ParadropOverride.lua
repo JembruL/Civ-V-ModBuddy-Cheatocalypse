@@ -44,6 +44,75 @@ local function EnsureParadropAccess(playerID)
     end
 end
 
+local function IsFriendZoneForCheatoUnit(player, unit)
+    if not player or not unit then return false end
+    if not unit:IsHasPromotion(promoMaster) then return false end
+    if not unit:IsHasPromotion(promoFlag) then return false end
+    return true
+end
+
+local function EnsureParadropAccess(playerID)
+    local player = Players[playerID]
+    if not player or not player:IsHuman() then return end
+
+    for unit in player:Units() do
+        if IsFriendZoneForCheatoUnit(player, unit) then
+            if promoParadrop and not unit:IsHasPromotion(promoParadrop) then
+                unit:SetHasPromotion(promoParadrop, true)
+            end
+            if promoEnemyLands and not unit:IsHasPromotion(promoEnemyLands) then
+                unit:SetHasPromotion(promoEnemyLands, true)
+            end
+        end
+    end
+end
+
+local function IsFriendZoneForCheatoUnit(player, unit)
+    if not player or not unit then return false end
+    if not unit:IsHasPromotion(promoMaster) then return false end
+    if not unit:IsHasPromotion(promoFlag) then return false end
+    return true
+end
+
+local function EnsureParadropAccess(playerID)
+    local player = Players[playerID]
+    if not player or not player:IsHuman() then return end
+
+    for unit in player:Units() do
+        if IsFriendZoneForCheatoUnit(player, unit) then
+            if promoParadrop and not unit:IsHasPromotion(promoParadrop) then
+                unit:SetHasPromotion(promoParadrop, true)
+            end
+            if promoEnemyLands and not unit:IsHasPromotion(promoEnemyLands) then
+                unit:SetHasPromotion(promoEnemyLands, true)
+            end
+        end
+    end
+end
+
+local function IsFriendZoneForCheatoUnit(player, unit)
+    if not player or not unit then return false end
+    if not unit:IsHasPromotion(promoMaster) then return false end
+    if not unit:IsHasPromotion(promoFlag) then return false end
+    return true
+end
+
+local function EnsureParadropAccess(playerID)
+    local player = Players[playerID]
+    if not player or not player:IsHuman() then return end
+
+    for unit in player:Units() do
+        if IsFriendZoneForCheatoUnit(player, unit) then
+            if promoParadrop and not unit:IsHasPromotion(promoParadrop) then
+                unit:SetHasPromotion(promoParadrop, true)
+            end
+            if promoEnemyLands and not unit:IsHasPromotion(promoEnemyLands) then
+                unit:SetHasPromotion(promoEnemyLands, true)
+            end
+        end
+    end
+end
+
 -- ===========================================================================
 -- TRACK posisi unit setiap kali gerak
 -- ===========================================================================

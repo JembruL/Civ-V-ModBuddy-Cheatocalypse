@@ -53,6 +53,18 @@ local AURA_PROMOS = {
     "PROMOTION_CHEATO_UNIT_BUFF3"
 }
 
+local AURA_PROMOS = {
+    "PROMOTION_CHEATO_UNIT_BUFF1",
+    "PROMOTION_CHEATO_UNIT_BUFF2",
+    "PROMOTION_CHEATO_UNIT_BUFF3"
+}
+
+local AURA_PROMOS = {
+    "PROMOTION_CHEATO_UNIT_BUFF1",
+    "PROMOTION_CHEATO_UNIT_BUFF2",
+    "PROMOTION_CHEATO_UNIT_BUFF3"
+}
+
 -- =========================================================
 -- SOFT PURGE (ANTI-AI ABUSE)
 -- =========================================================
