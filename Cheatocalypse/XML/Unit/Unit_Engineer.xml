@@ -27,7 +27,7 @@
 			<HurryCostModifier>-100</HurryCostModifier>
 			<FaithCost>1</FaithCost>
 			
-			<WorkRate>100</WorkRate>
+			<WorkRate>10000</WorkRate>
 
 			<PrereqTech>TECH_AGRICULTURE</PrereqTech>
 

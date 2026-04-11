@@ -85,7 +85,7 @@
       <Description>
       </Description>
     </EntryPoint>
-    <EntryPoint type="DiplomacyUIAddin" file="Lua/EngineerBuildSystem.lua">
+    <EntryPoint type="InGameUIAddin" file="Lua/EngineerBuildSystem.lua">
       <Name>Engineer Build</Name>
       <Description>
       </Description>
