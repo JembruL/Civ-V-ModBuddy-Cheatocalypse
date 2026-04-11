@@ -42,7 +42,7 @@
 			<IgnoreBuildingDefense>true</IgnoreBuildingDefense>
 			<Capture>UNIT_WORKER</Capture>
 
-			<UnitArtInfo>ART_DEF_UNIT_SETTLER</UnitArtInfo>
+			<UnitArtInfo>ART_DEF_UNIT__SETTLER</UnitArtInfo>
 			<UnitArtInfoCulturalVariation>true</UnitArtInfoCulturalVariation>
 			<IconAtlas>UNIT_ATLAS_1</IconAtlas>
 			<PortraitIndex>0</PortraitIndex>
