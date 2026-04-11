@@ -42,12 +42,22 @@
 			<IgnoreBuildingDefense>true</IgnoreBuildingDefense>
 			<Capture>UNIT_WORKER</Capture>
 
-			<UnitArtInfo>ART_DEF_UNIT_SETTLER</UnitArtInfo>
+			<UnitArtInfo>ART_DEF_UNIT__SETTLER</UnitArtInfo>
 			<UnitArtInfoCulturalVariation>true</UnitArtInfoCulturalVariation>
 			<IconAtlas>UNIT_ATLAS_1</IconAtlas>
 			<PortraitIndex>0</PortraitIndex>
 		</Row>
 	</Units>
+
+	<!-- ========================= -->
+	<!-- UNIT BUILDS -->
+	<!-- ========================= -->
+	<!--<Unit_Builds>
+		<Row>
+			<UnitType>UNIT_CHEAT_WAYFINDER</UnitType>
+			<BuildType>BUILD_SETTLER</BuildType>
+		</Row>
+	</Unit_Builds>-->
 
 	<!-- ========================= -->
 	<!-- UNIT FREE PROMOTIONS -->

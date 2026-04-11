@@ -92,7 +92,7 @@
         <FileName>Lua/ImprovementMovesOverride.lua</FileName>
       </Content>
       <Content>
-        <Type>InGameUIAddin</Type>
+        <Type>DiplomacyUIAddin</Type>
         <Name>Engineer Build</Name>
         <Description />
         <FileName>Lua/EngineerBuildSystem.lua</FileName>
