@@ -20,17 +20,8 @@ local promoBlitz         = GameInfoTypes.PROMOTION_BLITZ
 local lastPositions = {}
 
 -- ===========================================================================
--- TRACK posisi unit setiap kali gerak
--- ===========================================================================
-function TrackUnitPosition(playerID, unitID, x, y)
-    lastPositions[playerID] = lastPositions[playerID] or {}
-    lastPositions[playerID][unitID] = {x = x, y = y}
-end
-
-GameEvents.UnitSetXY.Add(TrackUnitPosition)
-
--- ===========================================================================
--- MAIN OVERRIDE SYSTEM
+-- MAIN OVERRIDE + TRACK SYSTEM
+-- NOTE: gunakan satu hook agar posisi lama terbaca sebelum di-update.
 -- ===========================================================================
 function ParadropOverride(playerID, unitID, x, y)
 
@@ -38,45 +29,45 @@ function ParadropOverride(playerID, unitID, x, y)
     if not player then return end
 
     -- HARD FILTER: HUMAN ONLY
-    if not player:IsHuman() then return end
+    if not player:IsHuman() then
+        lastPositions[playerID] = lastPositions[playerID] or {}
+        lastPositions[playerID][unitID] = {x = x, y = y}
+        return
+    end
 
     local unit = player:GetUnitByID(unitID)
     if not unit then return end
 
-    -- FILTER LAYER (WAJIB DUA-DUANYA ADA + MASTER FLAG)
-    if not unit:IsHasPromotion(promoMaster) then return end
-    if not unit:IsHasPromotion(promoParadrop) then return end
-    if not unit:IsHasPromotion(promoFlag) then return end
-
-    -- ambil posisi sebelumnya
-    if not lastPositions[playerID] or not lastPositions[playerID][unitID] then
-        return
+    local prev = nil
+    if lastPositions[playerID] then
+        prev = lastPositions[playerID][unitID]
     end
 
-    local prev = lastPositions[playerID][unitID]
-    local prevX = prev.x
-    local prevY = prev.y
+    -- FILTER LAYER (WAJIB DUA-DUANYA ADA + MASTER FLAG)
+    if unit:IsHasPromotion(promoMaster)
+    and unit:IsHasPromotion(promoParadrop)
+    and unit:IsHasPromotion(promoFlag)
+    and prev then
 
-    local distance = Map.PlotDistance(prevX, prevY, x, y)
+        local distance = Map.PlotDistance(prev.x, prev.y, x, y)
 
-    -- threshold: dianggap paradrop kalau lompat jauh //fix UI error
-	--if distance >= 5 then //deprecated.
-		if distance >= 5 then
-        
-		-- reset movement biar bisa lanjut aksi
-		unit:SetMoves(unit:MaxMoves())
+        -- threshold: dianggap paradrop kalau lompat jauh
+        if distance >= 5 then
+            -- reset movement biar bisa lanjut aksi
+            unit:SetMoves(unit:MaxMoves())
 
-		-- kasih blitz biar bisa attack setelah drop
-		if not unit:IsHasPromotion(promoBlitz) then
-        unit:SetHasPromotion(promoBlitz, true)
-		end
+            -- kasih blitz biar bisa attack setelah drop
+            if not unit:IsHasPromotion(promoBlitz) then
+                unit:SetHasPromotion(promoBlitz, true)
+            end
 
-		-- optional: heal dikit biar gak fragile
-		unit:ChangeDamage(-10)
+            -- optional: heal dikit biar gak fragile
+            unit:ChangeDamage(-10)
+        end
+    end
 
-		-- debug (optional, aktifin kalau perlu)
-		-- print("Paradrop override triggered for unit:", unitID)
-	end
+    lastPositions[playerID] = lastPositions[playerID] or {}
+    lastPositions[playerID][unitID] = {x = x, y = y}
 end
 
 GameEvents.UnitSetXY.Add(ParadropOverride)
