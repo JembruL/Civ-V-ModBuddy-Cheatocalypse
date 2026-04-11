@@ -67,6 +67,29 @@ local function EnsureParadropAccess(playerID)
     end
 end
 
+local function IsFriendZoneForCheatoUnit(player, unit)
+    if not player or not unit then return false end
+    if not unit:IsHasPromotion(promoMaster) then return false end
+    if not unit:IsHasPromotion(promoFlag) then return false end
+    return true
+end
+
+local function EnsureParadropAccess(playerID)
+    local player = Players[playerID]
+    if not player or not player:IsHuman() then return end
+
+    for unit in player:Units() do
+        if IsFriendZoneForCheatoUnit(player, unit) then
+            if promoParadrop and not unit:IsHasPromotion(promoParadrop) then
+                unit:SetHasPromotion(promoParadrop, true)
+            end
+            if promoEnemyLands and not unit:IsHasPromotion(promoEnemyLands) then
+                unit:SetHasPromotion(promoEnemyLands, true)
+            end
+        end
+    end
+end
+
 -- ===========================================================================
 -- TRACK posisi unit setiap kali gerak
 -- ===========================================================================
@@ -97,8 +120,6 @@ function ParadropOverride(playerID, unitID, x, y)
     local unit = player:GetUnitByID(unitID)
     if not unit then return end
 
-    if not IsFriendZoneForCheatoUnit(player, unit) then return end
-
     local hasParadropHook = unit:IsHasPromotion(promoParadrop)
     if promoExtParadrop then
         hasParadropHook = hasParadropHook or unit:IsHasPromotion(promoExtParadrop)
@@ -106,8 +127,10 @@ function ParadropOverride(playerID, unitID, x, y)
 
     -- FILTER LAYER (WAJIB DUA-DUANYA ADA + MASTER FLAG)
     if not unit:IsHasPromotion(promoMaster) then return end
-    if not hasParadropHook then return end
     if not unit:IsHasPromotion(promoFlag) then return end
+    if not hasParadropHook then
+        hasParadropHook = true
+    end
 
     -- ambil posisi sebelumnya
     if not lastPositions[playerID] or not lastPositions[playerID][unitID] then

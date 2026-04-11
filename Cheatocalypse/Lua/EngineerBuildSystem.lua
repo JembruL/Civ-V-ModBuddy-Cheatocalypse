@@ -121,3 +121,17 @@ GameEvents.PlayerDoTurn.Add(function(playerID)
         pendingRestore[playerID] = nil
     end
 end)
+
+GameEvents.UnitSelectionChanged.Add(function(playerID, unitID, isSelected)
+    if not isSelected then return end
+
+    local pPlayer = Players[playerID]
+    if not pPlayer or not pPlayer:IsHuman() then return end
+
+    local unit = pPlayer:GetUnitByID(unitID)
+    if not unit then return end
+    if unit:GetUnitType() ~= iUnitEngineer then return end
+    if not unit:IsHasPromotion(promoMaster) then return end
+
+    RestoreEngineerMoves(unit)
+end)
