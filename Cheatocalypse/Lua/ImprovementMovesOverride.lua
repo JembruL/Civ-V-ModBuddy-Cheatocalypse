@@ -6,31 +6,6 @@ local iUnitEngineer = GameInfoTypes.UNIT_CHEAT_ENGINEER
 local promoMaster   = GameInfoTypes.PROMOTION_CHEATO_MASTER_FLAG
 
 -- =========================================================
--- BUILD: RESTORE MOVES
--- =========================================================
-GameEvents.BuildFinished.Add(function(playerID, x, y, improvementType)
-
-	local pPlayer = Players[playerID]
-	if not pPlayer then return end
-
-	if not pPlayer:IsHuman() then return end
-
-	for unit in pPlayer:Units() do
-		if unit:GetUnitType() == iUnitEngineer then
-
-			if unit:IsHasPromotion(promoMaster) then
-
-				if unit:GetX() == x and unit:GetY() == y then
-					unit:SetMoves(unit:MaxMoves())
-				end
-
-			end
-		end
-	end
-
-end)
-
--- =========================================================
 -- VISION OVERRIDE
 -- =========================================================
 local VISION_RADIUS = 5
@@ -58,7 +33,7 @@ GameEvents.PlayerDoTurn.Add(function(playerID)
 
 						local plot = Map.GetPlot(ux + dx, uy + dy)
 						if plot then
-							plot:SetRevealed(teamID, true, false, -1)
+							plot:SetRevealed(teamID, true, -1, false)
 						end
 
 					end
