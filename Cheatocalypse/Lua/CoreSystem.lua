@@ -17,10 +17,6 @@ GameEvents.PlayerCanTrain.Add(function(playerID, unitType)
     local player = Players[playerID]
     if not player then return true end
 
-    if player:IsBarbarian() then
-        return false
-    end
-
     local unitInfo = GameInfo.Units[unitType]
     if unitInfo and MASTER_UNITS[unitInfo.Type] and not player:IsHuman() then
         if FEATURE_LOG_SECURITY then
@@ -41,11 +37,6 @@ GameEvents.UnitCreated.Add(function(playerID, unitID)
 
     local unit = player:GetUnitByID(unitID)
     if not unit then return end
-
-    if player:IsBarbarian() then
-        unit:Kill()
-        return
-    end
 
     -- kalau unit punya MASTER FLAG tapi bukan human ? kill/purge
     if unit:IsHasPromotion(PROMO_MASTER)
