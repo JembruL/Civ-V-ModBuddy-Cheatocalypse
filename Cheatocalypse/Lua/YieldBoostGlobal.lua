@@ -4,16 +4,14 @@
 --------------------------------------------------------------
 print("Yield Boost Global Loaded")
 
-local BUILDING_STATUE = GameInfoTypes.BUILDING_CHEATOCALYPSE_STATUE
-
-GameEvents.PlayerDoTurn.Add(function(playerID)
+GameEvents.CityYield.Add(function(playerID, cityID, yieldType)
     local pPlayer = Players[playerID]
-    if not pPlayer or not pPlayer:IsHuman() then return end
+    if not pPlayer:IsHuman() then return end
 
-    for city in pPlayer:Cities() do
-        if city:IsHasBuilding(BUILDING_STATUE) then
-            -- dummy building / mekanisme lain direkomendasikan jika ingin bonus yield dinamis
-            -- jangan pakai GameEvents.CityYield (bukan Civ V API)
-        end
+    local city = pPlayer:GetCityByID(cityID)
+    if not city then return end
+
+    if city:IsHasBuilding(GameInfoTypes.BUILDING_CHEATOCALYPSE_STATUE) then
+        return city:GetYieldRate(yieldType) -- +100%
     end
 end)

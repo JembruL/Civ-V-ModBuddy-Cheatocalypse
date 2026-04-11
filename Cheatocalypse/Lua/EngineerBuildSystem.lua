@@ -68,4 +68,3 @@ end)
 GameEvents.PlayerDoTurn.Add(function(playerID)
     ProcessPending(playerID)
 end)
-

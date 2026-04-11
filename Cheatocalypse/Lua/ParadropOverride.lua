@@ -1,79 +1,109 @@
-local promoParadrop    = GameInfoTypes.PROMOTION_PARADROP
-local promoExtParadrop = GameInfoTypes.PROMOTION_EXTENDED_PARADROP
-local promoFlag        = GameInfoTypes.PROMOTION_CHEATO_PARADROP_FLAG
-local promoMaster      = GameInfoTypes.PROMOTION_CHEATO_MASTER_FLAG
-local promoBlitz       = GameInfoTypes.PROMOTION_BLITZ
-local promoEnemyLands  = GameInfoTypes.PROMOTION_ENEMY_LANDS
+-- Lua Script1
+-- Author: CivicKr
+-- DateCreated: 3/30/2026 11:57:55 AM
+--------------------------------------------------------------
 
+-- ===========================================================================
+-- PARADROP OVERRIDE SYSTEM (DUAL LAYER FILTER)
+-- Requirement:
+-- 1. PROMOTION_PARADROP (engine hook)
+-- 2. PROMOTION_CHEATO_PARADROP_FLAG (custom control)
+-- 3. PROMOTION_CHEATO_MASTER_FLAG (system ownership)
+-- ===========================================================================
+
+local promoParadrop      = GameInfoTypes.PROMOTION_PARADROP
+local promoFlag          = GameInfoTypes.PROMOTION_CHEATO_PARADROP_FLAG
+local promoMaster        = GameInfoTypes.PROMOTION_CHEATO_MASTER_FLAG
+local promoBlitz         = GameInfoTypes.PROMOTION_BLITZ
+
+-- cache posisi sebelumnya biar bisa hitung distance
 local lastPositions = {}
 
-local function IsCheatoParadropUnit(unit)
-    if not unit then return false end
-    return unit:IsHasPromotion(promoMaster) and unit:IsHasPromotion(promoFlag)
-end
-
-local function EnsureParadropAccess(playerID)
-    local player = Players[playerID]
-    if not player or not player:IsHuman() then return end
-
-    for unit in player:Units() do
-        if IsCheatoParadropUnit(unit) then
-            if promoParadrop and not unit:IsHasPromotion(promoParadrop) then
-                unit:SetHasPromotion(promoParadrop, true)
-            end
-            if promoEnemyLands and not unit:IsHasPromotion(promoEnemyLands) then
-                unit:SetHasPromotion(promoEnemyLands, true)
-            end
-        end
-    end
-end
-
-GameEvents.UnitCreated.Add(function(playerID, unitID)
-    EnsureParadropAccess(playerID)
-end)
-
-GameEvents.PlayerDoTurn.Add(function(playerID)
-    EnsureParadropAccess(playerID)
-end)
-
-GameEvents.UnitSetXY.Add(function(playerID, unitID, x, y)
+-- ===========================================================================
+-- TRACK posisi unit setiap kali gerak
+-- ===========================================================================
+function TrackUnitPosition(playerID, unitID, x, y)
     lastPositions[playerID] = lastPositions[playerID] or {}
-    local prev = lastPositions[playerID][unitID]
-    lastPositions[playerID][unitID] = { x = x, y = y }
+    lastPositions[playerID][unitID] = {x = x, y = y}
+end
+
+GameEvents.UnitSetXY.Add(TrackUnitPosition)
+
+-- ===========================================================================
+-- MAIN OVERRIDE SYSTEM
+-- ===========================================================================
+function ParadropOverride(playerID, unitID, x, y)
 
     local player = Players[playerID]
-    if not player or not player:IsHuman() then return end
+    if not player then return end
+
+    -- HARD FILTER: HUMAN ONLY
+    if not player:IsHuman() then return end
 
     local unit = player:GetUnitByID(unitID)
-    if not IsCheatoParadropUnit(unit) then return end
-    if not prev then return end
+    if not unit then return end
 
-    local distance = Map.PlotDistance(prev.x, prev.y, x, y)
-    if not distance or distance < 5 then return end
+    -- FILTER LAYER (WAJIB DUA-DUANYA ADA + MASTER FLAG)
+    if not unit:IsHasPromotion(promoMaster) then return end
+    if not unit:IsHasPromotion(promoParadrop) then return end
+    if not unit:IsHasPromotion(promoFlag) then return end
 
-    local hasAnyParadrop = unit:IsHasPromotion(promoParadrop)
-    if promoExtParadrop then
-        hasAnyParadrop = hasAnyParadrop or unit:IsHasPromotion(promoExtParadrop)
+    -- ambil posisi sebelumnya
+    if not lastPositions[playerID] or not lastPositions[playerID][unitID] then
+        return
     end
-    if not hasAnyParadrop then return end
 
-    if unit:GetMoves() == 0 then
-        unit:SetMoves(unit:MaxMoves())
-        if promoBlitz and not unit:IsHasPromotion(promoBlitz) then
-            unit:SetHasPromotion(promoBlitz, true)
-        end
-        unit:ChangeDamage(-10)
-    end
-end)
+    local prev = lastPositions[playerID][unitID]
+    local prevX = prev.x
+    local prevY = prev.y
 
-GameEvents.PlayerDoTurn.Add(function(playerID)
+    local distance = Map.PlotDistance(prevX, prevY, x, y)
+
+    -- threshold: dianggap paradrop kalau lompat jauh //fix UI error
+	--if distance >= 5 then //deprecated.
+		if distance >= 5 then
+        
+		-- reset movement biar bisa lanjut aksi
+		unit:SetMoves(unit:MaxMoves())
+
+		-- kasih blitz biar bisa attack setelah drop
+		if not unit:IsHasPromotion(promoBlitz) then
+        unit:SetHasPromotion(promoBlitz, true)
+		end
+
+		-- optional: heal dikit biar gak fragile
+		unit:ChangeDamage(-10)
+
+		-- debug (optional, aktifin kalau perlu)
+		-- print("Paradrop override triggered for unit:", unitID)
+	end
+end
+
+GameEvents.UnitSetXY.Add(ParadropOverride)
+
+-- ===========================================================================
+-- CLEANUP SYSTEM (REMOVE BLITZ SETIAP TURN)
+-- ===========================================================================
+function CleanupParadropBoost(playerID)
+
     local player = Players[playerID]
-    if not player or not player:IsHuman() then return end
+    if not player then return end
+
+    -- HARD FILTER: HUMAN ONLY
+    if not player:IsHuman() then return end
 
     for unit in player:Units() do
-        if unit:IsHasPromotion(promoBlitz) and IsCheatoParadropUnit(unit) then
-            unit:SetHasPromotion(promoBlitz, false)
+        if unit:IsHasPromotion(promoBlitz) then
+
+            -- hanya unit dalam ecosystem Cheatocalypse
+            if unit:IsHasPromotion(promoMaster)
+            and unit:IsHasPromotion(promoFlag) then
+
+                unit:SetHasPromotion(promoBlitz, false)
+
+            end
         end
     end
-end)
+end
 
+GameEvents.PlayerDoTurn.Add(CleanupParadropBoost)

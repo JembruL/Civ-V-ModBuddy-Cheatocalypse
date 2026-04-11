@@ -1,14 +1,6 @@
 print("Cheatocalypse Core System Loaded")
 
 local PROMO_MASTER = GameInfoTypes.PROMOTION_CHEATO_MASTER_FLAG
-local FEATURE_LOG_SECURITY = false
-
-local MASTER_UNITS = {}
-for row in GameInfo.Unit_FreePromotions() do
-    if row.PromotionType == "PROMOTION_CHEATO_MASTER_FLAG" then
-        MASTER_UNITS[row.UnitType] = true
-    end
-end
 
 -- =========================================================
 -- BLOCK AI TRAINING (BASED ON MASTER FLAG)
@@ -17,12 +9,23 @@ GameEvents.PlayerCanTrain.Add(function(playerID, unitType)
     local player = Players[playerID]
     if not player then return true end
 
-    local unitInfo = GameInfo.Units[unitType]
-    if unitInfo and MASTER_UNITS[unitInfo.Type] and not player:IsHuman() then
-        if FEATURE_LOG_SECURITY then
-            print("Cheatocalypse Security: blocked AI training", playerID, unitInfo.Type)
-        end
+    if player:IsBarbarian() then
         return false
+    end
+
+    -- check apakah unit ini punya MASTER FLAG
+    local unitInfo = GameInfo.Units[unitType]
+    if unitInfo then
+        for row in GameInfo.Unit_FreePromotions() do
+            if row.UnitType == unitInfo.Type
+            and row.PromotionType == "PROMOTION_CHEATO_MASTER_FLAG" then
+
+                if not player:IsHuman() then
+                    return false
+                end
+
+            end
+        end
     end
 
     return true
@@ -38,12 +41,14 @@ GameEvents.UnitCreated.Add(function(playerID, unitID)
     local unit = player:GetUnitByID(unitID)
     if not unit then return end
 
+    if player:IsBarbarian() then
+        unit:Kill()
+        return
+    end
+
     -- kalau unit punya MASTER FLAG tapi bukan human ? kill/purge
     if unit:IsHasPromotion(PROMO_MASTER)
     and not player:IsHuman() then
-        if FEATURE_LOG_SECURITY then
-            print("Cheatocalypse Security: killed non-human cheat unit", playerID, unitID)
-        end
         unit:Kill()
     end
 end)
@@ -65,10 +70,32 @@ GameEvents.PlayerDoTurn.Add(function(playerID)
 end)
 
 -- =========================================================
--- STATUE BUFF AUTHORITY
+-- HOOK STATUE
 -- =========================================================
--- IMPORTANT:
--- Statue buff (+25% strength, +200% XP, visibility bonus) tetap aktif
--- melalui PROMOTION_CHEATO_STATUE_BUFF di Lua/BuildingEffects.lua.
--- Hook duplikat di CoreSystem dihapus untuk mencegah stacking movement
--- (SetMoves + ChangeMoves) dan konflik sumber kebenaran.
+GameEvents.PlayerDoTurn.Add(function(playerID)
+    local pPlayer = Players[playerID]
+    if not pPlayer:IsHuman() then return end
+
+    local hasStatue = false
+
+    for city in pPlayer:Cities() do
+        if city:IsHasBuilding(GameInfoTypes.BUILDING_CHEATOCALYPSE_STATUE) then
+            hasStatue = true
+            break
+        end
+    end
+
+    if not hasStatue then return end
+
+    for unit in pPlayer:Units() do
+        if unit:IsHasPromotion(GameInfoTypes.PROMOTION_CHEATO_MASTER_FLAG) then
+
+            -- +1 movement
+            unit:ChangeMoves(60) -- 1 tile ? 60
+
+            -- +25% strength & +200% XP
+            unit:SetHasPromotion(GameInfoTypes.PROMOTION_CHEATO_STATUE_BUFF, true)
+
+        end
+    end
+end)

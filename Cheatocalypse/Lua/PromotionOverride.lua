@@ -16,10 +16,7 @@ end
 -- PROMOTION REGISTRY (CENTRAL CONTROL)
 -- =========================================================
 local PROMO = {
-    MASTER_FLAG    = GameInfoTypes.PROMOTION_CHEATO_MASTER_FLAG,
-    UNIT_BUFF1     = GameInfoTypes.PROMOTION_CHEATO_UNIT_BUFF1,
-    UNIT_BUFF2     = GameInfoTypes.PROMOTION_CHEATO_UNIT_BUFF2,
-    UNIT_BUFF3     = GameInfoTypes.PROMOTION_CHEATO_UNIT_BUFF3
+    MASTER_FLAG    = GameInfoTypes.PROMOTION_CHEATO_MASTER_FLAG
 }
 
 -- =========================================================
@@ -47,24 +44,6 @@ function IsCheatoPromotion(promoType)
     return string.find(promoType, "PROMOTION_CHEATO_") ~= nil
 end
 
-local AURA_PROMOS = {
-    "PROMOTION_CHEATO_UNIT_BUFF1",
-    "PROMOTION_CHEATO_UNIT_BUFF2",
-    "PROMOTION_CHEATO_UNIT_BUFF3"
-}
-
-local AURA_PROMOS = {
-    "PROMOTION_CHEATO_UNIT_BUFF1",
-    "PROMOTION_CHEATO_UNIT_BUFF2",
-    "PROMOTION_CHEATO_UNIT_BUFF3"
-}
-
-local AURA_PROMOS = {
-    "PROMOTION_CHEATO_UNIT_BUFF1",
-    "PROMOTION_CHEATO_UNIT_BUFF2",
-    "PROMOTION_CHEATO_UNIT_BUFF3"
-}
-
 -- =========================================================
 -- SOFT PURGE (ANTI-AI ABUSE)
 -- =========================================================
@@ -75,23 +54,22 @@ function PurgeAI(playerID)
     if player:IsHuman() then return end
 
     for unit in player:Units() do
-        for promo in GameInfo.UnitPromotions() do
-            if IsCheatoPromotion(promo.Type)
-            and promo.Type ~= "PROMOTION_CHEATO_MASTER_FLAG" then
-                local isProtectedPromo = (
-                    promo.Type == "PROMOTION_CHEATO_STATUE_BUFF"
-                    or promo.Type == "PROMOTION_CHEATO_PARADROP_FLAG"
-                )
-                if unit:IsHasPromotion(PROMO.MASTER_FLAG) then
-                    if not isProtectedPromo and unit:IsHasPromotion(promo.ID) then
-                        unit:SetHasPromotion(promo.ID, false)
-                    end
-                else
+
+        -- only if unit own Cheatocalypse system
+        if unit:IsHasPromotion(PROMO.MASTER_FLAG) then
+
+            for promo in GameInfo.UnitPromotions() do
+                if IsCheatoPromotion(promo.Type) 
+				and promo.Type ~= "PROMOTION_CHEATO_MASTER_FLAG"
+				and promo.Type ~= "PROMOTION_CHEATO_STATUE_BUFF"   
+				and promo.Type ~= "PROMOTION_CHEATO_PARADROP_FLAG" 
+				then
                     if unit:IsHasPromotion(promo.ID) then
                         unit:SetHasPromotion(promo.ID, false)
                     end
                 end
             end
+
         end
     end
 end
@@ -110,10 +88,17 @@ function System_CheatoAura(playerID)
     for unit in player:Units() do
         if IsCheatUnit(unit) then
 
-            for _, promoType in ipairs(AURA_PROMOS) do
-                local promoID = GameInfoTypes[promoType]
-                if promoID and unit:IsHasPromotion(promoID) then
-                    unit:SetHasPromotion(promoID, false)
+            for promo in GameInfo.UnitPromotions() do
+                if IsCheatoPromotion(promo.Type)
+                and promo.Type ~= "PROMOTION_CHEATO_MASTER_FLAG" 
+				and promo.Type ~= "PROMOTION_CHEATO_STATUE_BUFF"   
+				and promo.Type ~= "PROMOTION_CHEATO_PARADROP_FLAG"
+				then
+
+                    if unit:IsHasPromotion(promo.ID) then
+                        unit:SetHasPromotion(promo.ID, false)
+                    end
+
                 end
             end
 
@@ -125,19 +110,21 @@ function System_CheatoAura(playerID)
         if IsCheatUnit(unit) then
 
             local plot = unit:GetPlot()
-            if plot then
-                for i = 0, 5 do
-					local adjPlot = Map.PlotDirection(plot:GetX(), plot:GetY(), i)
-					if adjPlot then
-						local count = adjPlot:GetNumUnits()
-						for n = 0, count - 1 do
-							local adjUnit = adjPlot:GetUnit(n)
-							if adjUnit and adjUnit:GetOwner() == playerID and IsCheatUnit(adjUnit) then
-								adjUnit:SetHasPromotion(GameInfoTypes.PROMOTION_CHEATO_UNIT_BUFF1, true)
-							end
-						end
-					end
-				end
+
+            for i = 0, 5 do
+                local adjPlot = Map.PlotDirection(plot:GetX(), plot:GetY(), i)
+
+                if adjPlot then
+                    local adjUnit = adjPlot:GetUnit(0)
+
+                    if adjUnit
+                    and adjUnit:GetOwner() == playerID
+                    and IsCheatUnit(adjUnit) then
+
+                        adjUnit:SetHasPromotion(GameInfoTypes.PROMOTION_CHEATO_UNIT_BUFF1, true)
+
+                    end
+                end
             end
 
         end
@@ -159,9 +146,7 @@ end
 -- EVENT HOOKS
 -- =========================================================
 GameEvents.UnitSetXY.Add(System_CheatoAura)
-GameEvents.UnitCreated.Add(function(playerID, unitID)
-    System_CheatoAura(playerID)
-end)
+GameEvents.UnitCreated.Add(System_CheatoAura)
 GameEvents.PlayerDoTurn.Add(System_CheatoAura)
 
 GameEvents.PlayerDoTurn.Add(GlobalSecuritySweep)
