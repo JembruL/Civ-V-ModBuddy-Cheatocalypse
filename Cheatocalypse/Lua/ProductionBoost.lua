@@ -7,7 +7,7 @@ print("Production Boost Loaded")
 function ApplyProductionBoost(playerID)
 
     local player = Players[playerID]
-    if not player:IsHuman() then return end
+    if not player or not player:IsHuman() then return end
 
     for city in player:Cities() do
 
