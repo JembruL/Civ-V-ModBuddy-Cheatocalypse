@@ -1,813 +1,529 @@
-[642405.781] Initializing Lua 5.1.4
-[642419.562] InstalledPanel: Refreshing Mods
-[642419.562] InstalledPanel: GetModBrowserListings()
-[642419.562] InstalledPanel: Refreshing Mods
-[642419.562] InstalledPanel: GetModBrowserListings()
-[642422.156] InstalledPanel: Refreshing Mods
-[642422.156] InstalledPanel: GetModBrowserListings()
-[642468.640] Map Script: Generating Map
-[642468.640] Map Script: Setting Plot Types (Lua Fractal) ...
-[642468.656] Map Script: Setting Plot Types (MapGenerator.Lua)
-[642468.671] Map Script: Setting coasts and oceans (MapGenerator.Lua)
-[642468.671] Map Script: Expanding coasts (MapGenerator.Lua)
-[642468.671] Map Script: Generating Terrain (Lua Fractal) ...
-[642468.671] Map Script: Setting Terrain Types (MapGenerator.Lua)
-[642468.687] Map Script: Map Generation - Adding Rivers
-[642468.687] Map Script: Map Generation - Adding Lakes
-[642468.687] Map Script: 2 lakes added
-[642468.687] Map Script: Adding Features (Lua Fractal) ...
-[642468.703] Map Script: Creating start plot database.
-[642468.718] Map Script: Dividing the map in to Regions.
-[642468.718] Map Script: Map Generation - Dividing the map in to Regions
-[642468.718] Map Script: -
-[642468.718] Map Script: Civs:	8
-[642468.718] Map Script: City States:	16
-[642468.718] Map Script: * * * * * * * * * *
-[642468.718] Map Script: Area ID 98304 has fertility of -2
-[642468.718] Map Script: Area ID 352287 has fertility of 6
-[642468.718] Map Script: Area ID 376866 has fertility of 5
-[642468.718] Map Script: Area ID 401445 has fertility of 346
-[642468.718] Map Script: Area ID 270357 has fertility of 3225
-[642468.718] Map Script: Area ID 393252 has fertility of 46
-[642468.718] Map Script: Area ID 360480 has fertility of 485
-[642468.718] Map Script: Area ID 344094 has fertility of 245
-[642468.718] Map Script: * * * * * * * * * *
-[642468.718] Map Script: Interim Table ID 1 has fertility of -2
-[642468.718] Map Script: Interim Table ID 2 has fertility of 5
-[642468.718] Map Script: Interim Table ID 3 has fertility of 6
-[642468.718] Map Script: Interim Table ID 4 has fertility of 46
-[642468.718] Map Script: Interim Table ID 5 has fertility of 245
-[642468.718] Map Script: Interim Table ID 6 has fertility of 346
-[642468.718] Map Script: Interim Table ID 7 has fertility of 485
-[642468.718] Map Script: Interim Table ID 8 has fertility of 3225
-[642468.718] Map Script: * * * * * * * * * *
-[642468.718] Map Script: -
-[642468.718] Map Script: --- Continental Division, Initial Readout ---
-[642468.718] Map Script: -
-[642468.718] Map Script: - Global Fertility:	4356
-[642468.718] Map Script: - Total Land Plots:	1098
-[642468.718] Map Script: - Total Areas:	8
-[642468.718] Map Script: - Relevant Areas:	8
-[642468.718] Map Script: -
-[642468.718] Map Script: * * * * * * * * * *
-[642468.718] Map Script: Area ID 270357 has fertility of 3225
-[642468.718] Map Script: Area ID 360480 has fertility of 485
-[642468.718] Map Script: Area ID 401445 has fertility of 346
-[642468.718] Map Script: Area ID 344094 has fertility of 245
-[642468.718] Map Script: Area ID 393252 has fertility of 46
-[642468.718] Map Script: Area ID 352287 has fertility of 6
-[642468.718] Map Script: Area ID 376866 has fertility of 5
-[642468.718] Map Script: Area ID 98304 has fertility of -2
-[642468.718] Map Script: * * * * * * * * * *
-[642468.718] Map Script: - - Searching landmasses in order to place Civ #	1
-[642468.718] Map Script: -
-[642468.718] Map Script: - Found new candidate landmass with Area ID#:	270357	 with fertility of 	3225
-[642468.718] Map Script: Civ #	1	has been assigned to Area#	270357
-[642468.718] Map Script: -
-[642468.718] Map Script: - - Searching landmasses in order to place Civ #	2
-[642468.718] Map Script: -
-[642468.718] Map Script: - Found new candidate landmass with Area ID#:	270357	 with fertility of 	1612.5
-[642468.718] Map Script: Civ #	2	has been assigned to Area#	270357
-[642468.718] Map Script: -
-[642468.718] Map Script: - - Searching landmasses in order to place Civ #	3
-[642468.718] Map Script: -
-[642468.718] Map Script: - Found new candidate landmass with Area ID#:	270357	 with fertility of 	1075
-[642468.718] Map Script: Civ #	3	has been assigned to Area#	270357
-[642468.718] Map Script: -
-[642468.718] Map Script: - - Searching landmasses in order to place Civ #	4
-[642468.718] Map Script: -
-[642468.718] Map Script: - Found new candidate landmass with Area ID#:	270357	 with fertility of 	806.25
-[642468.718] Map Script: Civ #	4	has been assigned to Area#	270357
-[642468.718] Map Script: -
-[642468.718] Map Script: - - Searching landmasses in order to place Civ #	5
-[642468.718] Map Script: -
-[642468.718] Map Script: - Found new candidate landmass with Area ID#:	270357	 with fertility of 	645
-[642468.718] Map Script: Civ #	5	has been assigned to Area#	270357
-[642468.718] Map Script: -
-[642468.718] Map Script: - - Searching landmasses in order to place Civ #	6
-[642468.718] Map Script: -
-[642468.718] Map Script: - Found new candidate landmass with Area ID#:	270357	 with fertility of 	537.5
-[642468.718] Map Script: Civ #	6	has been assigned to Area#	270357
-[642468.718] Map Script: -
-[642468.718] Map Script: - - Searching landmasses in order to place Civ #	7
-[642468.718] Map Script: -
-[642468.718] Map Script: - Found new candidate landmass with Area ID#:	270357	 with fertility of 	460.71428571429
-[642468.718] Map Script: - Found new candidate landmass with Area ID#:	360480	 with fertility of 	485
-[642468.718] Map Script: Civ #	7	has been assigned to Area#	360480
-[642468.718] Map Script: -
-[642468.718] Map Script: - - Searching landmasses in order to place Civ #	8
-[642468.718] Map Script: -
-[642468.718] Map Script: - Found new candidate landmass with Area ID#:	270357	 with fertility of 	460.71428571429
-[642468.718] Map Script: Civ #	8	has been assigned to Area#	270357
-[642468.718] Map Script: -
-[642468.718] Map Script: -
-[642468.718] Map Script: --- End of Initial Readout ---
-[642468.718] Map Script: -
-[642468.718] Map Script: *** Number of Civs per Landmass - Table Readout ***
-[642468.718] Map Script: --------------------------------------------------
-[642468.718] Map Script: Table printout for table ID:	table: 2BF5ABD0
-[642468.718] Map Script: Table index:	1	Table entry:	7
-[642468.718] Map Script: Table index:	2	Table entry:	1
-[642468.718] Map Script: Table index:	3	Table entry:	0
-[642468.718] Map Script: Table index:	4	Table entry:	0
-[642468.718] Map Script: Table index:	5	Table entry:	0
-[642468.718] Map Script: Table index:	6	Table entry:	0
-[642468.718] Map Script: Table index:	7	Table entry:	0
-[642468.718] Map Script: Table index:	8	Table entry:	0
-[642468.718] Map Script: - - - - - - - - - - - - - - - - - - - - - - - - - -
-[642468.718] Map Script: --- End of Civs per Landmass readout ***
-[642468.718] Map Script: -
-[642468.718] Map Script: -
-[642468.718] Map Script: -
-[642468.718] Map Script: - Region #: 	1
-[642468.718] Map Script: - Civs on this landmass: 	7
-[642468.718] Map Script: - Area ID#: 	270357
-[642468.718] Map Script: - Fertility: 	3225
-[642468.718] Map Script: - Plot Count: 	2132
-[642468.718] Map Script: -
-[642468.718] Map Script: DivideIntoRegions: Uneven Division for handling prime numbers selected.
-[642468.718] Map Script: Dividing along vertical line between columns: 	50	-	51
-[642468.718] Map Script: -
-[642468.718] Map Script: Removed Dead Rows, West: 	0	 East: 	0
-[642468.718] Map Script: Removed Dead Rows, South: 	0	 North: 	11
-[642468.718] Map Script: -
-[642468.718] Map Script: Incoming values: 	25	4	26	41
-[642468.718] Map Script: Outgoing values: 	25	4	26	30
-[642468.718] Map Script: -
-[642468.718] Map Script: Size of incoming fertility table: 	1066
-[642468.718] Map Script: Size of outgoing fertility table: 	780
-[642468.718] Map Script: -
-[642468.718] Map Script: Removed Dead Rows, West: 	0	 East: 	0
-[642468.718] Map Script: Removed Dead Rows, South: 	1	 North: 	0
-[642468.718] Map Script: -
-[642468.718] Map Script: Incoming values: 	51	4	26	41
-[642468.718] Map Script: Outgoing values: 	51	5	26	40
-[642468.718] Map Script: -
-[642468.718] Map Script: Size of incoming fertility table: 	1066
-[642468.718] Map Script: Size of outgoing fertility table: 	1040
-[642468.718] Map Script: DivideIntoRegions: Divide in to Thirds selected.
-[642468.718] Map Script: -
-[642468.718] Map Script: ChopIntoThree called.
-[642468.718] Map Script: Dividing along horizontal line between rows: 	15	-	16
-[642468.718] Map Script: -
-[642468.718] Map Script: Removed Dead Rows, West: 	4	 East: 	0
-[642468.718] Map Script: Removed Dead Rows, South: 	0	 North: 	0
-[642468.718] Map Script: -
-[642468.718] Map Script: Incoming values: 	25	4	26	12
-[642468.718] Map Script: Outgoing values: 	29	4	22	12
-[642468.718] Map Script: -
-[642468.718] Map Script: Size of incoming fertility table: 	312
-[642468.718] Map Script: Size of outgoing fertility table: 	264
-[642468.718] Map Script: Dividing along vertical line between columns: 	44	-	45
-[642468.718] Map Script: -
-[642468.718] Map Script: ---------------------------------------------
-[642468.718] Map Script: Defined location of Start Region #	1
-[642468.718] Map Script: ---------------------------------------------
-[642468.718] Map Script: -
-[642468.718] Map Script: -
-[642468.718] Map Script: ---------------------------------------------
-[642468.718] Map Script: Defined location of Start Region #	2
-[642468.718] Map Script: ---------------------------------------------
-[642468.718] Map Script: -
-[642468.718] Map Script: -
-[642468.718] Map Script: ---------------------------------------------
-[642468.718] Map Script: Defined location of Start Region #	3
-[642468.718] Map Script: ---------------------------------------------
-[642468.718] Map Script: -
-[642468.718] Map Script: DivideIntoRegions: Divide in to Halves selected.
-[642468.718] Map Script: Dividing along horizontal line between rows: 	25	-	26
-[642468.718] Map Script: -
-[642468.718] Map Script: Removed Dead Rows, West: 	0	 East: 	5
-[642468.718] Map Script: Removed Dead Rows, South: 	0	 North: 	0
-[642468.718] Map Script: -
-[642468.718] Map Script: Incoming values: 	51	26	26	19
-[642468.718] Map Script: Outgoing values: 	51	26	21	19
-[642468.718] Map Script: -
-[642468.718] Map Script: Size of incoming fertility table: 	494
-[642468.718] Map Script: Size of outgoing fertility table: 	399
-[642468.718] Map Script: DivideIntoRegions: Divide in to Halves selected.
-[642468.718] Map Script: Dividing along vertical line between columns: 	65	-	66
-[642468.718] Map Script: -
-[642468.718] Map Script: Removed Dead Rows, West: 	0	 East: 	0
-[642468.718] Map Script: Removed Dead Rows, South: 	8	 North: 	0
-[642468.718] Map Script: -
-[642468.718] Map Script: Incoming values: 	51	5	15	21
-[642468.718] Map Script: Outgoing values: 	51	13	15	13
-[642468.718] Map Script: -
-[642468.718] Map Script: Size of incoming fertility table: 	315
-[642468.718] Map Script: Size of outgoing fertility table: 	195
-[642468.718] Map Script: -
-[642468.718] Map Script: ---------------------------------------------
-[642468.718] Map Script: Defined location of Start Region #	4
-[642468.718] Map Script: ---------------------------------------------
-[642468.718] Map Script: -
-[642468.718] Map Script: -
-[642468.718] Map Script: ---------------------------------------------
-[642468.718] Map Script: Defined location of Start Region #	5
-[642468.718] Map Script: ---------------------------------------------
-[642468.718] Map Script: -
-[642468.718] Map Script: DivideIntoRegions: Divide in to Halves selected.
-[642468.718] Map Script: Dividing along vertical line between columns: 	60	-	61
-[642468.718] Map Script: -
-[642468.718] Map Script: Removed Dead Rows, West: 	0	 East: 	0
-[642468.718] Map Script: Removed Dead Rows, South: 	0	 North: 	2
-[642468.718] Map Script: -
-[642468.718] Map Script: Incoming values: 	51	26	10	19
-[642468.718] Map Script: Outgoing values: 	51	26	10	17
-[642468.718] Map Script: -
-[642468.718] Map Script: Size of incoming fertility table: 	190
-[642468.718] Map Script: Size of outgoing fertility table: 	170
-[642468.718] Map Script: -
-[642468.718] Map Script: ---------------------------------------------
-[642468.718] Map Script: Defined location of Start Region #	6
-[642468.718] Map Script: ---------------------------------------------
-[642468.718] Map Script: -
-[642468.718] Map Script: -
-[642468.718] Map Script: ---------------------------------------------
-[642468.718] Map Script: Defined location of Start Region #	7
-[642468.718] Map Script: ---------------------------------------------
-[642468.718] Map Script: -
-[642468.718] Map Script: -
-[642468.718] Map Script: - Region #: 	2
-[642468.718] Map Script: - Civs on this landmass: 	1
-[642468.718] Map Script: - Area ID#: 	360480
-[642468.718] Map Script: - Fertility: 	485
-[642468.718] Map Script: - Plot Count: 	198
-[642468.718] Map Script: -
-[642468.718] Map Script: -
-[642468.718] Map Script: ---------------------------------------------
-[642468.718] Map Script: Defined location of Start Region #	8
-[642468.718] Map Script: ---------------------------------------------
-[642468.718] Map Script: -
-[642468.718] Map Script: -
-[642468.718] Map Script: Data for Start Region #	1
-[642468.718] Map Script: WestX:  	29
-[642468.718] Map Script: SouthY: 	4
-[642468.718] Map Script: Width:  	22
-[642468.718] Map Script: Height: 	12
-[642468.718] Map Script: AreaID: 	270357
-[642468.718] Map Script: Fertility:	532
-[642468.718] Map Script: Plots:  	264
-[642468.718] Map Script: Fert/Plot:	2.0151515151515
-[642468.718] Map Script: -
-[642468.718] Map Script: -
-[642468.718] Map Script: Data for Start Region #	2
-[642468.718] Map Script: WestX:  	25
-[642468.718] Map Script: SouthY: 	16
-[642468.718] Map Script: Width:  	20
-[642468.718] Map Script: Height: 	18
-[642468.718] Map Script: AreaID: 	270357
-[642468.718] Map Script: Fertility:	512
-[642468.718] Map Script: Plots:  	360
-[642468.718] Map Script: Fert/Plot:	1.4222222222222
-[642468.718] Map Script: -
-[642468.718] Map Script: -
-[642468.718] Map Script: Data for Start Region #	3
-[642468.718] Map Script: WestX:  	45
-[642468.718] Map Script: SouthY: 	16
-[642468.718] Map Script: Width:  	6
-[642468.718] Map Script: Height: 	18
-[642468.718] Map Script: AreaID: 	270357
-[642468.718] Map Script: Fertility:	403
-[642468.718] Map Script: Plots:  	108
-[642468.718] Map Script: Fert/Plot:	3.7314814814815
-[642468.718] Map Script: -
-[642468.718] Map Script: -
-[642468.718] Map Script: Data for Start Region #	4
-[642468.718] Map Script: WestX:  	51
-[642468.718] Map Script: SouthY: 	13
-[642468.718] Map Script: Width:  	15
-[642468.718] Map Script: Height: 	13
-[642468.718] Map Script: AreaID: 	270357
-[642468.718] Map Script: Fertility:	500
-[642468.718] Map Script: Plots:  	195
-[642468.718] Map Script: Fert/Plot:	2.5641025641026
-[642468.718] Map Script: -
-[642468.718] Map Script: -
-[642468.718] Map Script: Data for Start Region #	5
-[642468.718] Map Script: WestX:  	66
-[642468.718] Map Script: SouthY: 	5
-[642468.718] Map Script: Width:  	11
-[642468.718] Map Script: Height: 	21
-[642468.718] Map Script: AreaID: 	270357
-[642468.718] Map Script: Fertility:	469
-[642468.718] Map Script: Plots:  	231
-[642468.718] Map Script: Fert/Plot:	2.030303030303
-[642468.718] Map Script: -
-[642468.718] Map Script: -
-[642468.718] Map Script: Data for Start Region #	6
-[642468.718] Map Script: WestX:  	51
-[642468.718] Map Script: SouthY: 	26
-[642468.718] Map Script: Width:  	10
-[642468.718] Map Script: Height: 	17
-[642468.718] Map Script: AreaID: 	270357
-[642468.718] Map Script: Fertility:	448
-[642468.718] Map Script: Plots:  	170
-[642468.718] Map Script: Fert/Plot:	2.6352941176471
-[642468.718] Map Script: -
-[642468.718] Map Script: -
-[642468.718] Map Script: Data for Start Region #	7
-[642468.718] Map Script: WestX:  	61
-[642468.718] Map Script: SouthY: 	26
-[642468.718] Map Script: Width:  	11
-[642468.718] Map Script: Height: 	19
-[642468.718] Map Script: AreaID: 	270357
-[642468.718] Map Script: Fertility:	361
-[642468.718] Map Script: Plots:  	209
-[642468.718] Map Script: Fert/Plot:	1.7272727272727
-[642468.718] Map Script: -
-[642468.718] Map Script: -
-[642468.718] Map Script: Data for Start Region #	8
-[642468.718] Map Script: WestX:  	6
-[642468.718] Map Script: SouthY: 	17
-[642468.718] Map Script: Width:  	11
-[642468.718] Map Script: Height: 	18
-[642468.718] Map Script: AreaID: 	360480
-[642468.718] Map Script: Fertility:	485
-[642468.718] Map Script: Plots:  	198
-[642468.718] Map Script: Fert/Plot:	2.4494949494949
-[642468.718] Map Script: -
-[642468.718] Map Script: Choosing start locations for civilizations.
-[642468.718] Map Script: Map Generation - Choosing Start Locations for Civilizations
-[642468.718] Map Script: Normalizing start locations and assigning them to Players.
-[642468.718] Map Script: Player	0	of Civ Type	CIVILIZATION_INDONESIA
-[642468.718] Map Script: - - - - - - - needs Coastal Start!
-[642468.718] Map Script: -
-[642468.718] Map Script: Player	1	of Civ Type	CIVILIZATION_PERSIA
-[642468.718] Map Script: Player	2	of Civ Type	CIVILIZATION_SIAM
-[642468.718] Map Script: Player	3	of Civ Type	CIVILIZATION_IROQUOIS
-[642468.718] Map Script: Player	4	of Civ Type	CIVILIZATION_BRAZIL
-[642468.718] Map Script: Player	5	of Civ Type	CIVILIZATION_CELTS
-[642468.718] Map Script: Player	6	of Civ Type	CIVILIZATION_GERMANY
-[642468.718] Map Script: Player	7	of Civ Type	CIVILIZATION_VENICE
-[642468.718] Map Script: - - - - - - - needs Coastal Start!
-[642468.718] Map Script: -
-[642468.718] Map Script: - - - - - - - needs to Place First!
-[642468.718] Map Script: -
-[642468.718] Map Script: Civs with Coastal Bias:	2
-[642468.718] Map Script: Civs with River Bias:	0
-[642468.718] Map Script: Civs with Region Priority:	3
-[642468.718] Map Script: Civs with Region Avoid:	1
-[642468.718] Map Script: -
-[642468.718] Map Script: Region#	1	has a Coastal Start.
-[642468.718] Map Script: Region#	2	has a Coastal Start.
-[642468.718] Map Script: Region#	5	has a Coastal Start.
-[642468.718] Map Script: Region#	6	has a Coastal Start.
-[642468.718] Map Script: iNumCoastalCivs: 2
-[642468.718] Map Script: iNumUnassignableCoastStarts: 0
-[642468.718] Map Script: shuffled_coastal_civs[1]: 7
-[642468.718] Map Script: shuffled_coastal_civs[2]: 0
-[642468.718] Map Script: Placing Natural Wonders.
-[642468.781] Map Script: -
-[642468.781] Map Script: -
-[642468.781] Map Script: --- Number of Candidate Plots on the map for Natural Wonders ---
-[642468.781] Map Script: -
-[642468.781] Map Script: -	20	candidates for	FEATURE_CRATER
-[642468.781] Map Script: -	13	candidates for	FEATURE_FUJI
-[642468.781] Map Script: -	43	candidates for	FEATURE_MESA
-[642468.781] Map Script: -	126	candidates for	FEATURE_REEF
-[642468.781] Map Script: -	1677	candidates for	FEATURE_VOLCANO
-[642468.781] Map Script: -	124	candidates for	FEATURE_GIBRALTAR
-[642468.781] Map Script: -	89	candidates for	FEATURE_GEYSER
-[642468.781] Map Script: -	246	candidates for	FEATURE_FOUNTAIN_YOUTH
-[642468.781] Map Script: -	191	candidates for	FEATURE_POTOSI
-[642468.781] Map Script: -	57	candidates for	FEATURE_EL_DORADO
-[642468.781] Map Script: -	63	candidates for	FEATURE_SRI_PADA
-[642468.781] Map Script: -	20	candidates for	FEATURE_MT_SINAI
-[642468.781] Map Script: -	156	candidates for	FEATURE_MT_KAILASH
-[642468.781] Map Script: -	45	candidates for	FEATURE_ULURU
-[642468.781] Map Script: -	246	candidates for	FEATURE_LAKE_VICTORIA
-[642468.781] Map Script: -	97	candidates for	FEATURE_KILIMANJARO
-[642468.781] Map Script: -	229	candidates for	FEATURE_SOLOMONS_MINES
-[642468.781] Map Script: -
-[642468.781] Map Script: --- End of candidates readout for Natural Wonders ---
-[642468.781] Map Script: -
-[642468.796] Map Script: -- Placed all Natural Wonders --
-[642468.796] Map Script: -
-[642468.796] Map Script: -
-[642468.796] Map Script: Placing Resources and City States.
-[642468.796] Map Script: Map Generation - Assigning Luxury Resource Distribution
-[642468.796] Map Script: -
-[642468.796] Map Script: Region#	3	 of type 	3	 has been assigned Luxury ID#	33
-[642468.796] Map Script: -
-[642468.796] Map Script: Region#	4	 of type 	5	 has been assigned Luxury ID#	16
-[642468.796] Map Script: -
-[642468.796] Map Script: Region#	6	 of type 	6	 has been assigned Luxury ID#	27
-[642468.796] Map Script: -
-[642468.796] Map Script: Region#	5	 of type 	7	 has been assigned Luxury ID#	13
-[642468.796] Map Script: -
-[642468.796] Map Script: Region#	8	 of type 	8	 has been assigned Luxury ID#	31
-[642468.796] Map Script: -
-[642468.796] Map Script: Region#	7	 of type 	8	 has been assigned Luxury ID#	25
-[642468.796] Map Script: -
-[642468.796] Map Script: Region#	1	 of type 	8	 has been assigned Luxury ID#	19
-[642468.796] Map Script: -
-[642468.796] Map Script: Region#	2	 of type 	8	 has been assigned Luxury ID#	14
-[642468.796] Map Script: Luxury ID#	13	rejected by City States as already belonging to Regions.
-[642468.796] Map Script: Luxury ID#	14	rejected by City States as already belonging to Regions.
-[642468.796] Map Script: Luxury ID#	16	rejected by City States as already belonging to Regions.
-[642468.796] Map Script: Luxury ID#	19	rejected by City States as already belonging to Regions.
-[642468.796] Map Script: Luxury ID#	25	rejected by City States as already belonging to Regions.
-[642468.796] Map Script: Luxury ID#	27	rejected by City States as already belonging to Regions.
-[642468.796] Map Script: Luxury ID#	31	rejected by City States as already belonging to Regions.
-[642468.796] Map Script: Luxury ID#	33	rejected by City States as already belonging to Regions.
-[642468.796] Map Script: --- Luxury Assignment Table ---
-[642468.796] Map Script: -
-[642468.796] Map Script: - - Assigned to Regions - -
-[642468.796] Map Script: Region#	3	has Luxury type	33
-[642468.796] Map Script: Region#	4	has Luxury type	16
-[642468.796] Map Script: Region#	6	has Luxury type	27
-[642468.796] Map Script: Region#	5	has Luxury type	13
-[642468.796] Map Script: Region#	8	has Luxury type	31
-[642468.796] Map Script: Region#	7	has Luxury type	25
-[642468.796] Map Script: Region#	1	has Luxury type	19
-[642468.796] Map Script: Region#	2	has Luxury type	14
-[642468.796] Map Script: -
-[642468.796] Map Script: - - Assigned to City States - -
-[642468.796] Map Script: Luxury type	24
-[642468.796] Map Script: Luxury type	15
-[642468.796] Map Script: Luxury type	21
-[642468.796] Map Script: -
-[642468.796] Map Script: - - Assigned to Random - -
-[642468.796] Map Script: Luxury type	26
-[642468.796] Map Script: Luxury type	22
-[642468.796] Map Script: Luxury type	34
-[642468.796] Map Script: Luxury type	20
-[642468.796] Map Script: Luxury type	32
-[642468.796] Map Script: -
-[642468.796] Map Script: - - Luxuries handled via Special Case - -
-[642468.796] Map Script: Luxury type	18
-[642468.796] Map Script: -
-[642468.796] Map Script: - - Disabled - -
-[642468.796] Map Script: Luxury type	41
-[642468.796] Map Script: Luxury type	23
-[642468.796] Map Script: Luxury type	17
-[642468.796] Map Script: Luxury type	30
-[642468.796] Map Script: - - - - - - - - - - - - - - - -
-[642468.796] Map Script: Map Generation - Placing City States
-[642468.796] Map Script: Map Generation - Choosing sites for City States
-[642468.796] Map Script: All city states assigned.
-[642468.796] Map Script: Map Generation - Placing Luxuries
-[642468.796] Map Script: -
-[642468.796] Map Script: Attempting to place Luxury#	33	at start plot	49	28	in Region#	3
-[642468.796] Map Script: -
-[642468.796] Map Script: Attempting to place Luxury#	16	at start plot	55	19	in Region#	4
-[642468.796] Map Script: -
-[642468.796] Map Script: Attempting to place Luxury#	27	at start plot	56	31	in Region#	6
-[642468.796] Map Script: -
-[642468.796] Map Script: Attempting to place Luxury#	13	at start plot	73	16	in Region#	5
-[642468.796] Map Script: -
-[642468.796] Map Script: Attempting to place Luxury#	31	at start plot	12	24	in Region#	8
-[642468.796] Map Script: -
-[642468.796] Map Script: Attempting to place Luxury#	25	at start plot	64	38	in Region#	7
-[642468.796] Map Script: -
-[642468.796] Map Script: Attempting to place Luxury#	19	at start plot	41	10	in Region#	1
-[642468.796] Map Script: -
-[642468.796] Map Script: Attempting to place Luxury#	14	at start plot	31	22	in Region#	2
-[642468.796] Map Script: -
-[642468.796] Map Script: -
-[642468.796] Map Script: -Assigned Luxury Type	24	to City State#	1
-[642468.796] Map Script: -
-[642468.796] Map Script: -
-[642468.796] Map Script: -Assigned Luxury Type	26	to City State#	2
-[642468.796] Map Script: -
-[642468.796] Map Script: -
-[642468.796] Map Script: -Assigned Luxury Type	24	to City State#	3
-[642468.796] Map Script: -
-[642468.796] Map Script: -
-[642468.796] Map Script: -Assigned Luxury Type	21	to City State#	4
-[642468.796] Map Script: -
-[642468.796] Map Script: -
-[642468.796] Map Script: -Assigned Luxury Type	21	to City State#	5
-[642468.796] Map Script: -
-[642468.796] Map Script: -
-[642468.796] Map Script: -Assigned Luxury Type	15	to City State#	6
-[642468.796] Map Script: -
-[642468.796] Map Script: -
-[642468.796] Map Script: -Assigned Luxury Type	21	to City State#	7
-[642468.796] Map Script: -
-[642468.796] Map Script: -
-[642468.796] Map Script: -Assigned Luxury Type	21	to City State#	8
-[642468.796] Map Script: -
-[642468.796] Map Script: -
-[642468.796] Map Script: -Assigned Luxury Type	15	to City State#	9
-[642468.796] Map Script: -
-[642468.796] Map Script: -
-[642468.796] Map Script: -Assigned Luxury Type	15	to City State#	10
-[642468.796] Map Script: -
-[642468.796] Map Script: -
-[642468.796] Map Script: -Assigned Luxury Type	24	to City State#	11
-[642468.796] Map Script: -
-[642468.796] Map Script: -
-[642468.796] Map Script: -Assigned Luxury Type	15	to City State#	12
-[642468.796] Map Script: -
-[642468.796] Map Script: -
-[642468.796] Map Script: -Assigned Luxury Type	15	to City State#	13
-[642468.796] Map Script: -
-[642468.796] Map Script: -
-[642468.796] Map Script: -Assigned Luxury Type	15	to City State#	14
-[642468.796] Map Script: -
-[642468.796] Map Script: -
-[642468.796] Map Script: -Assigned Luxury Type	26	to City State#	15
-[642468.796] Map Script: -
-[642468.796] Map Script: -
-[642468.796] Map Script: -Assigned Luxury Type	15	to City State#	16
-[642468.796] Map Script: -
-[642468.796] Map Script: - - -
-[642468.796] Map Script: Attempting to place regional luxury #	19	in Region#	1
-[642468.796] Map Script: -
-[642468.796] Map Script: - - -
-[642468.796] Map Script: Attempting to place regional luxury #	14	in Region#	2
-[642468.796] Map Script: -
-[642468.796] Map Script: - - -
-[642468.796] Map Script: Attempting to place regional luxury #	33	in Region#	3
-[642468.796] Map Script: -
-[642468.796] Map Script: - - -
-[642468.796] Map Script: Attempting to place regional luxury #	16	in Region#	4
-[642468.796] Map Script: -
-[642468.796] Map Script: - - -
-[642468.796] Map Script: Attempting to place regional luxury #	13	in Region#	5
-[642468.796] Map Script: -
-[642468.796] Map Script: - - -
-[642468.796] Map Script: Attempting to place regional luxury #	27	in Region#	6
-[642468.796] Map Script: -
-[642468.796] Map Script: - - -
-[642468.796] Map Script: Attempting to place regional luxury #	25	in Region#	7
-[642468.796] Map Script: -
-[642468.796] Map Script: - - -
-[642468.796] Map Script: Attempting to place regional luxury #	31	in Region#	8
-[642468.812] Map Script: * *
-[642468.812] Map Script: * iNumTypesRandom = 	5
-[642468.812] Map Script: * *
-[642468.812] Map Script: iNumRandomLuxTarget = -6. Just putting in 3 of each random.
-[642468.812] Map Script: -
-[642468.812] Map Script: Random Luxury Target Number:	3
-[642468.812] Map Script: Random Luxury Target Placed:	3
-[642468.812] Map Script: -
-[642468.812] Map Script: -
-[642468.812] Map Script: Random Luxury Target Number:	3
-[642468.812] Map Script: Random Luxury Target Placed:	3
-[642468.812] Map Script: -
-[642468.812] Map Script: -
-[642468.812] Map Script: Random Luxury Target Number:	3
-[642468.812] Map Script: Random Luxury Target Placed:	3
-[642468.812] Map Script: -
-[642468.812] Map Script: -
-[642468.812] Map Script: Random Luxury Target Number:	3
-[642468.812] Map Script: Random Luxury Target Placed:	3
-[642468.812] Map Script: -
-[642468.812] Map Script: -
-[642468.812] Map Script: Random Luxury Target Number:	3
-[642468.812] Map Script: Random Luxury Target Placed:	3
-[642468.812] Map Script: -
-[642468.812] Map Script: -
-[642468.812] Map Script: --- Eligible Types List for Second Luxury in Region#	1	---
-[642468.812] Map Script: - Found eligible luxury type:	18
-[642468.812] Map Script: --- End of Eligible Types list for Second Luxury in Region#	1	---
-[642468.812] Map Script: -
-[642468.812] Map Script: Placed Second Luxury type of ID#	26	for start located at Plot	41	10	 in Region#	1
-[642468.812] Map Script: -
-[642468.812] Map Script: --- Eligible Types List for Second Luxury in Region#	2	---
-[642468.812] Map Script: - Found eligible luxury type:	18
-[642468.812] Map Script: --- End of Eligible Types list for Second Luxury in Region#	2	---
-[642468.812] Map Script: -
-[642468.812] Map Script: Placed Second Luxury type of ID#	20	for start located at Plot	31	22	 in Region#	2
-[642468.812] Map Script: -
-[642468.812] Map Script: --- Eligible Types List for Second Luxury in Region#	3	---
-[642468.812] Map Script: - Found eligible luxury type:	18
-[642468.812] Map Script: --- End of Eligible Types list for Second Luxury in Region#	3	---
-[642468.812] Map Script: -
-[642468.812] Map Script: Placed Second Luxury type of ID#	20	for start located at Plot	49	28	 in Region#	3
-[642468.812] Map Script: -
-[642468.812] Map Script: --- Eligible Types List for Second Luxury in Region#	4	---
-[642468.812] Map Script: - Found eligible luxury type:	18
-[642468.812] Map Script: --- End of Eligible Types list for Second Luxury in Region#	4	---
-[642468.812] Map Script: -
-[642468.812] Map Script: Placed Second Luxury type of ID#	20	for start located at Plot	55	19	 in Region#	4
-[642468.812] Map Script: -
-[642468.812] Map Script: --- Eligible Types List for Second Luxury in Region#	5	---
-[642468.812] Map Script: - Found eligible luxury type:	18
-[642468.812] Map Script: --- End of Eligible Types list for Second Luxury in Region#	5	---
-[642468.812] Map Script: -
-[642468.812] Map Script: Placed Second Luxury type of ID#	18	for start located at Plot	73	16	 in Region#	5
-[642468.812] Map Script: -
-[642468.812] Map Script: --- Eligible Types List for Second Luxury in Region#	6	---
-[642468.812] Map Script: - Found eligible luxury type:	18
-[642468.812] Map Script: --- End of Eligible Types list for Second Luxury in Region#	6	---
-[642468.812] Map Script: -
-[642468.812] Map Script: Placed Second Luxury type of ID#	20	for start located at Plot	56	31	 in Region#	6
-[642468.812] Map Script: -
-[642468.812] Map Script: --- Eligible Types List for Second Luxury in Region#	7	---
-[642468.812] Map Script: - Found eligible luxury type:	18
-[642468.812] Map Script: --- End of Eligible Types list for Second Luxury in Region#	7	---
-[642468.812] Map Script: -
-[642468.812] Map Script: Placed Second Luxury type of ID#	26	for start located at Plot	64	38	 in Region#	7
-[642468.812] Map Script: -
-[642468.812] Map Script: --- Eligible Types List for Second Luxury in Region#	8	---
-[642468.812] Map Script: - Found eligible luxury type:	18
-[642468.812] Map Script: --- End of Eligible Types list for Second Luxury in Region#	8	---
-[642468.812] Map Script: Map Generation - Placing Strategics
-[642468.812] Map Script: Map Generation - Placing Bonuses
-[642468.812] Map Script: Map Generation - Normalize City State Locations
-[642468.812] Map Script: -
-[642468.812] Map Script: --- Table of Results, New Start Finder ---
-[642468.812] Map Script: -
-[642468.812] Map Script: Region#	1	 has start plot at: 	41	10	with Fertility Rating of 	246
-[642468.812] Map Script: -
-[642468.812] Map Script: Region#	2	 has start plot at: 	31	22	with Fertility Rating of 	199
-[642468.812] Map Script: -
-[642468.812] Map Script: Region#	3	 has start plot at: 	49	28	with Fertility Rating of 	285
-[642468.812] Map Script: -
-[642468.812] Map Script: Region#	4	 has start plot at: 	55	19	with Fertility Rating of 	200
-[642468.812] Map Script: -
-[642468.812] Map Script: Region#	5	 has start plot at: 	73	16	with Fertility Rating of 	179
-[642468.812] Map Script: -
-[642468.812] Map Script: Region#	6	 has start plot at: 	56	31	with Fertility Rating of 	263
-[642468.812] Map Script: -
-[642468.812] Map Script: Region#	7	 has start plot at: 	64	38	with Fertility Rating of 	222
-[642468.812] Map Script: -
-[642468.812] Map Script: Region#	8	 has start plot at: 	12	24	with Fertility Rating of 	282
-[642468.812] Map Script: -
-[642468.812] Map Script: --- End of Start Finder Results Table ---
-[642468.812] Map Script: -
-[642468.812] Map Script: -
-[642468.812] Map Script: --- Table of Final Results, City State Placements ---
-[642468.812] Map Script: -
-[642468.812] Map Script: - City State	1	in Region	1	is located at Plot	48	14
-[642468.812] Map Script: - City State	2	in Region	2	is located at Plot	43	32
-[642468.812] Map Script: - City State	3	in Region	3	is located at Plot	45	18
-[642468.812] Map Script: - City State	4	in Region	4	is located at Plot	65	13
-[642468.812] Map Script: - City State	5	in Region	5	is located at Plot	69	7
-[642468.812] Map Script: - City State	6	in Region	6	is located at Plot	58	40
-[642468.812] Map Script: - City State	7	in Region	7	is located at Plot	68	27
-[642468.812] Map Script: - City State	8	in Region	8	is located at Plot	7	34
-[642468.812] Map Script: - City State	9	in Region	-1	is located at Plot	23	9
-[642468.812] Map Script: - City State	10	in Region	-1	is located at Plot	13	45
-[642468.812] Map Script: - City State	11	in Region	-1	is located at Plot	10	39
-[642468.812] Map Script: - City State	12	in Region	-1	is located at Plot	26	15
-[642468.812] Map Script: - City State	13	in Region	-1	is located at Plot	16	37
-[642468.812] Map Script: - City State	14	in Region	-1	is located at Plot	13	32
-[642468.812] Map Script: - City State	15	in Region	7	is located at Plot	61	26
-[642468.812] Map Script: - City State	16	in Region	5	is located at Plot	71	23
-[642468.812] Map Script: -
-[642468.812] Map Script: - - - - -
-[642468.812] Map Script: -
-[642468.812] Map Script: --- Table of Final Results, Resource Distribution ---
-[642468.812] Map Script: -
-[642468.812] Map Script: - LUXURY Resources -
-[642468.812] Map Script: - Whale...: 	7
-[642468.812] Map Script: - Pearls..: 	7
-[642468.812] Map Script: - Gold....: 	7
-[642468.812] Map Script: - Silver..: 	7
-[642468.812] Map Script: - Gems....: 	0
-[642468.812] Map Script: - Marble..: 	6
-[642468.812] Map Script: - Ivory...: 	8
-[642468.812] Map Script: - Fur.....: 	7
-[642468.812] Map Script: - Dye.....: 	4
-[642468.812] Map Script: - Spices..: 	3
-[642468.812] Map Script: - Silk....: 	0
-[642468.812] Map Script: - Sugar...: 	3
-[642468.812] Map Script: - Cotton..: 	4
-[642468.812] Map Script: - Wine....: 	7
-[642468.812] Map Script: - Incense.: 	6
-[642468.812] Map Script: - Expansion LUXURY Resources -
-[642468.812] Map Script: - Copper..: 	0
-[642468.812] Map Script: - Salt....: 	7
-[642468.812] Map Script: - Citrus..: 	3
-[642468.812] Map Script: - Truffles: 	6
-[642468.812] Map Script: - Crab....: 	3
-[642468.812] Map Script: - Cocoa...: 	0
-[642468.812] Map Script: -
-[642468.812] Map Script: + TOTAL.Lux: 	129
-[642468.812] Map Script: -
-[642468.812] Map Script: - STRATEGIC Resources -
-[642468.812] Map Script: - Iron....: 	58
-[642468.812] Map Script: - Horse...: 	64
-[642468.812] Map Script: - Coal....: 	63
-[642468.812] Map Script: - Oil.....: 	135
-[642468.812] Map Script: - Aluminum: 	64
-[642468.812] Map Script: - Uranium.: 	26
-[642468.812] Map Script: -
-[642468.812] Map Script: - BONUS Resources -
-[642468.812] Map Script: - Cow.....: 	15
-[642468.812] Map Script: - Wheat...: 	15
-[642468.812] Map Script: - Sheep...: 	25
-[642468.812] Map Script: - Deer....: 	18
-[642468.812] Map Script: - Banana..: 	9
-[642468.812] Map Script: - Fish....: 	70
-[642468.812] Map Script: - Stone...: 	18
-[642468.812] Map Script: - Bison...: 	6
-[642468.812] Map Script: -
-[642468.812] Map Script: -----------------------------------------------------
-[642468.812] Map Script: -------------------------------
-[642468.812] Map Script: Map Generation - Adding Goodies
-[642468.812] Map Script: -------------------------------
-[642468.812] Map Script: Determining continents for art purposes (MapGenerator.Lua)
-[642470.937] CivilopediaScreen: SetSelectedCategory(12)
-[642470.937] CivilopediaScreen: CivilopediaCategory[CategoryTerrain].DisplayList
-[642470.937] CivilopediaScreen: SetSelectedCategory(1)
-[642470.937] CivilopediaScreen: CivilopediaCategory[CategoryHomePage].DisplayList
-[642471.093] Tutorial: Loaded Additional Tutorial checks - Assets\DLC\Expansion2\Tutorial\Lua\TutorialInclude_Expansion2.lua
-[642471.093] Tutorial: Loaded Additional Tutorial checks - Assets\DLC\Expansion\Tutorial\lua\TutorialInclude_Expansion1.lua
-[642471.296] GenericPopup: Loaded Popup - Assets\DLC\Expansion2\UI\InGame\PopupsGeneric\ConfirmImprovementRebuildPopup.lua
-[642471.296] GenericPopup: Loaded Popup - Assets\DLC\Expansion2\UI\InGame\PopupsGeneric\DeclareWarMovePopup.lua
-[642471.296] GenericPopup: Loaded Popup - Assets\DLC\Expansion2\UI\InGame\PopupsGeneric\PuppetCityPopup.lua
-[642471.296] GenericPopup: Loaded Popup - Assets\DLC\Expansion2\UI\InGame\PopupsGeneric\DeclareWarPlunderTradeRoutePopup.lua
-[642471.296] GenericPopup: Loaded Popup - Assets\DLC\Expansion2\UI\InGame\PopupsGeneric\DeclareWarRangeStrikePopup.lua
-[642471.296] GenericPopup: Loaded Popup - Assets\UI\InGame\PopupsGeneric\ConfirmImprovementRebuildPopup.lua
-[642471.296] GenericPopup: Loaded Popup - Assets\UI\InGame\PopupsGeneric\NetworkKickedPopup.lua
-[642471.296] GenericPopup: Loaded Popup - Assets\UI\InGame\PopupsGeneric\CityPlotManagementPopup.lua
-[642471.296] GenericPopup: Loaded Popup - Assets\UI\InGame\PopupsGeneric\ConfirmCommandPopup.lua
-[642471.296] GenericPopup: Loaded Popup - Assets\UI\InGame\PopupsGeneric\MinorCivEnterTerritoryPopup.lua
-[642471.296] GenericPopup: Loaded Popup - Assets\UI\InGame\PopupsGeneric\LiberateMinorPopup.lua
-[642471.296] GenericPopup: Loaded Popup - Assets\UI\InGame\PopupsGeneric\ReturnCivilianPopup.lua
-[642471.296] GenericPopup: Loaded Popup - Assets\UI\InGame\PopupsGeneric\AnnexCityPopup.lua
-[642471.296] GenericPopup: Loaded Popup - Assets\UI\InGame\PopupsGeneric\DeclareWarMovePopup.lua
-[642471.296] GenericPopup: Loaded Popup - Assets\UI\InGame\PopupsGeneric\BarbarianRansomPopup.lua
-[642471.296] GenericPopup: Loaded Popup - Assets\UI\InGame\PopupsGeneric\ConfirmGiftPopup.lua
-[642471.296] GenericPopup: Loaded Popup - Assets\UI\InGame\PopupsGeneric\ConfirmCityTaskPopup.lua
-[642471.296] GenericPopup: Loaded Popup - Assets\UI\InGame\PopupsGeneric\PuppetCityPopup.lua
-[642471.296] GenericPopup: Loaded Popup - Assets\UI\InGame\PopupsGeneric\DeclareWarRangeStrikePopup.lua
-[642471.296] GenericPopup: Loaded Popup - Assets\UI\InGame\PopupsGeneric\ConfirmPolicyBranchPopup.lua
-[642471.296] GenericPopup: Loaded Popup - Assets\UI\InGame\PopupsGeneric\MinorCivGoldPopup.lua
-[642471.375] EconomicGeneralInfo: Total Units - 2
-[642471.375] EconomicGeneralInfo: Maint Free Units - 0
-[642471.375] EconomicGeneralInfo: Paid Units - 2
-[642471.375] EconomicGeneralInfo: Total Units - 2
-[642471.375] EconomicGeneralInfo: Maint Free Units - 0
-[642471.375] EconomicGeneralInfo: Paid Units - 2
-[642471.484] ChoosePantheonPopup: 60
-[642471.484] ChoosePantheonPopup: 963
-[642471.484] ChoosePantheonPopup: 1023
-[642471.515] ChooseIdeologyPopup: 60
-[642471.515] ChooseIdeologyPopup: 963
-[642471.515] ChooseIdeologyPopup: 1023
-[642471.625] IGE_Controller_All: ****************************************************************
-[642471.625] IGE_Controller_All: Starting...
-[642471.640] IGE_Overlay: loaded
-[642471.640] IGE_CityBanner: loaded
-[642471.640] IGE_MiniMap: loaded
-[642471.656] IGE_TabsBar: IGE_TabsBar
-[642471.656] IGE_ActivePlayerSelection: IGE_ActivePlayerSelection
-[642471.671] IGE_RiversElement: IGE_RiversElement
-[642471.671] IGE_TerrainPanel: IGE_TerrainPanel
-[642471.671] IGE_CitiesPanel: IGE_CitiesPanel
-[642471.687] IGE_UnitsPanel: IGE_UnitsPanel
-[642471.687] IGE_PlayersPanel: IGE_PlayersPanel
-[642471.687] IGE_TechsPanel: IGE_TechsPanel
-[642471.703] IGE_PoliciesPanel: IGE_PoliciesPanel
-[642471.703] IGE_ConfirmPopup: IGE_ConfirmPopup
-[642471.718] IGE_Window: IGE_Window
-[642471.718] IGE_Window: IGE_ShareGlobalAndOptions
-[642471.718] IGE_Window: IGE_SharingGlobalAndOptions, IGE=...
-[642471.718] IGE_Window: IGE loaded
-[642471.734] BuildingEffects: Cheatocalypse Building Effects System Loaded
-[642471.734] CoreSystem: Cheatocalypse Core System Loaded
-[642471.734] YieldBoostGlobal: Yield Boost Global Loaded
-[642471.734] ProductionBoost: Production Boost Loaded
-[642471.734] PromotionOverride: Cheatocalypse Promotion Override Loaded
-[642471.765] EngineerBuildSystem: Cheatocalypse Engineer Build System Loaded
-[642471.828] AdvisorInfoPopup: Closing Advisor Info
-[642471.828] Demographics: Dequeuing demographics
-[642471.828] Demographics: Dequeuing demographics
-[642502.843] TechTree: popupInfo.Data1: 0
-[642502.843] TechTree: popupInfo.Data2: -1
-[642502.843] TechTree: popupInfo.Data3: 0
-[642503.921] TechTree: stealingTechTargetPlayerID: -1
-[642503.921] TechTree: player:GetNumFreeTechs(): 0
-[642525.765] TurnProcessing: Hiding TurnProcessing
-[642532.031] InGame: OnInterfaceModeChanged
-[642532.031] InGame: oldInterfaceMode: 1
-[642532.031] InGame: newInterfaceMode: 9
-[642532.031] InGame: irange: 49
-[642533.375] InGame: OnInterfaceModeChanged
-[642533.375] InGame: oldInterfaceMode: 9
-[642533.375] InGame: newInterfaceMode: 1
-[642623.484] TurnProcessing: Hiding TurnProcessing
-[642628.218] CityBannerManager: CityBanner CombatBegin
-[642631.593] CityBannerManager: CityBanner CombatEnd
-[642658.812] ProductionPopup: true
-[642659.531] ProductionPopup: true
-[642659.531] ProductionPopup: true
-[642679.468] TurnProcessing: Hiding TurnProcessing
-[642697.156] TechTree: popupInfo.Data1: 0
-[642697.156] TechTree: popupInfo.Data2: -1
-[642697.156] TechTree: popupInfo.Data3: 0
-[642702.671] TechTree: stealingTechTargetPlayerID: -1
-[642702.671] TechTree: player:GetNumFreeTechs(): 0
-[642724.421] TurnProcessing: Hiding TurnProcessing
-[642725.140] SocialPolicyPopup: In UpdateDisplay()
-[642726.703] SocialPolicyPopup: In UpdateDisplay()
-[642732.062] CityBannerManager: CityBanner CombatBegin
-[642735.062] CityBannerManager: CityBanner CombatEnd
-[642739.265] LeaderHeadRoot: Handling LeaderMessage: 0, Greetings, Stranger. I am Hiawatha, speaker for the Iroquois.  We seek peace with all but we do not shrink from war.
-[642747.296] DiscussionDialog: Handling LeaderMessage: 16, What do you propose?
-[642747.296] LeaderHeadRoot: Handling LeaderMessage: 16, What do you propose?
-[642754.640] DiscussionDialog: Handling LeaderMessage: 16, So be it. I will not settle near your lands. Cooperation is clearly not one of your strong suits.
-[642754.640] LeaderHeadRoot: Handling LeaderMessage: 16, So be it. I will not settle near your lands. Cooperation is clearly not one of your strong suits.
-[642763.078] LeaderHeadRoot: Handling LeaderMessage: 0, Hail, foreign leader.  I am Boudicca, Queen of the Celts, chosen of Prasutagus.  In me lives the will of my people and the soul of a King.
-[642767.968] DiscussionDialog: Handling LeaderMessage: 16, Let's hear your offer.
-[642767.968] LeaderHeadRoot: Handling LeaderMessage: 16, Let's hear your offer.
-[642772.796] DiscussionDialog: Handling LeaderMessage: 16, So be it. I will not settle near your lands. Cooperation is clearly not one of your strong suits.
-[642772.796] LeaderHeadRoot: Handling LeaderMessage: 16, So be it. I will not settle near your lands. Cooperation is clearly not one of your strong suits.
-[642791.250] TurnProcessing: Hiding TurnProcessing
+[18942.109] Initializing Lua 5.1.4
+[18956.390] InstalledPanel: Refreshing Mods
+[18956.390] InstalledPanel: GetModBrowserListings()
+[18956.390] InstalledPanel: Refreshing Mods
+[18956.390] InstalledPanel: GetModBrowserListings()
+[18959.484] InstalledPanel: Refreshing Mods
+[18959.484] InstalledPanel: GetModBrowserListings()
+[18961.703] InstalledPanel: Refreshing Mods
+[18961.703] InstalledPanel: GetModBrowserListings()
+[18962.796] InstalledPanel: Refreshing Mods
+[18962.796] InstalledPanel: GetModBrowserListings()
+[18965.281] InstalledPanel: Refreshing Mods
+[18965.281] InstalledPanel: GetModBrowserListings()
+[18967.609] InstalledPanel: Refreshing Mods
+[18967.609] InstalledPanel: GetModBrowserListings()
+[19053.984] Map Script: Generating Map
+[19053.984] Map Script: Setting Plot Types (Lua Boreal) ...
+[19054.000] Map Script: Setting Plot Types (MapGenerator.Lua)
+[19054.000] Map Script: Setting coasts and oceans (MapGenerator.Lua)
+[19054.000] Map Script: Expanding coasts (MapGenerator.Lua)
+[19054.000] Map Script: Generating Terrain (Lua Boreal) ...
+[19054.000] Map Script: Inland Sea - Adding Rivers
+[19054.015] Map Script: Map Generation - Adding Lakes
+[19054.015] Map Script: 6 lakes added
+[19054.015] Map Script: Adding Features (Lua Boreal) ...
+[19054.015] Map Script: Creating start plot database (MapGenerator.Lua)
+[19054.031] Map Script: Dividing the map in to Regions (Lua Boreal)
+[19054.031] Map Script: Map Generation - Dividing the map in to Regions
+[19054.031] Map Script: -
+[19054.031] Map Script: Civs:	6
+[19054.031] Map Script: City States:	12
+[19054.031] Map Script: DivideIntoRegions: Divide in to Thirds selected.
+[19054.031] Map Script: -
+[19054.031] Map Script: ChopIntoThree called.
+[19054.031] Map Script: Dividing along vertical line between columns: 	14	-	15
+[19054.031] Map Script: Dividing along vertical line between columns: 	38	-	39
+[19054.031] Map Script: -
+[19054.031] Map Script: Removed Dead Rows, West: 	0	 East: 	0
+[19054.031] Map Script: Removed Dead Rows, South: 	0	 North: 	2
+[19054.031] Map Script: -
+[19054.031] Map Script: Incoming values: 	15	0	24	30
+[19054.031] Map Script: Outgoing values: 	15	0	24	28
+[19054.031] Map Script: -
+[19054.031] Map Script: Size of incoming fertility table: 	720
+[19054.031] Map Script: Size of outgoing fertility table: 	672
+[19054.031] Map Script: DivideIntoRegions: Divide in to Halves selected.
+[19054.031] Map Script: Dividing along horizontal line between rows: 	11	-	12
+[19054.031] Map Script: -
+[19054.031] Map Script: ---------------------------------------------
+[19054.031] Map Script: Defined location of Start Region #	1
+[19054.031] Map Script: ---------------------------------------------
+[19054.031] Map Script: -
+[19054.031] Map Script: -
+[19054.031] Map Script: ---------------------------------------------
+[19054.031] Map Script: Defined location of Start Region #	2
+[19054.031] Map Script: ---------------------------------------------
+[19054.031] Map Script: -
+[19054.031] Map Script: DivideIntoRegions: Divide in to Halves selected.
+[19054.031] Map Script: Dividing along horizontal line between rows: 	13	-	14
+[19054.031] Map Script: -
+[19054.031] Map Script: ---------------------------------------------
+[19054.031] Map Script: Defined location of Start Region #	3
+[19054.031] Map Script: ---------------------------------------------
+[19054.031] Map Script: -
+[19054.031] Map Script: -
+[19054.031] Map Script: ---------------------------------------------
+[19054.031] Map Script: Defined location of Start Region #	4
+[19054.031] Map Script: ---------------------------------------------
+[19054.031] Map Script: -
+[19054.031] Map Script: DivideIntoRegions: Divide in to Halves selected.
+[19054.031] Map Script: Dividing along horizontal line between rows: 	12	-	13
+[19054.031] Map Script: -
+[19054.031] Map Script: ---------------------------------------------
+[19054.031] Map Script: Defined location of Start Region #	5
+[19054.031] Map Script: ---------------------------------------------
+[19054.031] Map Script: -
+[19054.031] Map Script: -
+[19054.031] Map Script: ---------------------------------------------
+[19054.031] Map Script: Defined location of Start Region #	6
+[19054.031] Map Script: ---------------------------------------------
+[19054.031] Map Script: -
+[19054.031] Map Script: -
+[19054.031] Map Script: Data for Start Region #	1
+[19054.031] Map Script: WestX:  	0
+[19054.031] Map Script: SouthY: 	0
+[19054.031] Map Script: Width:  	15
+[19054.031] Map Script: Height: 	12
+[19054.031] Map Script: AreaID: 	147456
+[19054.031] Map Script: Fertility:	477
+[19054.031] Map Script: Plots:  	180
+[19054.031] Map Script: Fert/Plot:	2.65
+[19054.031] Map Script: -
+[19054.031] Map Script: -
+[19054.031] Map Script: Data for Start Region #	2
+[19054.031] Map Script: WestX:  	0
+[19054.031] Map Script: SouthY: 	12
+[19054.031] Map Script: Width:  	15
+[19054.031] Map Script: Height: 	18
+[19054.031] Map Script: AreaID: 	147456
+[19054.031] Map Script: Fertility:	432
+[19054.031] Map Script: Plots:  	270
+[19054.031] Map Script: Fert/Plot:	1.6
+[19054.031] Map Script: -
+[19054.031] Map Script: -
+[19054.031] Map Script: Data for Start Region #	3
+[19054.031] Map Script: WestX:  	15
+[19054.031] Map Script: SouthY: 	0
+[19054.031] Map Script: Width:  	24
+[19054.031] Map Script: Height: 	14
+[19054.031] Map Script: AreaID: 	147456
+[19054.031] Map Script: Fertility:	464
+[19054.031] Map Script: Plots:  	336
+[19054.031] Map Script: Fert/Plot:	1.3809523809524
+[19054.031] Map Script: -
+[19054.031] Map Script: -
+[19054.031] Map Script: Data for Start Region #	4
+[19054.031] Map Script: WestX:  	15
+[19054.031] Map Script: SouthY: 	14
+[19054.031] Map Script: Width:  	24
+[19054.031] Map Script: Height: 	14
+[19054.031] Map Script: AreaID: 	147456
+[19054.031] Map Script: Fertility:	453
+[19054.031] Map Script: Plots:  	336
+[19054.031] Map Script: Fert/Plot:	1.3482142857143
+[19054.031] Map Script: -
+[19054.031] Map Script: -
+[19054.031] Map Script: Data for Start Region #	5
+[19054.031] Map Script: WestX:  	39
+[19054.031] Map Script: SouthY: 	0
+[19054.031] Map Script: Width:  	13
+[19054.031] Map Script: Height: 	13
+[19054.031] Map Script: AreaID: 	147456
+[19054.031] Map Script: Fertility:	392
+[19054.031] Map Script: Plots:  	169
+[19054.031] Map Script: Fert/Plot:	2.3195266272189
+[19054.031] Map Script: -
+[19054.031] Map Script: -
+[19054.031] Map Script: Data for Start Region #	6
+[19054.031] Map Script: WestX:  	39
+[19054.031] Map Script: SouthY: 	13
+[19054.031] Map Script: Width:  	13
+[19054.031] Map Script: Height: 	17
+[19054.031] Map Script: AreaID: 	147456
+[19054.031] Map Script: Fertility:	396
+[19054.031] Map Script: Plots:  	221
+[19054.031] Map Script: Fert/Plot:	1.7918552036199
+[19054.031] Map Script: -
+[19054.031] Map Script: Choosing start locations for civilizations (MapGenerator.Lua)
+[19054.031] Map Script: Map Generation - Choosing Start Locations for Civilizations
+[19054.031] Map Script: Normalizing start locations and assigning them to Players (MapGenerator.Lua)
+[19054.031] Map Script: Player	0	of Civ Type	CIVILIZATION_EGYPT
+[19054.031] Map Script: Player	1	of Civ Type	CIVILIZATION_AUSTRIA
+[19054.031] Map Script: Player	2	of Civ Type	CIVILIZATION_POLAND
+[19054.031] Map Script: Player	3	of Civ Type	CIVILIZATION_SONGHAI
+[19054.031] Map Script: Player	4	of Civ Type	CIVILIZATION_IROQUOIS
+[19054.031] Map Script: Player	5	of Civ Type	CIVILIZATION_PORTUGAL
+[19054.031] Map Script: - - - - - - - needs Coastal Start!
+[19054.031] Map Script: -
+[19054.031] Map Script: Civs with Coastal Bias:	1
+[19054.031] Map Script: Civs with River Bias:	0
+[19054.031] Map Script: Civs with Region Priority:	3
+[19054.031] Map Script: Civs with Region Avoid:	2
+[19054.031] Map Script: -
+[19054.031] Map Script: iNumCoastalCivs: 1
+[19054.031] Map Script: iNumUnassignableCoastStarts: 1
+[19054.031] Map Script: Placing Natural Wonders (MapGenerator.Lua)
+[19054.062] Map Script: -
+[19054.062] Map Script: -
+[19054.062] Map Script: --- Number of Candidate Plots on the map for Natural Wonders ---
+[19054.062] Map Script: -
+[19054.062] Map Script: -	124	candidates for	FEATURE_CRATER
+[19054.062] Map Script: -	0	candidates for	FEATURE_FUJI
+[19054.062] Map Script: -	54	candidates for	FEATURE_MESA
+[19054.062] Map Script: -	14	candidates for	FEATURE_REEF
+[19054.062] Map Script: -	9	candidates for	FEATURE_VOLCANO
+[19054.062] Map Script: -	26	candidates for	FEATURE_GIBRALTAR
+[19054.062] Map Script: -	157	candidates for	FEATURE_GEYSER
+[19054.062] Map Script: -	485	candidates for	FEATURE_FOUNTAIN_YOUTH
+[19054.062] Map Script: -	357	candidates for	FEATURE_POTOSI
+[19054.062] Map Script: -	0	candidates for	FEATURE_EL_DORADO
+[19054.062] Map Script: -	0	candidates for	FEATURE_SRI_PADA
+[19054.062] Map Script: -	0	candidates for	FEATURE_MT_SINAI
+[19054.062] Map Script: -	10	candidates for	FEATURE_MT_KAILASH
+[19054.062] Map Script: -	0	candidates for	FEATURE_ULURU
+[19054.062] Map Script: -	485	candidates for	FEATURE_LAKE_VICTORIA
+[19054.062] Map Script: -	6	candidates for	FEATURE_KILIMANJARO
+[19054.062] Map Script: -	440	candidates for	FEATURE_SOLOMONS_MINES
+[19054.062] Map Script: -
+[19054.062] Map Script: --- End of candidates readout for Natural Wonders ---
+[19054.062] Map Script: -
+[19054.062] Map Script: -- Placed all Natural Wonders --
+[19054.062] Map Script: -
+[19054.062] Map Script: -
+[19054.062] Map Script: Placing Resources and City States (MapGenerator.Lua)
+[19054.062] Map Script: Map Generation - Assigning Luxury Resource Distribution
+[19054.062] Map Script: -
+[19054.062] Map Script: Region#	6	 of type 	1	 has been assigned Luxury ID#	30
+[19054.062] Map Script: -
+[19054.062] Map Script: Region#	5	 of type 	1	 has been assigned Luxury ID#	20
+[19054.062] Map Script: -
+[19054.062] Map Script: Region#	4	 of type 	1	 has been assigned Luxury ID#	15
+[19054.062] Map Script: -
+[19054.062] Map Script: Region#	2	 of type 	1	 has been assigned Luxury ID#	31
+[19054.062] Map Script: -
+[19054.062] Map Script: Region#	3	 of type 	1	 has been assigned Luxury ID#	17
+[19054.062] Map Script: -
+[19054.062] Map Script: Region#	1	 of type 	1	 has been assigned Luxury ID#	21
+[19054.062] Map Script: Luxury ID#	15	rejected by City States as already belonging to Regions.
+[19054.062] Map Script: Luxury ID#	30	rejected by City States as already belonging to Regions.
+[19054.062] Map Script: Luxury ID#	31	rejected by City States as already belonging to Regions.
+[19054.062] Map Script: Luxury ID#	17	rejected by City States as already belonging to Regions.
+[19054.062] Map Script: Luxury ID#	20	rejected by City States as already belonging to Regions.
+[19054.062] Map Script: Luxury ID#	21	rejected by City States as already belonging to Regions.
+[19054.062] Map Script: --- Luxury Assignment Table ---
+[19054.062] Map Script: -
+[19054.062] Map Script: - - Assigned to Regions - -
+[19054.062] Map Script: Region#	6	has Luxury type	30
+[19054.062] Map Script: Region#	5	has Luxury type	20
+[19054.062] Map Script: Region#	4	has Luxury type	15
+[19054.062] Map Script: Region#	2	has Luxury type	31
+[19054.062] Map Script: Region#	3	has Luxury type	17
+[19054.062] Map Script: Region#	1	has Luxury type	21
+[19054.062] Map Script: -
+[19054.062] Map Script: - - Assigned to City States - -
+[19054.062] Map Script: Luxury type	16
+[19054.062] Map Script: Luxury type	13
+[19054.062] Map Script: Luxury type	26
+[19054.062] Map Script: -
+[19054.062] Map Script: - - Assigned to Random - -
+[19054.062] Map Script: -
+[19054.062] Map Script: - - Luxuries handled via Special Case - -
+[19054.062] Map Script: Luxury type	18
+[19054.062] Map Script: -
+[19054.062] Map Script: - - Disabled - -
+[19054.062] Map Script: Luxury type	27
+[19054.062] Map Script: Luxury type	32
+[19054.062] Map Script: - - - - - - - - - - - - - - - -
+[19054.062] Map Script: Map Generation - Placing City States
+[19054.062] Map Script: Map Generation - Choosing sites for City States
+[19054.062] Map Script: All city states assigned.
+[19054.078] Map Script: Map Generation - Placing Luxuries
+[19054.078] Map Script: -
+[19054.078] Map Script: Attempting to place Luxury#	30	at start plot	43	20	in Region#	6
+[19054.078] Map Script: -
+[19054.078] Map Script: Attempting to place Luxury#	20	at start plot	45	7	in Region#	5
+[19054.078] Map Script: -
+[19054.078] Map Script: Attempting to place Luxury#	15	at start plot	28	20	in Region#	4
+[19054.078] Map Script: -
+[19054.078] Map Script: Attempting to place Luxury#	31	at start plot	4	24	in Region#	2
+[19054.078] Map Script: -
+[19054.078] Map Script: Attempting to place Luxury#	17	at start plot	28	5	in Region#	3
+[19054.078] Map Script: -
+[19054.078] Map Script: Attempting to place Luxury#	21	at start plot	10	3	in Region#	1
+[19054.078] Map Script: -
+[19054.078] Map Script: -
+[19054.078] Map Script: -Assigned Luxury Type	16	to City State#	1
+[19054.078] Map Script: -
+[19054.078] Map Script: -
+[19054.078] Map Script: -Assigned Luxury Type	16	to City State#	2
+[19054.078] Map Script: -
+[19054.078] Map Script: -
+[19054.078] Map Script: -Assigned Luxury Type	16	to City State#	3
+[19054.078] Map Script: -
+[19054.078] Map Script: -
+[19054.078] Map Script: -Assigned Luxury Type	16	to City State#	4
+[19054.078] Map Script: -
+[19054.078] Map Script: -
+[19054.078] Map Script: -Assigned Luxury Type	26	to City State#	5
+[19054.078] Map Script: -
+[19054.078] Map Script: -
+[19054.078] Map Script: -Assigned Luxury Type	16	to City State#	6
+[19054.078] Map Script: -
+[19054.078] Map Script: -
+[19054.078] Map Script: -Assigned Luxury Type	26	to City State#	7
+[19054.078] Map Script: -
+[19054.078] Map Script: -
+[19054.078] Map Script: -Assigned Luxury Type	16	to City State#	8
+[19054.078] Map Script: -
+[19054.078] Map Script: -
+[19054.078] Map Script: -Assigned Luxury Type	17	to City State#	9
+[19054.078] Map Script: -
+[19054.078] Map Script: -
+[19054.078] Map Script: -Assigned Luxury Type	16	to City State#	10
+[19054.078] Map Script: -
+[19054.078] Map Script: -
+[19054.078] Map Script: -Assigned Luxury Type	20	to City State#	11
+[19054.078] Map Script: -
+[19054.078] Map Script: -
+[19054.078] Map Script: -Assigned Luxury Type	16	to City State#	12
+[19054.078] Map Script: -
+[19054.078] Map Script: - - -
+[19054.078] Map Script: Attempting to place regional luxury #	21	in Region#	1
+[19054.078] Map Script: -
+[19054.078] Map Script: - - -
+[19054.078] Map Script: Attempting to place regional luxury #	31	in Region#	2
+[19054.078] Map Script: -
+[19054.078] Map Script: - - -
+[19054.078] Map Script: Attempting to place regional luxury #	17	in Region#	3
+[19054.078] Map Script: -
+[19054.078] Map Script: - - -
+[19054.078] Map Script: Attempting to place regional luxury #	15	in Region#	4
+[19054.078] Map Script: -
+[19054.078] Map Script: - - -
+[19054.078] Map Script: Attempting to place regional luxury #	20	in Region#	5
+[19054.078] Map Script: -
+[19054.078] Map Script: - - -
+[19054.078] Map Script: Attempting to place regional luxury #	30	in Region#	6
+[19054.078] Map Script: * *
+[19054.078] Map Script: * iNumTypesRandom = 	5
+[19054.078] Map Script: * *
+[19054.078] Map Script: iNumRandomLuxTarget = 3. Just putting in 3 of each random.
+[19054.078] Map Script: -
+[19054.078] Map Script: --- Eligible Types List for Second Luxury in Region#	1	---
+[19054.078] Map Script: - Found eligible luxury type:	18
+[19054.078] Map Script: --- End of Eligible Types list for Second Luxury in Region#	1	---
+[19054.078] Map Script: -
+[19054.078] Map Script: Placed Second Luxury type of ID#	18	for start located at Plot	10	3	 in Region#	1
+[19054.078] Map Script: -
+[19054.078] Map Script: --- Eligible Types List for Second Luxury in Region#	2	---
+[19054.078] Map Script: - Found eligible luxury type:	18
+[19054.078] Map Script: --- End of Eligible Types list for Second Luxury in Region#	2	---
+[19054.078] Map Script: -
+[19054.078] Map Script: Placed Second Luxury type of ID#	18	for start located at Plot	4	24	 in Region#	2
+[19054.078] Map Script: -
+[19054.078] Map Script: --- Eligible Types List for Second Luxury in Region#	3	---
+[19054.078] Map Script: - Found eligible luxury type:	18
+[19054.078] Map Script: --- End of Eligible Types list for Second Luxury in Region#	3	---
+[19054.078] Map Script: -
+[19054.078] Map Script: Placed Second Luxury type of ID#	18	for start located at Plot	28	5	 in Region#	3
+[19054.078] Map Script: -
+[19054.078] Map Script: --- Eligible Types List for Second Luxury in Region#	4	---
+[19054.078] Map Script: - Found eligible luxury type:	18
+[19054.078] Map Script: --- End of Eligible Types list for Second Luxury in Region#	4	---
+[19054.078] Map Script: -
+[19054.078] Map Script: Placed Second Luxury type of ID#	18	for start located at Plot	28	20	 in Region#	4
+[19054.078] Map Script: -
+[19054.078] Map Script: --- Eligible Types List for Second Luxury in Region#	5	---
+[19054.078] Map Script: - Found eligible luxury type:	18
+[19054.078] Map Script: --- End of Eligible Types list for Second Luxury in Region#	5	---
+[19054.078] Map Script: -
+[19054.078] Map Script: Placed Second Luxury type of ID#	18	for start located at Plot	45	7	 in Region#	5
+[19054.078] Map Script: -
+[19054.078] Map Script: --- Eligible Types List for Second Luxury in Region#	6	---
+[19054.078] Map Script: - Found eligible luxury type:	18
+[19054.078] Map Script: --- End of Eligible Types list for Second Luxury in Region#	6	---
+[19054.078] Map Script: -
+[19054.078] Map Script: Placed Second Luxury type of ID#	18	for start located at Plot	43	20	 in Region#	6
+[19054.078] Map Script: Map Generation - Placing Strategics
+[19054.078] Map Script: Map Generation - Placing Bonuses
+[19054.078] Map Script: Map Generation - Normalize City State Locations
+[19054.078] Map Script: -
+[19054.078] Map Script: --- Table of Results, New Start Finder ---
+[19054.078] Map Script: -
+[19054.078] Map Script: Region#	1	 has start plot at: 	10	3	with Fertility Rating of 	296
+[19054.078] Map Script: -
+[19054.078] Map Script: Region#	2	 has start plot at: 	4	24	with Fertility Rating of 	209
+[19054.078] Map Script: -
+[19054.078] Map Script: Region#	3	 has start plot at: 	28	5	with Fertility Rating of 	269
+[19054.078] Map Script: -
+[19054.078] Map Script: Region#	4	 has start plot at: 	28	20	with Fertility Rating of 	288
+[19054.078] Map Script: -
+[19054.078] Map Script: Region#	5	 has start plot at: 	45	7	with Fertility Rating of 	263
+[19054.078] Map Script: -
+[19054.078] Map Script: Region#	6	 has start plot at: 	43	20	with Fertility Rating of 	238
+[19054.078] Map Script: -
+[19054.078] Map Script: --- End of Start Finder Results Table ---
+[19054.078] Map Script: -
+[19054.078] Map Script: -
+[19054.078] Map Script: --- Table of Final Results, City State Placements ---
+[19054.078] Map Script: -
+[19054.078] Map Script: - City State	1	in Region	1	is located at Plot	2	5
+[19054.078] Map Script: - City State	2	in Region	2	is located at Plot	4	15
+[19054.078] Map Script: - City State	3	in Region	3	is located at Plot	17	3
+[19054.078] Map Script: - City State	4	in Region	4	is located at Plot	35	25
+[19054.078] Map Script: - City State	5	in Region	5	is located at Plot	39	1
+[19054.078] Map Script: - City State	6	in Region	6	is located at Plot	45	29
+[19054.078] Map Script: - City State	7	in Region	1	is located at Plot	13	10
+[19054.078] Map Script: - City State	8	in Region	2	is located at Plot	12	15
+[19054.078] Map Script: - City State	9	in Region	3	is located at Plot	38	9
+[19054.078] Map Script: - City State	10	in Region	4	is located at Plot	18	26
+[19054.078] Map Script: - City State	11	in Region	5	is located at Plot	50	12
+[19054.078] Map Script: - City State	12	in Region	6	is located at Plot	39	14
+[19054.078] Map Script: -
+[19054.078] Map Script: - - - - -
+[19054.078] Map Script: -
+[19054.078] Map Script: --- Table of Final Results, Resource Distribution ---
+[19054.078] Map Script: -
+[19054.078] Map Script: - LUXURY Resources -
+[19054.078] Map Script: - Whale...: 	0
+[19054.078] Map Script: - Pearls..: 	0
+[19054.078] Map Script: - Gold....: 	5
+[19054.078] Map Script: - Silver..: 	8
+[19054.078] Map Script: - Gems....: 	6
+[19054.078] Map Script: - Marble..: 	8
+[19054.078] Map Script: - Ivory...: 	0
+[19054.078] Map Script: - Fur.....: 	7
+[19054.078] Map Script: - Dye.....: 	5
+[19054.078] Map Script: - Spices..: 	0
+[19054.078] Map Script: - Silk....: 	0
+[19054.078] Map Script: - Sugar...: 	0
+[19054.078] Map Script: - Cotton..: 	0
+[19054.078] Map Script: - Wine....: 	2
+[19054.078] Map Script: - Incense.: 	0
+[19054.078] Map Script: - Expansion LUXURY Resources -
+[19054.078] Map Script: - Copper..: 	6
+[19054.078] Map Script: - Salt....: 	6
+[19054.078] Map Script: - Citrus..: 	0
+[19054.078] Map Script: - Truffles: 	0
+[19054.078] Map Script: - Crab....: 	0
+[19054.078] Map Script: - Cocoa...: 	0
+[19054.078] Map Script: -
+[19054.078] Map Script: + TOTAL.Lux: 	65
+[19054.078] Map Script: -
+[19054.078] Map Script: - STRATEGIC Resources -
+[19054.078] Map Script: - Iron....: 	120
+[19054.078] Map Script: - Horse...: 	26
+[19054.078] Map Script: - Coal....: 	36
+[19054.078] Map Script: - Oil.....: 	92
+[19054.078] Map Script: - Aluminum: 	123
+[19054.078] Map Script: - Uranium.: 	23
+[19054.078] Map Script: -
+[19054.078] Map Script: - BONUS Resources -
+[19054.078] Map Script: - Cow.....: 	1
+[19054.078] Map Script: - Wheat...: 	12
+[19054.078] Map Script: - Sheep...: 	13
+[19054.078] Map Script: - Deer....: 	69
+[19054.078] Map Script: - Banana..: 	0
+[19054.078] Map Script: - Fish....: 	21
+[19054.078] Map Script: - Stone...: 	20
+[19054.078] Map Script: - Bison...: 	3
+[19054.078] Map Script: -
+[19054.078] Map Script: -----------------------------------------------------
+[19054.078] Map Script: -------------------------------
+[19054.078] Map Script: Map Generation - Adding Goodies
+[19054.078] Map Script: -------------------------------
+[19054.078] Map Script: Determining continents for art purposes (MapGenerator.Lua)
+[19055.171] CivilopediaScreen: SetSelectedCategory(12)
+[19055.171] CivilopediaScreen: CivilopediaCategory[CategoryTerrain].DisplayList
+[19055.171] CivilopediaScreen: SetSelectedCategory(1)
+[19055.171] CivilopediaScreen: CivilopediaCategory[CategoryHomePage].DisplayList
+[19055.328] Tutorial: Loaded Additional Tutorial checks - Assets\DLC\Expansion2\Tutorial\Lua\TutorialInclude_Expansion2.lua
+[19055.328] Tutorial: Loaded Additional Tutorial checks - Assets\DLC\Expansion\Tutorial\lua\TutorialInclude_Expansion1.lua
+[19055.515] GenericPopup: Loaded Popup - Assets\DLC\Expansion2\UI\InGame\PopupsGeneric\ConfirmImprovementRebuildPopup.lua
+[19055.515] GenericPopup: Loaded Popup - Assets\DLC\Expansion2\UI\InGame\PopupsGeneric\DeclareWarMovePopup.lua
+[19055.515] GenericPopup: Loaded Popup - Assets\DLC\Expansion2\UI\InGame\PopupsGeneric\PuppetCityPopup.lua
+[19055.515] GenericPopup: Loaded Popup - Assets\DLC\Expansion2\UI\InGame\PopupsGeneric\DeclareWarPlunderTradeRoutePopup.lua
+[19055.515] GenericPopup: Loaded Popup - Assets\DLC\Expansion2\UI\InGame\PopupsGeneric\DeclareWarRangeStrikePopup.lua
+[19055.515] GenericPopup: Loaded Popup - Assets\UI\InGame\PopupsGeneric\ConfirmImprovementRebuildPopup.lua
+[19055.515] GenericPopup: Loaded Popup - Assets\UI\InGame\PopupsGeneric\NetworkKickedPopup.lua
+[19055.515] GenericPopup: Loaded Popup - Assets\UI\InGame\PopupsGeneric\CityPlotManagementPopup.lua
+[19055.515] GenericPopup: Loaded Popup - Assets\UI\InGame\PopupsGeneric\ConfirmCommandPopup.lua
+[19055.515] GenericPopup: Loaded Popup - Assets\UI\InGame\PopupsGeneric\MinorCivEnterTerritoryPopup.lua
+[19055.515] GenericPopup: Loaded Popup - Assets\UI\InGame\PopupsGeneric\LiberateMinorPopup.lua
+[19055.515] GenericPopup: Loaded Popup - Assets\UI\InGame\PopupsGeneric\ReturnCivilianPopup.lua
+[19055.515] GenericPopup: Loaded Popup - Assets\UI\InGame\PopupsGeneric\AnnexCityPopup.lua
+[19055.515] GenericPopup: Loaded Popup - Assets\UI\InGame\PopupsGeneric\DeclareWarMovePopup.lua
+[19055.515] GenericPopup: Loaded Popup - Assets\UI\InGame\PopupsGeneric\BarbarianRansomPopup.lua
+[19055.515] GenericPopup: Loaded Popup - Assets\UI\InGame\PopupsGeneric\ConfirmGiftPopup.lua
+[19055.515] GenericPopup: Loaded Popup - Assets\UI\InGame\PopupsGeneric\ConfirmCityTaskPopup.lua
+[19055.515] GenericPopup: Loaded Popup - Assets\UI\InGame\PopupsGeneric\PuppetCityPopup.lua
+[19055.515] GenericPopup: Loaded Popup - Assets\UI\InGame\PopupsGeneric\DeclareWarRangeStrikePopup.lua
+[19055.515] GenericPopup: Loaded Popup - Assets\UI\InGame\PopupsGeneric\ConfirmPolicyBranchPopup.lua
+[19055.515] GenericPopup: Loaded Popup - Assets\UI\InGame\PopupsGeneric\MinorCivGoldPopup.lua
+[19055.593] EconomicGeneralInfo: Total Units - 2
+[19055.593] EconomicGeneralInfo: Maint Free Units - 0
+[19055.593] EconomicGeneralInfo: Paid Units - 2
+[19055.593] EconomicGeneralInfo: Total Units - 2
+[19055.593] EconomicGeneralInfo: Maint Free Units - 0
+[19055.593] EconomicGeneralInfo: Paid Units - 2
+[19055.703] ChoosePantheonPopup: 60
+[19055.703] ChoosePantheonPopup: 963
+[19055.703] ChoosePantheonPopup: 1023
+[19055.750] ChooseIdeologyPopup: 60
+[19055.750] ChooseIdeologyPopup: 963
+[19055.750] ChooseIdeologyPopup: 1023
+[19055.843] BuildingEffects: Cheatocalypse Building Effects System Loaded
+[19055.843] CoreSystem: Cheatocalypse Core System Loaded
+[19055.843] YieldBoostGlobal: Yield Boost Global Loaded
+[19055.843] ProductionBoost: Production Boost Loaded
+[19055.843] PromotionOverride: Cheatocalypse Promotion Override Loaded
+[19055.875] EngineerBuildSystem: Cheatocalypse Engineer Build System Loaded
+[19055.921] AdvisorInfoPopup: Closing Advisor Info
+[19055.921] Demographics: Dequeuing demographics
+[19055.921] Demographics: Dequeuing demographics
+[19080.375] TechTree: popupInfo.Data1: 0
+[19080.375] TechTree: popupInfo.Data2: -1
+[19080.375] TechTree: popupInfo.Data3: 0
+[19083.671] TechTree: stealingTechTargetPlayerID: -1
+[19083.671] TechTree: player:GetNumFreeTechs(): 0
+[19105.000] TurnProcessing: Hiding TurnProcessing
+[19109.984] InGame: OnInterfaceModeChanged
+[19109.984] InGame: oldInterfaceMode: 1
+[19109.984] InGame: newInterfaceMode: 9
+[19109.984] InGame: irange: 49
+[19111.125] InGame: OnInterfaceModeChanged
+[19111.125] InGame: oldInterfaceMode: 9
+[19111.125] InGame: newInterfaceMode: 1
+[19195.468] TurnProcessing: Hiding TurnProcessing
+[19211.468] ProductionPopup: true
+[19212.281] ProductionPopup: true
+[19212.281] ProductionPopup: true
+[19245.500] TechTree: popupInfo.Data1: 0
+[19245.500] TechTree: popupInfo.Data2: -1
+[19245.500] TechTree: popupInfo.Data3: 0
+[19267.546] TurnProcessing: Hiding TurnProcessing
+[19268.921] SocialPolicyPopup: In UpdateDisplay()
+[19270.687] SocialPolicyPopup: In UpdateDisplay()
+[19316.640] TurnProcessing: Hiding TurnProcessing
+[19320.593] TechTree: popupInfo.Data1: 0
+[19320.593] TechTree: popupInfo.Data2: -1
+[19320.593] TechTree: popupInfo.Data3: 0
+[19322.578] TechTree: stealingTechTargetPlayerID: -1
+[19322.578] TechTree: player:GetNumFreeTechs(): 0
+[19354.375] TurnProcessing: Hiding TurnProcessing
+[19356.515] SocialPolicyPopup: In UpdateDisplay()
+[19358.062] SocialPolicyPopup: Clicked on Policy: 8
+[19358.062] SocialPolicyPopup: bHasPolicy: false
+[19358.062] SocialPolicyPopup: bCanAdoptPolicy: true
+[19358.062] SocialPolicyPopup: Policy Blocked: false
+[19358.781] SocialPolicyPopup: In UpdateDisplay()
+[19373.265] InGame: OnInterfaceModeChanged
+[19373.265] InGame: oldInterfaceMode: 1
+[19373.265] InGame: newInterfaceMode: 10
+[19374.562] InGame: OnInterfaceModeChanged
+[19374.562] InGame: oldInterfaceMode: 10
+[19374.562] InGame: newInterfaceMode: 1
+[19375.578] CityBannerManager: CityBanner CombatBegin
+[19381.687] CityBannerManager: CityBanner CombatEnd
+[19418.343] TurnProcessing: Hiding TurnProcessing
