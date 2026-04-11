@@ -12,12 +12,37 @@
 -- ===========================================================================
 
 local promoParadrop      = GameInfoTypes.PROMOTION_PARADROP
+local promoExtParadrop   = GameInfoTypes.PROMOTION_EXTENDED_PARADROP
 local promoFlag          = GameInfoTypes.PROMOTION_CHEATO_PARADROP_FLAG
 local promoMaster        = GameInfoTypes.PROMOTION_CHEATO_MASTER_FLAG
 local promoBlitz         = GameInfoTypes.PROMOTION_BLITZ
+local promoEnemyLands    = GameInfoTypes.PROMOTION_ENEMY_LANDS
 
 -- cache posisi sebelumnya biar bisa hitung distance
 local lastPositions = {}
+
+local function IsFriendZoneForCheatoUnit(player, unit)
+    if not player or not unit then return false end
+    if not unit:IsHasPromotion(promoMaster) then return false end
+    if not unit:IsHasPromotion(promoFlag) then return false end
+    return true
+end
+
+local function EnsureParadropAccess(playerID)
+    local player = Players[playerID]
+    if not player or not player:IsHuman() then return end
+
+    for unit in player:Units() do
+        if IsFriendZoneForCheatoUnit(player, unit) then
+            if promoParadrop and not unit:IsHasPromotion(promoParadrop) then
+                unit:SetHasPromotion(promoParadrop, true)
+            end
+            if promoEnemyLands and not unit:IsHasPromotion(promoEnemyLands) then
+                unit:SetHasPromotion(promoEnemyLands, true)
+            end
+        end
+    end
+end
 
 -- ===========================================================================
 -- TRACK posisi unit setiap kali gerak
@@ -28,6 +53,12 @@ function TrackUnitPosition(playerID, unitID, x, y)
 end
 
 GameEvents.UnitSetXY.Add(TrackUnitPosition)
+GameEvents.UnitSetXY.Add(function(playerID, unitID, x, y)
+    EnsureParadropAccess(playerID)
+end)
+GameEvents.UnitCreated.Add(function(playerID, unitID)
+    EnsureParadropAccess(playerID)
+end)
 
 -- ===========================================================================
 -- MAIN OVERRIDE SYSTEM
@@ -43,10 +74,17 @@ function ParadropOverride(playerID, unitID, x, y)
     local unit = player:GetUnitByID(unitID)
     if not unit then return end
 
+    local hasParadropHook = unit:IsHasPromotion(promoParadrop)
+    if promoExtParadrop then
+        hasParadropHook = hasParadropHook or unit:IsHasPromotion(promoExtParadrop)
+    end
+
     -- FILTER LAYER (WAJIB DUA-DUANYA ADA + MASTER FLAG)
     if not unit:IsHasPromotion(promoMaster) then return end
-    if not unit:IsHasPromotion(promoParadrop) then return end
     if not unit:IsHasPromotion(promoFlag) then return end
+    if not hasParadropHook then
+        hasParadropHook = true
+    end
 
     -- ambil posisi sebelumnya
     if not lastPositions[playerID] or not lastPositions[playerID][unitID] then
@@ -56,9 +94,10 @@ function ParadropOverride(playerID, unitID, x, y)
     local prev = lastPositions[playerID][unitID]
     local prevX = prev.x
     local prevY = prev.y
+    local distance = Map.PlotDistance(prevX, prevY, x, y)
 
-    if distance >= 5
-	and unit:IsHasPromotion(promoParadrop)
+    if distance and distance >= 5
+	and hasParadropHook
 	and unit:IsHasPromotion(promoFlag)
 	and unit:IsHasPromotion(promoMaster)
 	and unit:GetMoves() == 0 then
@@ -71,6 +110,7 @@ function ParadropOverride(playerID, unitID, x, y)
 end
 
 GameEvents.UnitSetXY.Add(ParadropOverride)
+GameEvents.PlayerDoTurn.Add(EnsureParadropAccess)
 
 -- ===========================================================================
 -- CLEANUP SYSTEM (REMOVE BLITZ SETIAP TURN)
