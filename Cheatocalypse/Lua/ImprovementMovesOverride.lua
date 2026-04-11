@@ -18,7 +18,6 @@ GameEvents.BuildFinished.Add(function(playerID, x, y, improvementType)
 	for unit in pPlayer:Units() do
 		if unit:GetUnitType() == iUnitEngineer then
 
-			-- FIX: jangan return, cukup skip unit ini
 			if unit:IsHasPromotion(promoMaster) then
 
 				if unit:GetX() == x and unit:GetY() == y then
@@ -44,10 +43,11 @@ GameEvents.PlayerDoTurn.Add(function(playerID)
 	-- HARD FILTER: HUMAN ONLY
 	if not pPlayer:IsHuman() then return end
 
+	local teamID = pPlayer:GetTeam()
+
 	for unit in pPlayer:Units() do
 		if unit:GetUnitType() == iUnitEngineer then
 
-			-- FIX: jangan return, cukup skip unit ini
 			if unit:IsHasPromotion(promoMaster) then
 
 				local ux = unit:GetX()
@@ -58,8 +58,7 @@ GameEvents.PlayerDoTurn.Add(function(playerID)
 
 						local plot = Map.GetPlot(ux + dx, uy + dy)
 						if plot then
-							-- FIX: gunakan SetVisible untuk buka FOW aktif
-							plot:SetVisible(playerID, true)
+							plot:SetRevealed(teamID, true, false, -1)
 						end
 
 					end

@@ -54,22 +54,21 @@ function PurgeAI(playerID)
     if player:IsHuman() then return end
 
     for unit in player:Units() do
-
-        -- only if unit own Cheatocalypse system
-        if unit:IsHasPromotion(PROMO.MASTER_FLAG) then
-
-            for promo in GameInfo.UnitPromotions() do
-                if IsCheatoPromotion(promo.Type) 
-				and promo.Type ~= "PROMOTION_CHEATO_MASTER_FLAG"
-				and promo.Type ~= "PROMOTION_CHEATO_STATUE_BUFF"   
-				and promo.Type ~= "PROMOTION_CHEATO_PARADROP_FLAG" 
-				then
-                    if unit:IsHasPromotion(promo.ID) then
-                        unit:SetHasPromotion(promo.ID, false)
-                    end
+        for promo in GameInfo.UnitPromotions() do
+            if IsCheatoPromotion(promo.Type)
+            and promo.Type ~= "PROMOTION_CHEATO_MASTER_FLAG"
+            and promo.Type ~= "PROMOTION_CHEATO_STATUE_BUFF"
+            and promo.Type ~= "PROMOTION_CHEATO_PARADROP_FLAG"
+            then
+                if unit:IsHasPromotion(promo.ID) then
+                    unit:SetHasPromotion(promo.ID, false)
                 end
             end
+        end
 
+        -- hard remove ownership marker dari AI untuk cegah chain abuse capture/upgrade
+        if unit:IsHasPromotion(PROMO.MASTER_FLAG) then
+            unit:SetHasPromotion(PROMO.MASTER_FLAG, false)
         end
     end
 end
@@ -90,8 +89,8 @@ function System_CheatoAura(playerID)
 
             for promo in GameInfo.UnitPromotions() do
                 if IsCheatoPromotion(promo.Type)
-                and promo.Type ~= "PROMOTION_CHEATO_MASTER_FLAG" 
-				and promo.Type ~= "PROMOTION_CHEATO_STATUE_BUFF"   
+                and promo.Type ~= "PROMOTION_CHEATO_MASTER_FLAG"
+				and promo.Type ~= "PROMOTION_CHEATO_STATUE_BUFF"
 				and promo.Type ~= "PROMOTION_CHEATO_PARADROP_FLAG"
 				then
 
