@@ -50,16 +50,6 @@
 	</Units>
 
 	<!-- ========================= -->
-	<!-- UNIT BUILDS -->
-	<!-- ========================= -->
-	<Unit_Builds>
-		<Row>
-			<UnitType>UNIT_CHEAT_WAYFINDER</UnitType>
-			<BuildType>BUILD_SETTLER</BuildType>
-		</Row>
-	</Unit_Builds>
-
-	<!-- ========================= -->
 	<!-- UNIT FREE PROMOTIONS -->
 	<!-- ========================= -->
 	<Unit_FreePromotions>
