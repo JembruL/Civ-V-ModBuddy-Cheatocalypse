@@ -1,15 +1,15 @@
-[51496.875] columns StrategicViewType, TileType are not unique
-[51496.875] While executing - 'INSERT INTO ArtDefine_StrategicView(StrategicViewType, TileType, Asset) VALUES(?,?,?)'
-[51498.078] no such table: ContentPackage.LocalizedText
-[51498.078] no such table: ContentPackage.LocalizedText
-[51498.078] no such table: ContentPackage.LocalizedText
-[51498.796] no such table: ContentPackage.LocalizedText
-[51499.500] columns StrategicViewType, TileType are not unique
-[51499.500] While executing - 'INSERT INTO ArtDefine_StrategicView(StrategicViewType, TileType, Asset) VALUES(?,?,?)'
-[51499.875] no such table: ContentPackage.LocalizedText
-[51499.875] no such table: ContentPackage.LocalizedText
-[51499.875] no such table: ContentPackage.LocalizedText
-[51502.203] 
+[52912.687] columns StrategicViewType, TileType are not unique
+[52912.687] While executing - 'INSERT INTO ArtDefine_StrategicView(StrategicViewType, TileType, Asset) VALUES(?,?,?)'
+[52913.593] no such table: ContentPackage.LocalizedText
+[52913.593] no such table: ContentPackage.LocalizedText
+[52913.593] no such table: ContentPackage.LocalizedText
+[52914.062] no such table: ContentPackage.LocalizedText
+[52914.734] columns StrategicViewType, TileType are not unique
+[52914.734] While executing - 'INSERT INTO ArtDefine_StrategicView(StrategicViewType, TileType, Asset) VALUES(?,?,?)'
+[52915.109] no such table: ContentPackage.LocalizedText
+[52915.109] no such table: ContentPackage.LocalizedText
+[52915.109] no such table: ContentPackage.LocalizedText
+[52917.390] 
 -- SQLite Memory Statistics --
 Memory Usage:
 		[Cur]		[Max]
@@ -31,7 +31,7 @@ Scratch:	6640
 Prepared Statements:
 Current:		6
 ------------------------------
-[51502.437] 
+[52917.625] 
 -- SQLite Memory Statistics --
 Memory Usage:
 		[Cur]		[Max]
@@ -53,7 +53,7 @@ Scratch:	6640
 Prepared Statements:
 Current:		6
 ------------------------------
-[51520.593] 
+[52986.328] 
 -- SQLite Memory Statistics --
 Memory Usage:
 		[Cur]		[Max]
@@ -75,5 +75,5 @@ Scratch:	6640
 Prepared Statements:
 Current:		8
 ------------------------------
-[51524.656] no such column: Type
-[51524.656] In Query - select * from Natural_Wonder_Placement where Type = ? LIMIT 1
+[53007.953] no such column: Type
+[53007.953] In Query - select * from Natural_Wonder_Placement where Type = ? LIMIT 1
