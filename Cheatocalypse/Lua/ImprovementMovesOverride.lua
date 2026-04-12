@@ -1,6 +1,7 @@
 -- Lua Script1
 -- Author: CivicKr
 -- DateCreated: 4/6/2026 1:57:40 PM
+print("ImprovementMovesOverride FIXED VERSION LOADED")
 --------------------------------------------------------------
 local iUnitEngineer = GameInfoTypes.UNIT_CHEAT_ENGINEER
 local promoMaster   = GameInfoTypes.PROMOTION_CHEATO_MASTER_FLAG

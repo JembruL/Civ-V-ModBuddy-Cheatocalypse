@@ -1,7 +1,3 @@
--- Lua Script1
--- Author: CivicKr
--- DateCreated: 3/30/2026 1:14:58 PM
---------------------------------------------------------------
 print("Cheatocalypse Promotion Override Loaded")
 
 -- =========================================================
@@ -30,6 +26,21 @@ for k, v in pairs(PROMO) do
 end
 
 -- =========================================================
+-- PRE-CACHE CHEATO PROMOTIONS (CRITICAL FIX)
+-- =========================================================
+local CHEATO_PROMO_CACHE = {}
+
+for promo in GameInfo.UnitPromotions() do
+    if string.find(promo.Type, "PROMOTION_CHEATO_")
+    and promo.Type ~= "PROMOTION_CHEATO_MASTER_FLAG"
+    and promo.Type ~= "PROMOTION_CHEATO_STATUE_BUFF"
+    and promo.Type ~= "PROMOTION_CHEATO_PARADROP_FLAG"
+    then
+        table.insert(CHEATO_PROMO_CACHE, promo.ID)
+    end
+end
+
+-- =========================================================
 -- UNIT VALIDATION (LAYER 2 FILTER)
 -- =========================================================
 function IsCheatUnit(unit)
@@ -38,14 +49,7 @@ function IsCheatUnit(unit)
 end
 
 -- =========================================================
--- HELPER: DETECT ALL CHEATO PROMOTIONS (AUTO SCALING)
--- =========================================================
-function IsCheatoPromotion(promoType)
-    return string.find(promoType, "PROMOTION_CHEATO_") ~= nil
-end
-
--- =========================================================
--- SOFT PURGE (ANTI-AI ABUSE)
+-- SOFT PURGE (ANTI-AI ABUSE) - OPTIMIZED
 -- =========================================================
 function PurgeAI(playerID)
 
@@ -54,19 +58,15 @@ function PurgeAI(playerID)
     if player:IsHuman() then return end
 
     for unit in player:Units() do
-        for promo in GameInfo.UnitPromotions() do
-            if IsCheatoPromotion(promo.Type)
-            and promo.Type ~= "PROMOTION_CHEATO_MASTER_FLAG"
-            and promo.Type ~= "PROMOTION_CHEATO_STATUE_BUFF"
-            and promo.Type ~= "PROMOTION_CHEATO_PARADROP_FLAG"
-            then
-                if unit:IsHasPromotion(promo.ID) then
-                    unit:SetHasPromotion(promo.ID, false)
-                end
+
+        -- gunakan cache, bukan scan semua promotion
+        for i = 1, #CHEATO_PROMO_CACHE do
+            local promoID = CHEATO_PROMO_CACHE[i]
+            if unit:IsHasPromotion(promoID) then
+                unit:SetHasPromotion(promoID, false)
             end
         end
 
-        -- hard remove ownership marker dari AI untuk cegah chain abuse capture/upgrade
         if unit:IsHasPromotion(PROMO.MASTER_FLAG) then
             unit:SetHasPromotion(PROMO.MASTER_FLAG, false)
         end
@@ -74,7 +74,7 @@ function PurgeAI(playerID)
 end
 
 -- =========================================================
--- AURA SYSTEM (ISOLATED)
+-- AURA SYSTEM (ISOLATED) - OPTIMIZED
 -- =========================================================
 function System_CheatoAura(playerID)
 
@@ -83,28 +83,21 @@ function System_CheatoAura(playerID)
     local player = Players[playerID]
     if not player then return end
 
-    -- CLEAR (remove all CHEATO buffs first)
+    -- CLEAR (optimized)
     for unit in player:Units() do
         if IsCheatUnit(unit) then
 
-            for promo in GameInfo.UnitPromotions() do
-                if IsCheatoPromotion(promo.Type)
-                and promo.Type ~= "PROMOTION_CHEATO_MASTER_FLAG"
-				and promo.Type ~= "PROMOTION_CHEATO_STATUE_BUFF"
-				and promo.Type ~= "PROMOTION_CHEATO_PARADROP_FLAG"
-				then
-
-                    if unit:IsHasPromotion(promo.ID) then
-                        unit:SetHasPromotion(promo.ID, false)
-                    end
-
+            for i = 1, #CHEATO_PROMO_CACHE do
+                local promoID = CHEATO_PROMO_CACHE[i]
+                if unit:IsHasPromotion(promoID) then
+                    unit:SetHasPromotion(promoID, false)
                 end
             end
 
         end
     end
 
-    -- APPLY (example: apply BUFF1 as base aura)
+    -- APPLY (no change, already optimal)
     for unit in player:Units() do
         if IsCheatUnit(unit) then
 

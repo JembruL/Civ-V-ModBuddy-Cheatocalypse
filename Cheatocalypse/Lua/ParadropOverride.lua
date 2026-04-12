@@ -18,6 +18,8 @@ local promoBlitz         = GameInfoTypes.PROMOTION_BLITZ
 
 -- cache posisi sebelumnya biar bisa hitung distance
 local lastPositions = {}
+-- tambahan tracking move untuk validasi paradrop real
+local lastMoves = {}
 
 -- ===========================================================================
 -- MAIN OVERRIDE + TRACK SYSTEM
@@ -43,31 +45,48 @@ function ParadropOverride(playerID, unitID, x, y)
         prev = lastPositions[playerID][unitID]
     end
 
+    -- ambil move sebelumnya
+    local prevMoves = nil
+    if lastMoves[playerID] then
+        prevMoves = lastMoves[playerID][unitID]
+    end
+
     -- FILTER LAYER (WAJIB DUA-DUANYA ADA + MASTER FLAG)
     if unit:IsHasPromotion(promoMaster)
     and unit:IsHasPromotion(promoParadrop)
     and unit:IsHasPromotion(promoFlag)
-    and prev then
+    and prev and prevMoves then
 
         local distance = Map.PlotDistance(prev.x, prev.y, x, y)
+        local currentMoves = unit:GetMoves()
 
-        -- threshold: dianggap paradrop kalau lompat jauh
-        if distance >= 5 then
-            -- reset movement biar bisa lanjut aksi
-            unit:SetMoves(unit:MaxMoves())
+        -- =========================================================
+        -- FIX: VALID PARADROP DETECTION
+        -- SYARAT:
+        -- 1. lompat jauh (distance)
+        -- 2. move berkurang drastis (engine consume)
+        -- =========================================================
+        if distance >= 5 and currentMoves < prevMoves then
 
-            -- kasih blitz biar bisa attack setelah drop
-            if not unit:IsHasPromotion(promoBlitz) then
-                unit:SetHasPromotion(promoBlitz, true)
-            end
+            -- reset movement
+			unit:SetMoves(unit:MaxMoves())
 
-            -- optional: heal dikit biar gak fragile
-            unit:ChangeDamage(-10)
+			-- HARD RESET COMBAT STATE (CRITICAL FIX)
+			unit:SetHasPromotion(promoBlitz, false)
+			unit:SetHasPromotion(promoBlitz, true)
+
+			-- optional heal
+			unit:ChangeDamage(-10)
         end
     end
 
+    -- update posisi terakhir
     lastPositions[playerID] = lastPositions[playerID] or {}
     lastPositions[playerID][unitID] = {x = x, y = y}
+
+    -- update move terakhir
+    lastMoves[playerID] = lastMoves[playerID] or {}
+    lastMoves[playerID][unitID] = unit:GetMoves()
 end
 
 GameEvents.UnitSetXY.Add(ParadropOverride)
