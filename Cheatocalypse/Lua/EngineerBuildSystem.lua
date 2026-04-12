@@ -9,67 +9,38 @@ local function IsEligibleEngineer(unit)
         and unit:IsHasPromotion(promoMaster)
 end
 
--- =========================================================
--- HARD FORCE INSTANT BUILD
--- =========================================================
-local function ForceInstantBuild(playerID, unit, plot)
-
-    if not IsEligibleEngineer(unit) then return end
-
-    local buildType = unit:GetBuildType()
-    if not buildType then return end
-
-    local buildInfo = GameInfo.Builds[buildType]
-    if not buildInfo then return end
-
-    local improvement = buildInfo.ImprovementType
-    if not improvement then return end
-
-    local improvementID = GameInfoTypes[improvement]
-    if not improvementID then return end
-
-    -- APPLY langsung improvement (skip progress system)
-    plot:SetImprovementType(improvementID)
-
-    -- optional: route support
-    if buildInfo.RouteType then
-        plot:SetRouteType(GameInfoTypes[buildInfo.RouteType])
-    end
-end
-
--- =========================================================
--- RESTORE MOVE (AUTHORITATIVE)
--- =========================================================
 local function RestoreEngineerMoves(unit)
     if not IsEligibleEngineer(unit) then return end
     unit:SetMoves(unit:MaxMoves())
 end
 
 -- =========================================================
--- BUILD EVENT — FIXED
+-- BUILD EVENT — SIGNATURE BENAR
+-- BuildFinished(playerID, x, y, buildType, bImprovement, bRoute, bClear)
+-- TIDAK ada unitID, TIDAK ada bSucceeded
 -- =========================================================
-GameEvents.BuildFinished.Add(function(playerID, unitID, x, y, buildType, bSucceeded)
-    print("BuildFinished fired: playerID="..tostring(playerID).." unitID="..tostring(unitID).." succeeded="..tostring(bSucceeded))
+GameEvents.BuildFinished.Add(function(playerID, x, y, buildType, bImprovement, bRoute, bClear)
 
-    if not bSucceeded then return end
+    print("BuildFinished fired: playerID="..tostring(playerID).." x="..tostring(x).." y="..tostring(y).." buildType="..tostring(buildType))
 
     local pPlayer = Players[playerID]
     if not pPlayer or not pPlayer:IsHuman() then return end
 
-    local unit = pPlayer:GetUnitByID(unitID)
-    print("Unit found: "..tostring(unit ~= nil))
-    if not IsEligibleEngineer(unit) then
-        print("Not eligible engineer")
-        return
+    -- cari engineer di koordinat build
+    for unit in pPlayer:Units() do
+        if IsEligibleEngineer(unit)
+        and unit:GetX() == x
+        and unit:GetY() == y then
+            unit:SetMoves(unit:MaxMoves())
+            unit:SetMoves(unit:MaxMoves())
+            print("EngineerBuildSystem: Moves restored for unitID="..tostring(unit:GetID()))
+            return
+        end
     end
-
-    unit:SetMoves(unit:MaxMoves())
-    unit:SetMoves(unit:MaxMoves())
-    print("Moves restored to: "..tostring(unit:GetMoves()))
 end)
 
 -- =========================================================
--- SELECTION FIX — TETAP DIPERTAHANKAN
+-- SELECTION FIX
 -- =========================================================
 GameEvents.UnitSelectionChanged.Add(function(playerID, unitID, isSelected)
     if not isSelected then return end
@@ -78,6 +49,9 @@ GameEvents.UnitSelectionChanged.Add(function(playerID, unitID, isSelected)
     if not pPlayer or not pPlayer:IsHuman() then return end
 
     local unit = pPlayer:GetUnitByID(unitID)
-    if not unit then return end  -- TAMBAH nil check
+    if not unit then return end
     RestoreEngineerMoves(unit)
 end)
+
+-- PlayerDoTurn restore DIHAPUS PERMANEN
+-- konflik dengan build state engine
