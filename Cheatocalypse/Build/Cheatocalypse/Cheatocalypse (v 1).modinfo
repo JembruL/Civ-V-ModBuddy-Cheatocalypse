@@ -22,14 +22,14 @@
   <References />
   <Blocks />
   <Files>
-    <File md5="3DDAF6FE8C0443048DC10F3E4F7E1F04" import="1">Lua/CoreSystem.lua</File>
-    <File md5="DA6683F47E768EC0913560D2291D06FE" import="1">Lua/BuildingEffects.lua</File>
-    <File md5="B3C9F8202FAF5334FCA2702CD891788D" import="1">Lua/ImprovementMovesOverride.lua</File>
-    <File md5="7B51168E0B6D264BF0B20EFBC175E8A9" import="1">Lua/EngineerBuildSystem.lua</File>
-    <File md5="21EDBB03CBA2A949D69E0373A412E0FC" import="1">Lua/ProductionBoost.lua</File>
+    <File md5="687D75170B68C59CA2DBC298BAD94734" import="1">Lua/CoreSystem.lua</File>
+    <File md5="C20E9F0F9DEDE18FCEBBF9EFB42616F6" import="1">Lua/BuildingEffects.lua</File>
+    <File md5="674EF8C656B2C7CD5D5ED773EB0A69FA" import="1">Lua/ImprovementMovesOverride.lua</File>
+    <File md5="E2D5759BDF04E8B75B34638FDD73F5AD" import="1">Lua/EngineerBuildSystem.lua</File>
+    <File md5="BDDC4DACC11DDC95DDE8435A819ACB74" import="1">Lua/ProductionBoost.lua</File>
     <File md5="8B09A97FB3BA15F6229F9E989D675923" import="0">Lua/UnitSystems_Deprecated.lua</File>
     <File md5="B5F62295AA3C87B67CA21F2089BCB6CB" import="0">Lua/YieldBoostGlobal_Deprecated.lua</File>
-    <File md5="DA6AE1ABBFD7204CBFC0FD099565AEDC" import="1">Lua/PromotionOverride.lua</File>
+    <File md5="6E3ED0C6A12DA860BABA1EDF427733E4" import="1">Lua/PromotionOverride.lua</File>
     <File md5="B70DE093026C1B3C9431334ED60370F7" import="1">Lua/ParadropOverride.lua</File>
     <File md5="626E3A9B37EDC3C033B68FFB8196A6FE" import="1">XML/Building/Building_Statue.xml</File>
     <File md5="2081F3B3AF2CC00A82D8B387D3715D78" import="0">XML/Unit/Units_Deprecated.xml</File>

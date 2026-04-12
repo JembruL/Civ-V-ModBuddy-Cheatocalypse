@@ -98,37 +98,28 @@ function System_CheatoAura(playerID)
         end
     end
 
-    -- APPLY (no change, already optimal)
+    -- APPLY AURA
     for unit in player:Units() do
         if IsCheatUnit(unit) then
 
             local plot = unit:GetPlot()
 
-            for i = 0, 5 do
-                local adjPlot = Map.PlotDirection(plot:GetX(), plot:GetY(), i)
+            for dir = 0, 5 do
+                local adjPlot = Map.PlotDirection(plot:GetX(), plot:GetY(), dir)
 
                 if adjPlot then
-                    --local adjUnit = adjPlot:GetUnit(0)
-					-- Iterasi semua unit di plot:
-					for i = 0, adjPlot:GetNumUnits() - 1 do
-						local adjUnit = adjPlot:GetUnit(i)
-						if adjUnit
-						and adjUnit:GetOwner() == playerID
-						and IsCheatUnit(adjUnit) then
-							adjUnit:SetHasPromotion(GameInfoTypes.PROMOTION_CHEATO_UNIT_BUFF1, true)
-						end
-					end
-
-                    if adjUnit
-                    and adjUnit:GetOwner() == playerID
-                    and IsCheatUnit(adjUnit) then
-
-                        adjUnit:SetHasPromotion(GameInfoTypes.PROMOTION_CHEATO_UNIT_BUFF1, true)
-
+                    local numUnits = adjPlot:GetNumUnits()
+                    for idx = 0, numUnits - 1 do
+                        local adjUnit = adjPlot:GetUnit(idx)
+                        if adjUnit
+                        and adjUnit:GetOwner() == playerID
+                        and IsCheatUnit(adjUnit) then
+                            adjUnit:SetHasPromotion(GameInfoTypes.PROMOTION_CHEATO_UNIT_BUFF1, true)
+                        end
                     end
+                -- HAPUS blok if adjUnit di bawah — dead code dihilangkan
                 end
             end
-
         end
     end
 end
@@ -147,8 +138,5 @@ end
 -- =========================================================
 -- EVENT HOOKS
 -- =========================================================
---GameEvents.UnitSetXY.Add(System_CheatoAura)
-GameEvents.UnitCreated.Add(System_CheatoAura)
 GameEvents.PlayerDoTurn.Add(System_CheatoAura)
-
 GameEvents.PlayerDoTurn.Add(GlobalSecuritySweep)

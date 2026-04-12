@@ -29,16 +29,15 @@ end)
 -- =========================================================
 -- HARD KILL SAFETY (ANTI-SPAWN EDGE CASE)
 -- =========================================================
-GameEvents.UnitCreated.Add(function(playerID, unitID)
+GameEvents.UnitDoTurn.Add(function(playerID, unitID)
     local player = Players[playerID]
     if not player then return end
+    if player:IsHuman() then return end
 
     local unit = player:GetUnitByID(unitID)
     if not unit then return end
 
-    -- kalau unit punya MASTER FLAG tapi bukan human ? kill/purge
-    if unit:IsHasPromotion(PROMO_MASTER)
-    and not player:IsHuman() then
+    if unit:IsHasPromotion(PROMO_MASTER) then
         unit:Kill()
     end
 end)

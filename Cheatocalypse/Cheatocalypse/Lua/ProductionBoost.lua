@@ -7,16 +7,19 @@ print("Production Boost Loaded")
 function ApplyProductionBoost(playerID)
 
     local player = Players[playerID]
+    if not player then return end
     if not player:IsHuman() then return end
 
     for city in player:Cities() do
 
         if city:IsHasBuilding(GameInfoTypes.BUILDING_CHEATOCALYPSE_STATUE) then
 
-            --local base = city:GetProductionTimes100()
-            --city:ChangeProduction(base / 2) -- +50%
-			local base = city:GetProductionTimes100()
-			city:ChangeProduction(math.floor(base / 200))  -- base/100 = production normal, /2 = +50%
+            local base = city:GetProductionTimes100()
+            -- base/100 = production asli, *0.5 = 50%, *100 = kembali ke Times100 unit
+            city:ChangeProduction(math.floor(base / 200))
+            -- Ini BENAR secara matematis: base/100 * 0.5 = base/200
+            -- Tapi ChangeProduction menerima unit normal (bukan Times100)
+            -- Jadi: math.floor(base / 100) * 0.5 = math.floor(base / 200) ✓
 
         end
 

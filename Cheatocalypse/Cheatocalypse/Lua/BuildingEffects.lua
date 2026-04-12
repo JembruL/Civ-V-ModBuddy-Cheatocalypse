@@ -27,8 +27,6 @@ function ApplyStatueBuff(playerID)
 
     local player = Players[playerID]
     if not player then return end
-
-    -- HARD FILTER
     if not player:IsHuman() then return end
 
     local hasStatue = PlayerHasStatue(player)
@@ -37,16 +35,11 @@ function ApplyStatueBuff(playerID)
         if unit:IsHasPromotion(PROMO_MASTER) then
 
             if hasStatue then
-                -- APPLY
                 if not unit:IsHasPromotion(PROMO_BUFF) then
                     unit:SetHasPromotion(PROMO_BUFF, true)
                 end
-
-                -- +1 MOVE (hard inject)
-                unit:SetMoves(unit:MaxMoves())
-
+                -- HAPUS: unit:SetMoves(unit:MaxMoves()) ← jangan di sini
             else
-                -- REMOVE
                 if unit:IsHasPromotion(PROMO_BUFF) then
                     unit:SetHasPromotion(PROMO_BUFF, false)
                 end
