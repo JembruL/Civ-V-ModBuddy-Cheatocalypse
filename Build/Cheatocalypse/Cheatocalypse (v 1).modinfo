@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="db692d3a-0e02-4bda-951f-5712ad9be091" version="1">
+  <Properties>
+    <Name>Cheatocalypse</Name>
+    <Stability>Alpha</Stability>
+    <Teaser>A chaotic sandbox mod focused on accelerated progression, overpowered units, and controlled cheating mechanics — designed to en</Teaser>
+    <Description>A chaotic sandbox mod focused on accelerated progression, overpowered units, and controlled cheating mechanics, designed to enhance fun without completely removing gameplay mechanics.</Description>
+    <Authors>JembruL</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies />
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="3DDAF6FE8C0443048DC10F3E4F7E1F04" import="1">Lua/CoreSystem.lua</File>
+    <File md5="DA6683F47E768EC0913560D2291D06FE" import="1">Lua/BuildingEffects.lua</File>
+    <File md5="B3C9F8202FAF5334FCA2702CD891788D" import="1">Lua/ImprovementMovesOverride.lua</File>
+    <File md5="4149C3A66E49C5E93CA2409BB230B7B6" import="1">Lua/EngineerBuildSystem.lua</File>
+    <File md5="21EDBB03CBA2A949D69E0373A412E0FC" import="1">Lua/ProductionBoost.lua</File>
+    <File md5="B5F62295AA3C87B67CA21F2089BCB6CB" import="0">Lua/YieldBoostGlobal_Deprecated.lua</File>
+    <File md5="4350701EF9E1A1BD90CC925A94461CDE" import="1">Lua/PromotionOverride.lua</File>
+    <File md5="CE2C11E285AA4896CEF9180443692711" import="1">Lua/ParadropOverride.lua</File>
+    <File md5="626E3A9B37EDC3C033B68FFB8196A6FE" import="1">XML/Building/Building_Statue.xml</File>
+    <File md5="F34C7DBE579613D0D10212548C79DD6A" import="0">XML/Unit/Unit_Renovator.xml</File>
+    <File md5="4BDA75EF9FC47704EC5B27F09A89BCF8" import="1">XML/Unit/Unit_Engineer.xml</File>
+    <File md5="2D1A294E591F44E319810C8101877E0C" import="1">XML/Unit/Unit_Wayfinder.xml</File>
+    <File md5="FC549C4A3571099379CB63868F407CA8" import="1">XML/Unit/Unit_IronRain.xml</File>
+    <File md5="668B6176B72A4849C182FBE35138DF6A" import="0">XML/Unit/Unit_Nartillery.xml</File>
+    <File md5="E1E90523C872FA89E2E719AB1507B5F6" import="1">XML/Unit/Promotions_Master.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>XML/Unit/Promotions_Master.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Building/Building_Statue.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Unit/Unit_IronRain.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Unit/Unit_Engineer.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Unit/Unit_Wayfinder.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="Lua/CoreSystem.lua">
+      <Name>Core Logic</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+    <EntryPoint type="InGameUIAddin" file="Lua/ParadropOverride.lua">
+      <Name>Paradrop Override</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+    <EntryPoint type="InGameUIAddin" file="Lua/PromotionOverride.lua">
+      <Name>Promotion Override</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+    <EntryPoint type="InGameUIAddin" file="Lua/BuildingEffects.lua">
+      <Name>Building Effects</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+    <EntryPoint type="InGameUIAddin" file="Lua/ProductionBoost.lua">
+      <Name>Production Boost</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+    <EntryPoint type="InGameUIAddin" file="Lua/ImprovementMovesOverride.lua">
+      <Name>Moves Override for Improvement</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+    <EntryPoint type="InGameUIAddin" file="Lua/EngineerBuildSystem.lua">
+      <Name>Engineer Build</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>
