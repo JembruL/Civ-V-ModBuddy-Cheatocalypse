@@ -47,6 +47,11 @@
         <Type>UpdateDatabase</Type>
         <FileName>XML/Unit/Unit_Wayfinder.xml</FileName>
       </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>XML/Unit/Unit_Landsknut.xml</FileName>
+      </Action>
     </ModActions>
     <ModContent>
       <Content>
@@ -144,6 +149,10 @@
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="XML\Building\Building_Statue.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="XML\Unit\Unit_Landsknut.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>

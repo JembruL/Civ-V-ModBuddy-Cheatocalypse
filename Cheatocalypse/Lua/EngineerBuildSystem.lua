@@ -50,7 +50,14 @@ GameEvents.UnitSelectionChanged.Add(function(playerID, unitID, isSelected)
 
     local unit = pPlayer:GetUnitByID(unitID)
     if not unit then return end
-    RestoreEngineerMoves(unit)
+
+    if IsEligibleEngineer(unit) then
+        print("UnitSelectionChanged: Engineer selected, moves before="..tostring(unit:GetMoves()))
+        unit:SetMoves(unit:MaxMoves())
+        print("UnitSelectionChanged: moves after="..tostring(unit:GetMoves()))
+		-- Force UI refresh
+        Events.SerialEventUnitInfoDirty()
+    end
 end)
 
 -- PlayerDoTurn restore DIHAPUS PERMANEN

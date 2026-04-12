@@ -78,11 +78,11 @@
 			<!-- ========================= -->
 			<!-- ART -->
 			<!-- ========================= -->
-			<UnitArtInfo>ART_DEF_UNIT_U_GERMAN_LANDSKNECHT</UnitArtInfo>
+			<UnitArtInfo>ART_DEF_UNIT_U_FRENCH_MUSKETEER</UnitArtInfo>
 			<IconAtlas>UNIT_ATLAS_1</IconAtlas>
-			<PortraitIndex>34</PortraitIndex>
+			<PortraitIndex>40</PortraitIndex>
 <!-- 			<UnitFlagAtlas>EXPANSION_UNIT_FLAG_ATLAS</UnitFlagAtlas> -->
-			<UnitFlagIconOffset>33</UnitFlagIconOffset>
+			<UnitFlagIconOffset>39</UnitFlagIconOffset>
 
 		</Row>
 
