@@ -1,4 +1,4 @@
-# Cheatocalypse (Civ V Mod)
+# Cheatocalypse (Civ V Mod) AA
 
 A high-power Civilization V sandbox mod focused on **system stability**, **controlled cheat ownership**, and **anti-AI-abuse safeguards**.
 
