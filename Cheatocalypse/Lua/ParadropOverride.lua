@@ -21,6 +21,15 @@ local lastPositions = {}
 -- tambahan tracking move untuk validasi paradrop real
 local lastMoves = {}
 
+GameEvents.UnitPrekill.Add(function(playerID, unitID, unitType, bDelay, x, y)
+    if lastPositions[playerID] then
+        lastPositions[playerID][unitID] = nil
+    end
+    if lastMoves[playerID] then
+        lastMoves[playerID][unitID] = nil
+    end
+end)
+
 -- ===========================================================================
 -- MAIN OVERRIDE + TRACK SYSTEM
 -- NOTE: gunakan satu hook agar posisi lama terbaca sebelum di-update.
@@ -72,8 +81,11 @@ function ParadropOverride(playerID, unitID, x, y)
 			unit:SetMoves(unit:MaxMoves())
 
 			-- HARD RESET COMBAT STATE (CRITICAL FIX)
-			unit:SetHasPromotion(promoBlitz, false)
-			unit:SetHasPromotion(promoBlitz, true)
+			--unit:SetHasPromotion(promoBlitz, false)
+			--unit:SetHasPromotion(promoBlitz, true)
+
+			-- Engine akan izinkan attack jika moves > 0 dan unit punya PROMOTION_CAN_MOVE_AFTER_ATTACKING
+			unit:SetMoves(unit:MaxMoves())
 
 			-- optional heal
 			unit:ChangeDamage(-10)

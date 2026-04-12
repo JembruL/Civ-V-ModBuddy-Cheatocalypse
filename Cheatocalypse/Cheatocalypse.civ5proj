@@ -75,12 +75,6 @@
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
-        <Name>Global Yield Boost</Name>
-        <Description />
-        <FileName>Lua/YieldBoostGlobal.lua</FileName>
-      </Content>
-      <Content>
-        <Type>InGameUIAddin</Type>
         <Name>Production Boost</Name>
         <Description />
         <FileName>Lua/ProductionBoost.lua</FileName>
@@ -137,9 +131,9 @@
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Lua\YieldBoostGlobal.lua">
+    <Content Include="Lua\YieldBoostGlobal_Deprecated.lua">
       <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
+      <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="Lua\PromotionOverride.lua">
       <SubType>Lua</SubType>

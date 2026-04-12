@@ -107,7 +107,16 @@ function System_CheatoAura(playerID)
                 local adjPlot = Map.PlotDirection(plot:GetX(), plot:GetY(), i)
 
                 if adjPlot then
-                    local adjUnit = adjPlot:GetUnit(0)
+                    --local adjUnit = adjPlot:GetUnit(0)
+					-- Iterasi semua unit di plot:
+					for i = 0, adjPlot:GetNumUnits() - 1 do
+						local adjUnit = adjPlot:GetUnit(i)
+						if adjUnit
+						and adjUnit:GetOwner() == playerID
+						and IsCheatUnit(adjUnit) then
+							adjUnit:SetHasPromotion(GameInfoTypes.PROMOTION_CHEATO_UNIT_BUFF1, true)
+						end
+					end
 
                     if adjUnit
                     and adjUnit:GetOwner() == playerID
@@ -137,7 +146,7 @@ end
 -- =========================================================
 -- EVENT HOOKS
 -- =========================================================
-GameEvents.UnitSetXY.Add(System_CheatoAura)
+--GameEvents.UnitSetXY.Add(System_CheatoAura)
 GameEvents.UnitCreated.Add(System_CheatoAura)
 GameEvents.PlayerDoTurn.Add(System_CheatoAura)
 

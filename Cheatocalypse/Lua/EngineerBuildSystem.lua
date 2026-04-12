@@ -48,27 +48,22 @@ end
 -- =========================================================
 -- BUILD EVENT
 -- =========================================================
-GameEvents.BuildFinished.Add(function(playerID, x, y, improvementType)
+GameEvents.BuildFinished.Add(function(playerID, unitID, x, y, buildType, bSucceeded)
+
+    if not bSucceeded then return end
 
     local pPlayer = Players[playerID]
     if not pPlayer or not pPlayer:IsHuman() then return end
 
+    local unit = pPlayer:GetUnitByID(unitID)
+    if not IsEligibleEngineer(unit) then return end
+
     local plot = Map.GetPlot(x, y)
+    if not plot then return end
 
-    for unit in pPlayer:Units() do
-        if IsEligibleEngineer(unit)
-        and unit:GetX() == x
-        and unit:GetY() == y then
-
-            -- force instant (overwrite engine delay)
-            ForceInstantBuild(playerID, unit, plot)
-
-            -- restore move langsung
-            RestoreEngineerMoves(unit)
-
-            return
-        end
-    end
+    -- improvement sudah ditaruh engine karena build selesai
+    -- cukup restore moves
+    RestoreEngineerMoves(unit)
 end)
 
 -- =========================================================

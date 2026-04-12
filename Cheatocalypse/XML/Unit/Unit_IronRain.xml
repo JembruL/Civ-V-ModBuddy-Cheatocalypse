@@ -98,6 +98,10 @@
 		</Row>
 		<Row>
 			<UnitType>UNIT_CHEAT_IRON_RAIN_WALKER</UnitType>
+			<PromotionType>PROMOTION_PARADROP</PromotionType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_CHEAT_IRON_RAIN_WALKER</UnitType>
 			<PromotionType>PROMOTION_CHEATO_PARADROP_FLAG</PromotionType>
 		</Row>
 		<Row>

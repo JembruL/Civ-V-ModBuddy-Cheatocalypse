@@ -13,8 +13,10 @@ function ApplyProductionBoost(playerID)
 
         if city:IsHasBuilding(GameInfoTypes.BUILDING_CHEATOCALYPSE_STATUE) then
 
-            local base = city:GetProductionTimes100()
-            city:ChangeProduction(base / 2) -- +50%
+            --local base = city:GetProductionTimes100()
+            --city:ChangeProduction(base / 2) -- +50%
+			local base = city:GetProductionTimes100()
+			city:ChangeProduction(math.floor(base / 200))  -- base/100 = production normal, /2 = +50%
 
         end
 

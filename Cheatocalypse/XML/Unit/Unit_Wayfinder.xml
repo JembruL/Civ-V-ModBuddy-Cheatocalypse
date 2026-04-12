@@ -59,11 +59,15 @@
 		</Row>
 		<Row>
 			<UnitType>UNIT_CHEAT_WAYFINDER</UnitType>
-			<PromotionType>PROMOTION_CHEATO_PARADROP_FLAG</PromotionType>
+			<PromotionType>PROMOTION_PARADROP</PromotionType>
 		</Row>
 		<Row>
 			<UnitType>UNIT_CHEAT_WAYFINDER</UnitType>
 			<PromotionType>PROMOTION_EXTENDED_PARADROP</PromotionType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_CHEAT_WAYFINDER</UnitType>
+			<PromotionType>PROMOTION_CHEATO_PARADROP_FLAG</PromotionType>
 		</Row>
 		<Row>
 			<UnitType>UNIT_CHEAT_WAYFINDER</UnitType>

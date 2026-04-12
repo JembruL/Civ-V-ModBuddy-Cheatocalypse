@@ -2,6 +2,12 @@ print("Cheatocalypse Core System Loaded")
 
 local PROMO_MASTER = GameInfoTypes.PROMOTION_CHEATO_MASTER_FLAG
 local BUILDING_STATUE = GameInfoTypes.BUILDING_CHEATOCALYPSE_STATUE
+local CHEATO_TRAINABLE_UNITS = {}
+for row in GameInfo.Unit_FreePromotions() do
+    if row.PromotionType == "PROMOTION_CHEATO_MASTER_FLAG" then
+        CHEATO_TRAINABLE_UNITS[row.UnitType] = true
+    end
+end
 
 -- =========================================================
 -- BLOCK AI TRAINING (BASED ON MASTER FLAG)
@@ -13,13 +19,8 @@ GameEvents.PlayerCanTrain.Add(function(playerID, unitType)
     local unitInfo = GameInfo.Units[unitType]
     if not unitInfo then return true end
 
-    -- hanya blok unit CHEATO untuk non-human; jangan blok seluruh barbarian
-    for row in GameInfo.Unit_FreePromotions() do
-        if row.UnitType == unitInfo.Type
-        and row.PromotionType == "PROMOTION_CHEATO_MASTER_FLAG"
-        and not player:IsHuman() then
-            return false
-        end
+    if CHEATO_TRAINABLE_UNITS[unitInfo.Type] and not player:IsHuman() then
+        return false
     end
 
     return true

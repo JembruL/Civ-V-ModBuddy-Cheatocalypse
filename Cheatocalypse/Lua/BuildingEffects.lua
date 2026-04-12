@@ -57,4 +57,7 @@ function ApplyStatueBuff(playerID)
 end
 
 GameEvents.PlayerDoTurn.Add(ApplyStatueBuff)
-GameEvents.UnitCreated.Add(ApplyStatueBuff)
+--GameEvents.UnitCreated.Add(ApplyStatueBuff)
+GameEvents.UnitCreated.Add(function(playerID, unitID)
+    ApplyStatueBuff(playerID)
+end)
