@@ -1,15 +1,15 @@
-[46637.625] columns StrategicViewType, TileType are not unique
-[46637.625] While executing - 'INSERT INTO ArtDefine_StrategicView(StrategicViewType, TileType, Asset) VALUES(?,?,?)'
-[46638.828] no such table: ContentPackage.LocalizedText
-[46638.828] no such table: ContentPackage.LocalizedText
-[46638.828] no such table: ContentPackage.LocalizedText
-[46639.531] no such table: ContentPackage.LocalizedText
-[46640.234] columns StrategicViewType, TileType are not unique
-[46640.234] While executing - 'INSERT INTO ArtDefine_StrategicView(StrategicViewType, TileType, Asset) VALUES(?,?,?)'
-[46640.609] no such table: ContentPackage.LocalizedText
-[46640.609] no such table: ContentPackage.LocalizedText
-[46640.609] no such table: ContentPackage.LocalizedText
-[46642.937] 
+[51496.875] columns StrategicViewType, TileType are not unique
+[51496.875] While executing - 'INSERT INTO ArtDefine_StrategicView(StrategicViewType, TileType, Asset) VALUES(?,?,?)'
+[51498.078] no such table: ContentPackage.LocalizedText
+[51498.078] no such table: ContentPackage.LocalizedText
+[51498.078] no such table: ContentPackage.LocalizedText
+[51498.796] no such table: ContentPackage.LocalizedText
+[51499.500] columns StrategicViewType, TileType are not unique
+[51499.500] While executing - 'INSERT INTO ArtDefine_StrategicView(StrategicViewType, TileType, Asset) VALUES(?,?,?)'
+[51499.875] no such table: ContentPackage.LocalizedText
+[51499.875] no such table: ContentPackage.LocalizedText
+[51499.875] no such table: ContentPackage.LocalizedText
+[51502.203] 
 -- SQLite Memory Statistics --
 Memory Usage:
 		[Cur]		[Max]
@@ -31,7 +31,7 @@ Scratch:	6640
 Prepared Statements:
 Current:		6
 ------------------------------
-[46643.171] 
+[51502.437] 
 -- SQLite Memory Statistics --
 Memory Usage:
 		[Cur]		[Max]
@@ -53,18 +53,18 @@ Scratch:	6640
 Prepared Statements:
 Current:		6
 ------------------------------
-[46657.812] 
+[51520.593] 
 -- SQLite Memory Statistics --
 Memory Usage:
 		[Cur]		[Max]
-Malloc:		6720272		76248248
+Malloc:		6721448		76248248
 PageCache:	7		13
 LookAside:	0		0
 Scratch:	0		1
 
 Static Buffer Overflows:
 		[TooLarge]	[NoSpace]
-PageCache:	6299832		63354648
+PageCache:	6301008		63354648
 Scratch:	0		0
 
 Largest Allocations:
@@ -75,5 +75,5 @@ Scratch:	6640
 Prepared Statements:
 Current:		8
 ------------------------------
-[46660.437] no such column: Type
-[46660.437] In Query - select * from Natural_Wonder_Placement where Type = ? LIMIT 1
+[51524.656] no such column: Type
+[51524.656] In Query - select * from Natural_Wonder_Placement where Type = ? LIMIT 1
