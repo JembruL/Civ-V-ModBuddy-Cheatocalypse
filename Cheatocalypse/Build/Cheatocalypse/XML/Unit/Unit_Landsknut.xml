@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+
+	<!-- ========================= -->
+	<!-- UNIT CLASSES -->
+	<!-- ========================= -->
+	<UnitClasses>
+		<Row>
+			<Type>UNITCLASS_CHEAT_LANDSKNUT</Type>
+			<Description>TXT_KEY_UNIT_CHEAT_LANDSKNUT</Description>
+			<DefaultUnit>UNIT_CHEAT_LANDSKNUT</DefaultUnit>
+		</Row>
+	</UnitClasses>
+
+	<!-- ========================= -->
+	<!-- UNITS -->
+	<!-- ========================= -->
+	<Units>
+
+		<!-- LANDSKNUT -->
+		<Row>
+			<Class>UNITCLASS_CHEAT_LANDSKNUT</Class>
+			<Type>UNIT_CHEAT_LANDSKNUT</Type>
+
+			<!-- MELEE FOCUS -->
+			<Combat>220</Combat>
+			<RangedCombat>0</RangedCombat>
+
+			<!-- ========================= -->
+			<!-- PRODUCTION CONTROL -->
+			<!-- ========================= -->
+			<Cost>9999</Cost> <!-- extreme cost → AI & barbarian deprioritize -->
+
+			<Moves>10</Moves>
+			<Range>0</Range>
+
+			<PrereqTech>TECH_AGRICULTURE</PrereqTech>
+			<ObsoleteTech></ObsoleteTech>
+
+			<!-- ========================= -->
+			<!-- AI CONTROL (MINIMAL VALID) -->
+			<!-- ========================= -->
+			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI> <!-- melee aggressive behavior -->
+
+			<Description>TXT_KEY_UNIT_CHEAT_LANDSKNUT</Description>
+			<Help>TXT_KEY_UNIT_CHEAT_LANDSKNUT_HELP</Help>
+			<Strategy>TXT_KEY_UNIT_CHEAT_LANDSKNUT_STRATEGY</Strategy>
+			<Civilopedia>TXT_KEY_UNIT_CHEAT_LANDSKNUT_PEDIA</Civilopedia>
+
+			<CombatClass>UNITCOMBAT_MELEE</CombatClass> <!-- promotion filter + AI behavior -->
+			<Domain>DOMAIN_LAND</Domain>
+
+			<!-- ========================= -->
+			<!-- AI DESIRABILITY SUPPRESSION -->
+			<!-- ========================= -->
+			<MilitarySupport>false</MilitarySupport> <!-- not count millitary needs -->
+			<MilitaryProduction>false</MilitaryProduction> <!-- not count millitary productions -->
+
+			<!-- ========================= -->
+			<!-- PURCHASE HACK (GOLD / FAITH) -->
+			<!-- ========================= -->
+			<HurryCostModifier>-100</HurryCostModifier>  <!-- ≈1 gold -->
+			<FaithCost>1</FaithCost> <!-- ≈1 faith -->
+
+			<!-- ========================= -->
+			<!-- STANDARD FLAGS -->
+			<!-- ========================= -->
+			<Pillage>true</Pillage>
+			<IgnoreBuildingDefense>true</IgnoreBuildingDefense> <!-- overwhelm defense -->
+
+			<AdvancedStartCost>10</AdvancedStartCost>
+			<XPValueAttack>1</XPValueAttack>
+			<XPValueDefense>1</XPValueDefense>
+
+			<MoveRate>FOOT</MoveRate> <!-- animasi + terrain -->
+			<Special>NONE</Special> <!-- not count special pool -->
+
+			<!-- ========================= -->
+			<!-- ART -->
+			<!-- ========================= -->
+			<UnitArtInfo>ART_DEF_UNIT_U_GERMAN_LANDSKNECHT</UnitArtInfo>
+			<IconAtlas>UNIT_ATLAS_1</IconAtlas>
+			<PortraitIndex>34</PortraitIndex>
+<!-- 			<UnitFlagAtlas>EXPANSION_UNIT_FLAG_ATLAS</UnitFlagAtlas> -->
+			<UnitFlagIconOffset>33</UnitFlagIconOffset>
+
+		</Row>
+
+	</Units>
+
+	<!-- ========================= -->
+	<!-- UNIT FREE PROMOTIONS -->
+	<!-- ========================= -->
+	<Unit_FreePromotions>
+		<Row>
+			<UnitType>UNIT_CHEAT_LANDSKNUT</UnitType>
+			<PromotionType>PROMOTION_CHEATO_MASTER_FLAG</PromotionType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_CHEAT_LANDSKNUT</UnitType>
+			<PromotionType>PROMOTION_PARADROP</PromotionType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_CHEAT_LANDSKNUT</UnitType>
+			<PromotionType>PROMOTION_CHEATO_PARADROP_FLAG</PromotionType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_CHEAT_LANDSKNUT</UnitType>
+			<PromotionType>PROMOTION_CAN_MOVE_AFTER_ATTACKING</PromotionType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_CHEAT_LANDSKNUT</UnitType>
+			<PromotionType>PROMOTION_IGNORE_TERRAIN_COST</PromotionType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_CHEAT_LANDSKNUT</UnitType>
+			<PromotionType>PROMOTION_EXTENDED_PARADROP</PromotionType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_CHEAT_LANDSKNUT</UnitType>
+			<PromotionType>PROMOTION_CHEATO_BLITZ_FLAG</PromotionType>
+		</Row>
+	</Unit_FreePromotions>
+
+	<!-- ========================= -->
+	<!-- AI TYPES -->
+	<!-- ========================= -->
+	<Unit_AITypes>
+		<Row>
+			<UnitType>UNIT_CHEAT_LANDSKNUT</UnitType>
+			<UnitAIType>UNITAI_ATTACK</UnitAIType>
+		</Row>
+	</Unit_AITypes>
+
+	<!-- ========================= -->
+	<!-- FLAVOR -->
+	<!-- ========================= -->
+	<Unit_Flavors>
+		<Row>
+			<UnitType>UNIT_CHEAT_LANDSKNUT</UnitType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>30</Flavor>
+		</Row>
+	</Unit_Flavors>
+
+	<!-- ========================= -->
+	<!-- REGISTER //deprecated to prevent barbarians false spawn-->
+	<!-- ========================= -->
+	<!--	<Civilization_UnitClassOverrides>
+		<Row>
+			<CivilizationType>CIVILIZATION_BARBARIAN</CivilizationType>
+			<UnitClassType>UNITCLASS_CHEAT_LANDSKNUT</UnitClassType>
+			<UnitType/>
+		</Row>
+	</Civilization_UnitClassOverrides> -->
+
+	<!-- ========================= -->
+	<!-- TEXT -->
+	<!-- ========================= -->
+	<Language_en_US>
+		<Row Tag="TXT_KEY_UNIT_CHEAT_LANDSKNUT">
+			<Text>Landsknut</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CHEAT_LANDSKNUT_HELP">
+			<Text>High-mobility melee assault unit with paradrop capability.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CHEAT_LANDSKNUT_STRATEGY">
+			<Text>Deploy deep behind enemy lines and overwhelm defenses through rapid engagement.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CHEAT_LANDSKNUT_PEDIA">
+			<Text>The Landsknut is a fast-response melee unit designed for shock assault. Capable of paradrop insertion, it excels at breaching defenses and sustaining offensive pressure.</Text>
+		</Row>
+	</Language_en_US>
+
+</GameData>

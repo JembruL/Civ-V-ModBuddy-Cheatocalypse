@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+
+	<!-- ========================= -->
+	<!-- UNIT CLASSES -->
+	<!-- ========================= -->
+	<UnitClasses>
+		<Row>
+			<Type>UNITCLASS_CHEAT_WAYFINDER</Type>
+			<Description>TXT_KEY_UNIT_CHEAT_WAYFINDER</Description>
+			<DefaultUnit>UNIT_CHEAT_WAYFINDER</DefaultUnit>
+		</Row>
+	</UnitClasses>
+
+	<!-- ========================= -->
+	<!-- UNITS -->
+	<!-- ========================= -->
+	<Units>
+
+		<!-- WAYFINDER -->
+		<Row>
+			<Class>UNITCLASS_CHEAT_WAYFINDER</Class>
+			<Type>UNIT_CHEAT_WAYFINDER</Type>
+
+			<Moves>8</Moves>
+			<Cost>9999</Cost>
+			<HurryCostModifier>-100</HurryCostModifier>
+			<FaithCost>1</FaithCost>
+
+			<PrereqTech>TECH_AGRICULTURE</PrereqTech>
+
+			<DefaultUnitAI>UNITAI_SETTLE</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_CHEAT_WAYFINDER</Description>
+			<Help>TXT_KEY_UNIT_CHEAT_WAYFINDER_HELP</Help>
+
+			<CombatLimit>0</CombatLimit>
+			<Domain>DOMAIN_LAND</Domain>
+
+			<Found>true</Found>
+			<Special>SPECIALUNIT_SETTLER</Special>
+			<NoBadGoodies>true</NoBadGoodies>
+			<IgnoreBuildingDefense>true</IgnoreBuildingDefense>
+			<Capture>UNIT_WORKER</Capture>
+
+			<UnitArtInfo>ART_DEF_UNIT__SETTLER</UnitArtInfo>
+			<UnitArtInfoCulturalVariation>true</UnitArtInfoCulturalVariation>
+			<IconAtlas>UNIT_ATLAS_1</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+		</Row>
+	</Units>
+
+	<!-- ========================= -->
+	<!-- UNIT FREE PROMOTIONS -->
+	<!-- ========================= -->
+	<Unit_FreePromotions>
+		<Row>
+			<UnitType>UNIT_CHEAT_WAYFINDER</UnitType>
+			<PromotionType>PROMOTION_CHEATO_MASTER_FLAG</PromotionType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_CHEAT_WAYFINDER</UnitType>
+			<PromotionType>PROMOTION_PARADROP</PromotionType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_CHEAT_WAYFINDER</UnitType>
+			<PromotionType>PROMOTION_EXTENDED_PARADROP</PromotionType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_CHEAT_WAYFINDER</UnitType>
+			<PromotionType>PROMOTION_CHEATO_PARADROP_FLAG</PromotionType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_CHEAT_WAYFINDER</UnitType>
+			<PromotionType>PROMOTION_IGNORE_TERRAIN_COST</PromotionType>
+		</Row>
+	</Unit_FreePromotions>
+
+	<!-- ========================= -->
+	<!-- AI TYPES -->
+	<!-- ========================= -->
+	<Unit_AITypes>
+		<Row>
+			<UnitType>UNIT_CHEAT_WAYFINDER</UnitType>
+			<UnitAIType>UNITAI_SETTLE</UnitAIType>
+		</Row>
+	</Unit_AITypes>
+
+	<!-- ========================= -->
+	<!-- FLAVOR -->
+	<!-- ========================= -->
+	<!--<Unit_Flavors>
+		<Row>
+			<UnitType>UNIT_CHEAT_WAYFINDER</UnitType>
+			<FlavorType>FLAVOR_EXPANSION</FlavorType>
+			<Flavor>50</Flavor>
+		</Row>
+	</Unit_Flavors>-->
+
+	<!-- ========================= -->
+	<!-- REGISTER //deprecated to prevent barbarians false spawn-->
+	<!-- ========================= -->
+	<!--	<Civilization_UnitClassOverrides>
+		<Row>
+			<CivilizationType>CIVILIZATION_BARBARIAN</CivilizationType>
+			<UnitClassType>UNITCLASS_CHEAT_IRON_RAIN</UnitClassType>
+			<UnitType/>
+		</Row>
+	</Civilization_UnitClassOverrides> -->
+
+	<!-- ========================= -->
+	<!-- TEXT -->
+	<!-- ========================= -->
+	<Language_en_US>
+		<Row Tag="TXT_KEY_UNIT_CHEAT_WAYFINDER">
+			<Text>Wayfinder</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CHEAT_WAYFINDER_HELP">
+			<Text>Cheatocalypse fast expansion unit.</Text>
+		</Row>
+	</Language_en_US>
+
+</GameData>

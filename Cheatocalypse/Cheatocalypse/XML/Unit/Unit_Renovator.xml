@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+
+	<!-- ========================= -->
+	<!-- UNIT CLASSES -->
+	<!-- ========================= -->
+	<UnitClasses>
+		<Row>
+			<Type>UNITCLASS_CHEAT_RENOVATOR</Type>
+			<Description>TXT_KEY_UNIT_CHEAT_RENOVATOR</Description>
+			<DefaultUnit>UNIT_CHEAT_RENOVATOR</DefaultUnit>
+		</Row>
+	</UnitClasses>
+
+	<!-- ========================= -->
+	<!-- UNITS -->
+	<!-- ========================= -->
+	<Units>
+
+		<!-- RENOVATOR -->
+		<Row>
+			<Class>UNITCLASS_CHEAT_RENOVATOR</Class>
+			<Type>UNIT_CHEAT_RENOVATOR</Type>
+
+			<Moves>3</Moves>
+			<Cost>1</Cost>
+
+			<PrereqTech>TECH_AGRICULTURE</PrereqTech>
+
+			<DefaultUnitAI>UNITAI_WORKER</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_CHEAT_RENOVATOR</Description>
+			<Help>TXT_KEY_UNIT_CHEAT_RENOVATOR_HELP</Help>
+
+			<CombatClass>UNITCOMBAT_RECON</CombatClass>
+			<Domain>DOMAIN_LAND</Domain>
+
+			<UnitArtInfo>ART_DEF_UNIT_WORKER</UnitArtInfo>
+			<IconAtlas>UNIT_ATLAS_1</IconAtlas>
+			<PortraitIndex>1</PortraitIndex>
+		</Row>
+
+	</Units>
+
+	<!-- ========================= -->
+	<!-- UNIT FREE PROMOTIONS -->
+	<!-- ========================= -->
+	<Unit_FreePromotions>
+		<Row>
+			<UnitType>UNIT_CHEAT_RENOVATOR</UnitType>
+			<PromotionType>PROMOTION_CHEATO_MASTER_FLAG</PromotionType>
+		</Row>
+
+		<Row>
+			<UnitType>UNIT_CHEAT_RENOVATOR</UnitType>
+			<PromotionType>PROMOTION_CHEATO_PARADROP_FLAG</PromotionType>
+		</Row>
+
+		<Row>
+			<UnitType>UNIT_CHEAT_RENOVATOR</UnitType>
+			<PromotionType>PROMOTION_PARADROP</PromotionType>
+		</Row>
+	</Unit_FreePromotions>
+
+	<!-- ========================= -->
+	<!-- AI TYPES -->
+	<!-- ========================= -->
+	<Unit_AITypes>
+		<Row>
+			<UnitType>UNIT_CHEAT_RENOVATOR</UnitType>
+			<UnitAIType>UNITAI_WORKER</UnitAIType>
+		</Row>
+	</Unit_AITypes>
+
+	<!-- ========================= -->
+	<!-- FLAVOR -->
+	<!-- ========================= -->
+	<Unit_Flavors>
+		<Row>
+			<UnitType>UNIT_CHEAT_RENOVATOR</UnitType>
+			<FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
+			<Flavor>25</Flavor>
+		</Row>
+	</Unit_Flavors>
+
+	<!-- ========================= -->
+	<!-- REGISTER -->
+	<!-- ========================= -->
+	<Civilization_UnitClassOverrides>
+		<Row>
+			<CivilizationType>CIVILIZATION_BARBARIAN</CivilizationType>
+			<UnitClassType>UNITCLASS_CHEAT_RENOVATOR</UnitClassType>
+			<UnitType/>
+		</Row>
+	</Civilization_UnitClassOverrides>
+
+	<!-- ========================= -->
+	<!-- TEXT -->
+	<!-- ========================= -->
+	<Language_en_US>
+		<Row Tag="TXT_KEY_UNIT_CHEAT_RENOVATOR">
+			<Text>C-Renovator</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CHEAT_RENOVATOR_HELP">
+			<Text>Cheatocalypse advanced worker specialized in improvements.</Text>
+		</Row>
+	</Language_en_US>
+
+</GameData>

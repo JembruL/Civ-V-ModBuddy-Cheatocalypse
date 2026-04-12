@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 4/4/2026 8:38:10 PM -->
+<GameData>
+	
+	<Buildings>
+		<Row>
+			<Type>BUILDING_CHEATOCALYPSE_STATUE</Type>
+			<BuildingClass>BUILDINGCLASS_CHEATOCALYPSE_STATUE</BuildingClass>
+			<Cost>9999</Cost>
+			<HurryCostModifier>-100</HurryCostModifier>
+			<FaithCost>-1</FaithCost>
+			<PrereqTech>TECH_AGRICULTURE</PrereqTech>
+
+			<Description>TXT_KEY_BUILDING_CHEATOCALYPSE_STATUE</Description>
+			<Help>TXT_KEY_BUILDING_CHEATOCALYPSE_STATUE_HELP</Help>
+
+			<MinAreaSize>-1</MinAreaSize>
+			<NeverCapture>true</NeverCapture>
+			<NukeImmune>true</NukeImmune>
+			<Happiness>5</Happiness>
+
+			<!-- City defense -->
+			<Defense>500</Defense>
+			<ExtraCityHitPoints>250</ExtraCityHitPoints>
+
+			<!-- Art -->
+			<ArtDefineTag>MONUMENT</ArtDefineTag>
+			<PortraitIndex>21</PortraitIndex>
+			<IconAtlas>BW_ATLAS_1</IconAtlas>
+
+		</Row>
+	</Buildings>
+
+	<Building_YieldChanges>
+		<Row>
+			<BuildingType>BUILDING_CHEATOCALYPSE_STATUE</BuildingType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>5</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_CHEATOCALYPSE_STATUE</BuildingType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>20</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_CHEATOCALYPSE_STATUE</BuildingType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>15</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_CHEATOCALYPSE_STATUE</BuildingType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>25</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_CHEATOCALYPSE_STATUE</BuildingType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>10</Yield>
+		</Row>
+	</Building_YieldChanges>
+
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_CHEATOCALYPSE_STATUE</Type>
+			<DefaultBuilding>BUILDING_CHEATOCALYPSE_STATUE</DefaultBuilding>
+		</Row>
+	</BuildingClasses>
+
+	<Language_en_US>
+		<Row Tag="TXT_KEY_BUILDING_CHEATOCALYPSE_STATUE">
+			<Text>Cheatocalypse Statue</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_CHEATOCALYPSE_STATUE_HELP">
+			<Text>Cheatocalypse Reality override structure.</Text>
+		</Row>
+	</Language_en_US>
+  
+</GameData>
