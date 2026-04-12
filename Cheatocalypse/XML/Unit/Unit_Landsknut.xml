@@ -23,8 +23,8 @@
 			<Type>UNIT_CHEAT_LANDSKNUT</Type>
 
 			<!-- MELEE FOCUS -->
-			<Combat>200</Combat>
-			<RangedCombat>150</RangedCombat>
+			<Combat>220</Combat>
+			<RangedCombat>0</RangedCombat>
 
 			<!-- ========================= -->
 			<!-- PRODUCTION CONTROL -->
@@ -32,7 +32,7 @@
 			<Cost>9999</Cost> <!-- extreme cost → AI & barbarian deprioritize -->
 
 			<Moves>10</Moves>
-			<Range>2</Range>
+			<Range>0</Range>
 
 			<PrereqTech>TECH_AGRICULTURE</PrereqTech>
 			<ObsoleteTech></ObsoleteTech>
@@ -47,7 +47,7 @@
 			<Strategy>TXT_KEY_UNIT_CHEAT_LANDSKNUT_STRATEGY</Strategy>
 			<Civilopedia>TXT_KEY_UNIT_CHEAT_LANDSKNUT_PEDIA</Civilopedia>
 
-			<CombatClass>UNITCOMBAT_GUN</CombatClass> <!-- promotion filter + AI behavior -->
+			<CombatClass>UNITCOMBAT_MELEE</CombatClass> <!-- promotion filter + AI behavior -->
 			<Domain>DOMAIN_LAND</Domain>
 
 			<!-- ========================= -->
@@ -78,11 +78,11 @@
 			<!-- ========================= -->
 			<!-- ART -->
 			<!-- ========================= -->
-			<UnitArtInfo>ART_DEF_UNIT_U_FRENCH_MUSKETEER</UnitArtInfo>
+			<UnitArtInfo>ART_DEF_UNIT_U_GERMAN_LANDSKNECHT</UnitArtInfo>
 			<IconAtlas>UNIT_ATLAS_1</IconAtlas>
-			<PortraitIndex>40</PortraitIndex>
+			<PortraitIndex>34</PortraitIndex>
 <!-- 			<UnitFlagAtlas>EXPANSION_UNIT_FLAG_ATLAS</UnitFlagAtlas> -->
-			<UnitFlagIconOffset>39</UnitFlagIconOffset>
+			<UnitFlagIconOffset>33</UnitFlagIconOffset>
 
 		</Row>
 
@@ -119,10 +119,6 @@
 		<Row>
 			<UnitType>UNIT_CHEAT_LANDSKNUT</UnitType>
 			<PromotionType>PROMOTION_CHEATO_BLITZ_FLAG</PromotionType>
-		</Row>
-		<Row>
-			<UnitType>UNIT_CHEAT_LANDSKNUT</UnitType>
-			<PromotionType>PROMOTION_INDIRECT_FIRE</PromotionType>
 		</Row>
 	</Unit_FreePromotions>
 
