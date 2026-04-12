@@ -35,6 +35,7 @@ for promo in GameInfo.UnitPromotions() do
     and promo.Type ~= "PROMOTION_CHEATO_MASTER_FLAG"
     and promo.Type ~= "PROMOTION_CHEATO_STATUE_BUFF"
     and promo.Type ~= "PROMOTION_CHEATO_PARADROP_FLAG"
+	and promo.Type ~= "PROMOTION_CHEATO_BLITZ_FLAG"
     then
         table.insert(CHEATO_PROMO_CACHE, promo.ID)
     end

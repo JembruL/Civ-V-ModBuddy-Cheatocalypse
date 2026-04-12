@@ -72,6 +72,10 @@
 			<UnitType>UNIT_CHEAT_ENGINEER</UnitType>
 			<PromotionType>PROMOTION_IGNORE_TERRAIN_COST</PromotionType>
 		</Row>
+		<Row>
+			<UnitType>UNIT_CHEAT_ENGINEER</UnitType>
+			<PromotionType>PROMOTION_CHEATO_BLITZ_FLAG</PromotionType>
+		</Row>
 	</Unit_FreePromotions>
 
 	<!-- ========================= -->

@@ -79,6 +79,19 @@
 			<PediaType>PEDIA_ATTRIBUTES</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_CHEATO_STATUE_BUFF</PediaEntry>
 		</Row>
+
+		<Row>
+			<Type>PROMOTION_CHEATO_BLITZ_FLAG</Type>
+			<Description>TXT_KEY_PROMOTION_CHEATO_BLITZ_FLAG</Description>
+			<Help>TXT_KEY_PROMOTION_CHEATO_BLITZ_FLAG_HELP</Help>
+			<CannotBeChosen>true</CannotBeChosen>
+			<LostWithUpgrade>false</LostWithUpgrade>
+			<Blitz>true</Blitz>
+			<PortraitIndex>52</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_CHEATO_BLITZ_FLAG</PediaEntry>
+		</Row>
 		
 	</UnitPromotions>
 
@@ -123,6 +136,13 @@
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_CHEATO_STATUE_BUFF_HELP">
 			<Text>Cheatocalypse Cheat Statue Buff.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_PROMOTION_CHEATO_BLITZ_FLAG">
+			<Text>Cheatocalypse Blitz Flag</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_CHEATO_BLITZ_FLAG_HELP">
+			<Text>Internal system flag. Allows action after movement.</Text>
 		</Row>
 	</Language_en_US>
 </GameData>

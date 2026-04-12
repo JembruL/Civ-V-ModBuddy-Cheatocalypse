@@ -49,6 +49,7 @@ end
 -- BUILD EVENT — FIXED
 -- =========================================================
 GameEvents.BuildFinished.Add(function(playerID, unitID, x, y, buildType, bSucceeded)
+    print("BuildFinished fired: playerID="..tostring(playerID).." unitID="..tostring(unitID).." succeeded="..tostring(bSucceeded))
 
     if not bSucceeded then return end
 
@@ -56,13 +57,15 @@ GameEvents.BuildFinished.Add(function(playerID, unitID, x, y, buildType, bSuccee
     if not pPlayer or not pPlayer:IsHuman() then return end
 
     local unit = pPlayer:GetUnitByID(unitID)
-    if not IsEligibleEngineer(unit) then return end
+    print("Unit found: "..tostring(unit ~= nil))
+    if not IsEligibleEngineer(unit) then
+        print("Not eligible engineer")
+        return
+    end
 
-    -- CRITICAL FIX: SetMoves harus dipanggil DUA KALI
-    -- Civ V engine override moves setelah BuildFinished fire pertama kali
-    -- Double-set memastikan nilai tertanam setelah engine override
     unit:SetMoves(unit:MaxMoves())
     unit:SetMoves(unit:MaxMoves())
+    print("Moves restored to: "..tostring(unit:GetMoves()))
 end)
 
 -- =========================================================
