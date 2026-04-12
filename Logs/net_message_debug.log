@@ -1,2 +1,969 @@
-[87483.390] DBG: Civilization 5: App Version: 403694 FINAL_RELEASE, GameCore: {83F34FF0-3D60-43E7-AEDB-82C79867EE3F}, version 1.0.0
-[87489.828] DBG: Civilization 5: App Version: 403694 FINAL_RELEASE, GameCore: {83F34FF0-3D60-43E7-AEDB-82C79867EE3F}, version 1.0.0
+[90006.984] DBG: Civilization 5: App Version: 403694 FINAL_RELEASE, GameCore: {83F34FF0-3D60-43E7-AEDB-82C79867EE3F}, version 1.0.0
+[90013.296] DBG: Civilization 5: App Version: 403694 FINAL_RELEASE, GameCore: {83F34FF0-3D60-43E7-AEDB-82C79867EE3F}, version 1.0.0
+[90030.453] DBG: Evaluating Map Path: (Success)
+Original Path: Assets\DLC\Expansion\Maps\Boreal.lua
+New Path: Assets\DLC\Expansion\Maps\Boreal.lua
+[90030.468] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 0 Boudicca
+[90032.531] DBG: setTimeoutCheck(true)
+[90081.734] DBG: UpdateMoves() : player.setEndTurn(true) called for player 0 Boudicca
+[90081.843] DBG: UpdateMoves() : player 0 Boudicca running AutoMission (NO_MISSIONAI) on Engineer id=24576
+[90081.843] DBG: UpdateMoves() : player 0 Boudicca running AutoMission (NO_MISSIONAI) on Warrior id=16385
+[90081.843] DBG: UpdateMoves() : player 0 Boudicca running AutoMission (NO_MISSIONAI) on Landsknut id=32770
+[90081.843] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Boudicca
+[90081.843] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Boudicca
+[90081.843] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 1 Askia
+[90081.953] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 1 Askia
+[90081.953] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 1 Askia
+[90081.953] DBG: UpdateMoves() : player 1 Askia running AutoMission (NO_MISSIONAI) on Settler id=8192
+[90081.953] DBG: UpdateMoves() : player 1 Askia running AutoMission (MISSIONAI_EXPLORE) on Warrior id=16385
+[90081.953] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Askia
+[90081.953] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Askia
+[90081.953] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 2 Maria Theresa
+[90082.062] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 2 Maria Theresa
+[90082.062] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 2 Maria Theresa
+[90082.062] DBG: UpdateMoves() : player 2 Maria Theresa running AutoMission (NO_MISSIONAI) on Settler id=8192
+[90082.062] DBG: UpdateMoves() : player 2 Maria Theresa running AutoMission (MISSIONAI_EXPLORE) on Warrior id=16385
+[90082.062] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Maria Theresa
+[90082.062] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Maria Theresa
+[90082.062] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 3 Gajah Mada
+[90082.171] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 3 Gajah Mada
+[90082.171] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 3 Gajah Mada
+[90082.171] DBG: UpdateMoves() : player 3 Gajah Mada running AutoMission (NO_MISSIONAI) on Settler id=8192
+[90082.171] DBG: UpdateMoves() : player 3 Gajah Mada running AutoMission (MISSIONAI_EXPLORE) on Warrior id=16385
+[90082.171] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Gajah Mada
+[90082.171] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Gajah Mada
+[90082.171] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 4 Bismarck
+[90082.281] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 4 Bismarck
+[90082.281] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 4 Bismarck
+[90082.281] DBG: UpdateMoves() : player 4 Bismarck running AutoMission (NO_MISSIONAI) on Settler id=8192
+[90082.281] DBG: UpdateMoves() : player 4 Bismarck running AutoMission (MISSIONAI_EXPLORE) on Warrior id=16385
+[90082.281] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Bismarck
+[90082.281] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Bismarck
+[90082.281] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 5 Attila
+[90082.390] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 5 Attila
+[90082.390] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 5 Attila
+[90082.390] DBG: UpdateMoves() : player 5 Attila running AutoMission (NO_MISSIONAI) on Settler id=8192
+[90082.390] DBG: UpdateMoves() : player 5 Attila running AutoMission (MISSIONAI_EXPLORE) on Warrior id=16385
+[90082.390] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Attila
+[90082.390] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Attila
+[90082.390] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 22 Buenos Aires
+[90082.500] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 22 Buenos Aires
+[90082.500] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 22 Buenos Aires
+[90082.500] DBG: UpdateMoves() : player 22 Buenos Aires running AutoMission (NO_MISSIONAI) on Settler id=8192
+[90082.500] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Buenos Aires
+[90082.500] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Buenos Aires
+[90082.500] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 23 Singapore
+[90082.609] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 23 Singapore
+[90082.609] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 23 Singapore
+[90082.609] DBG: UpdateMoves() : player 23 Singapore running AutoMission (NO_MISSIONAI) on Settler id=8192
+[90082.609] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Singapore
+[90082.609] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Singapore
+[90082.609] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 24 Jerusalem
+[90082.718] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 24 Jerusalem
+[90082.718] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 24 Jerusalem
+[90082.718] DBG: UpdateMoves() : player 24 Jerusalem running AutoMission (NO_MISSIONAI) on Settler id=8192
+[90082.718] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Jerusalem
+[90082.718] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Jerusalem
+[90082.718] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 25 Mogadishu
+[90082.828] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 25 Mogadishu
+[90082.828] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 25 Mogadishu
+[90082.828] DBG: UpdateMoves() : player 25 Mogadishu running AutoMission (NO_MISSIONAI) on Settler id=8192
+[90082.828] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Mogadishu
+[90082.828] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Mogadishu
+[90082.828] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 26 Kabul
+[90082.937] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 26 Kabul
+[90082.937] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 26 Kabul
+[90082.937] DBG: UpdateMoves() : player 26 Kabul running AutoMission (NO_MISSIONAI) on Settler id=8192
+[90082.937] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Kabul
+[90082.937] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Kabul
+[90082.937] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 27 La Venta
+[90083.046] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 27 La Venta
+[90083.046] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 27 La Venta
+[90083.046] DBG: UpdateMoves() : player 27 La Venta running AutoMission (NO_MISSIONAI) on Settler id=8192
+[90083.046] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for La Venta
+[90083.046] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player La Venta
+[90083.046] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 28 Colombo
+[90083.156] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 28 Colombo
+[90083.156] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 28 Colombo
+[90083.156] DBG: UpdateMoves() : player 28 Colombo running AutoMission (NO_MISSIONAI) on Settler id=8192
+[90083.156] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Colombo
+[90083.156] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Colombo
+[90083.156] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 29 Wittenberg
+[90083.265] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 29 Wittenberg
+[90083.265] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 29 Wittenberg
+[90083.265] DBG: UpdateMoves() : player 29 Wittenberg running AutoMission (NO_MISSIONAI) on Settler id=8192
+[90083.265] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Wittenberg
+[90083.265] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Wittenberg
+[90083.265] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 30 Ormus
+[90083.375] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 30 Ormus
+[90083.375] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 30 Ormus
+[90083.375] DBG: UpdateMoves() : player 30 Ormus running AutoMission (NO_MISSIONAI) on Settler id=8192
+[90083.375] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Ormus
+[90083.375] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Ormus
+[90083.375] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 31 Lhasa
+[90083.484] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 31 Lhasa
+[90083.484] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 31 Lhasa
+[90083.484] DBG: UpdateMoves() : player 31 Lhasa running AutoMission (NO_MISSIONAI) on Settler id=8192
+[90083.484] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Lhasa
+[90083.484] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Lhasa
+[90083.484] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 32 Milan
+[90083.593] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 32 Milan
+[90083.593] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 32 Milan
+[90083.593] DBG: UpdateMoves() : player 32 Milan running AutoMission (NO_MISSIONAI) on Settler id=8192
+[90083.593] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Milan
+[90083.593] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Milan
+[90083.593] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 33 Belgrade
+[90083.703] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 33 Belgrade
+[90083.703] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 33 Belgrade
+[90083.703] DBG: UpdateMoves() : player 33 Belgrade running AutoMission (NO_MISSIONAI) on Settler id=8192
+[90083.703] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Belgrade
+[90083.703] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Belgrade
+[90083.703] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 63 Barbarian
+[90083.812] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 63 Barbarian
+[90083.812] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 63 Barbarian
+[90083.812] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Barbarian
+[90083.812] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Barbarian
+[90084.125] DBG: Game Turn 1
+[90084.125] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 0 Boudicca
+[90201.265] DBG: UpdateMoves() : player.setEndTurn(true) called for player 0 Boudicca
+[90201.375] DBG: UpdateMoves() : player 0 Boudicca running AutoMission (NO_MISSIONAI) on Engineer id=24576
+[90201.375] DBG: UpdateMoves() : player 0 Boudicca running AutoMission (NO_MISSIONAI) on Warrior id=16385
+[90201.375] DBG: UpdateMoves() : player 0 Boudicca running AutoMission (NO_MISSIONAI) on Landsknut id=32770
+[90201.375] DBG: UpdateMoves() : player 0 Boudicca running AutoMission (NO_MISSIONAI) on Iron Rain Walker [I.R.C] id=40963
+[90201.375] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Boudicca
+[90201.375] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Boudicca
+[90201.375] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 1 Askia
+[90201.484] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 1 Askia
+[90201.484] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 1 Askia
+[90201.484] DBG: UpdateMoves() : player 1 Askia running AutoMission (MISSIONAI_EXPLORE) on Warrior id=16385
+[90201.484] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Askia
+[90201.484] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Askia
+[90201.484] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 2 Maria Theresa
+[90201.593] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 2 Maria Theresa
+[90201.593] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 2 Maria Theresa
+[90201.593] DBG: UpdateMoves() : player 2 Maria Theresa running AutoMission (MISSIONAI_EXPLORE) on Warrior id=16385
+[90201.593] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Maria Theresa
+[90201.593] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Maria Theresa
+[90201.593] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 3 Gajah Mada
+[90201.703] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 3 Gajah Mada
+[90201.703] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 3 Gajah Mada
+[90201.703] DBG: UpdateMoves() : player 3 Gajah Mada running AutoMission (MISSIONAI_EXPLORE) on Warrior id=16385
+[90201.703] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Gajah Mada
+[90201.703] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Gajah Mada
+[90201.703] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 4 Bismarck
+[90201.812] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 4 Bismarck
+[90201.812] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 4 Bismarck
+[90201.812] DBG: UpdateMoves() : player 4 Bismarck running AutoMission (MISSIONAI_EXPLORE) on Warrior id=16385
+[90201.812] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Bismarck
+[90201.812] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Bismarck
+[90201.812] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 5 Attila
+[90201.921] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 5 Attila
+[90201.921] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 5 Attila
+[90201.921] DBG: UpdateMoves() : player 5 Attila running AutoMission (MISSIONAI_EXPLORE) on Warrior id=16385
+[90201.921] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Attila
+[90201.921] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Attila
+[90201.921] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 22 Buenos Aires
+[90202.031] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 22 Buenos Aires
+[90202.031] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 22 Buenos Aires
+[90202.031] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Buenos Aires
+[90202.031] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Buenos Aires
+[90202.031] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 23 Singapore
+[90202.140] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 23 Singapore
+[90202.140] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 23 Singapore
+[90202.140] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Singapore
+[90202.140] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Singapore
+[90202.140] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 24 Jerusalem
+[90202.250] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 24 Jerusalem
+[90202.250] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 24 Jerusalem
+[90202.250] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Jerusalem
+[90202.359] DBG: Game Turn 2
+[90202.359] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 0 Boudicca
+[90276.625] DBG: UpdateMoves() : player.setEndTurn(true) called for player 0 Boudicca
+[90276.734] DBG: UpdateMoves() : player 0 Boudicca running AutoMission (NO_MISSIONAI) on Engineer id=24576
+[90276.734] DBG: UpdateMoves() : player 0 Boudicca running AutoMission (NO_MISSIONAI) on Warrior id=16385
+[90276.734] DBG: UpdateMoves() : player 0 Boudicca running AutoMission (NO_MISSIONAI) on Landsknut id=32770
+[90276.734] DBG: UpdateMoves() : player 0 Boudicca running AutoMission (NO_MISSIONAI) on Iron Rain Walker [I.R.C] id=40963
+[90276.734] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Boudicca
+[90276.734] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Boudicca
+[90276.734] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 1 Askia
+[90276.843] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 1 Askia
+[90276.843] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 1 Askia
+[90276.843] DBG: UpdateMoves() : player 1 Askia running AutoMission (MISSIONAI_EXPLORE) on Warrior id=16385
+[90276.843] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Askia
+[90276.843] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Askia
+[90276.843] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 2 Maria Theresa
+[90276.953] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 2 Maria Theresa
+[90276.953] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 2 Maria Theresa
+[90276.953] DBG: UpdateMoves() : player 2 Maria Theresa running AutoMission (NO_MISSIONAI) on Spearman id=24576
+[90276.953] DBG: UpdateMoves() : player 2 Maria Theresa running AutoMission (MISSIONAI_EXPLORE) on Warrior id=16385
+[90276.953] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Maria Theresa
+[90276.953] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Maria Theresa
+[90276.953] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 3 Gajah Mada
+[90277.062] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 3 Gajah Mada
+[90277.062] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 3 Gajah Mada
+[90277.062] DBG: UpdateMoves() : player 3 Gajah Mada running AutoMission (MISSIONAI_EXPLORE) on Warrior id=16385
+[90277.062] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Gajah Mada
+[90277.062] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Gajah Mada
+[90277.062] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 4 Bismarck
+[90277.171] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 4 Bismarck
+[90277.171] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 4 Bismarck
+[90277.171] DBG: UpdateMoves() : player 4 Bismarck running AutoMission (MISSIONAI_EXPLORE) on Warrior id=16385
+[90277.171] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Bismarck
+[90277.171] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Bismarck
+[90277.171] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 5 Attila
+[90277.281] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 5 Attila
+[90277.281] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 5 Attila
+[90277.281] DBG: UpdateMoves() : player 5 Attila running AutoMission (MISSIONAI_EXPLORE) on Warrior id=16385
+[90277.281] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Attila
+[90277.281] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Attila
+[90277.281] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 22 Buenos Aires
+[90277.390] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 22 Buenos Aires
+[90277.390] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 22 Buenos Aires
+[90277.390] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Buenos Aires
+[90277.390] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Buenos Aires
+[90277.390] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 23 Singapore
+[90277.500] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 23 Singapore
+[90277.500] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 23 Singapore
+[90277.500] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Singapore
+[90277.500] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Singapore
+[90277.500] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 25 Mogadishu
+[90277.609] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 25 Mogadishu
+[90277.609] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 25 Mogadishu
+[90277.609] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Mogadishu
+[90277.609] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Mogadishu
+[90277.609] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 26 Kabul
+[90277.718] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 26 Kabul
+[90277.718] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 26 Kabul
+[90277.718] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Kabul
+[90277.718] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Kabul
+[90277.718] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 27 La Venta
+[90277.828] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 27 La Venta
+[90277.828] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 27 La Venta
+[90277.828] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for La Venta
+[90277.828] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player La Venta
+[90277.828] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 28 Colombo
+[90277.937] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 28 Colombo
+[90277.937] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 28 Colombo
+[90277.937] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Colombo
+[90277.937] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Colombo
+[90277.937] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 29 Wittenberg
+[90278.046] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 29 Wittenberg
+[90278.046] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 29 Wittenberg
+[90278.046] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Wittenberg
+[90278.046] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Wittenberg
+[90278.046] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 30 Ormus
+[90278.156] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 30 Ormus
+[90278.156] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 30 Ormus
+[90278.156] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Ormus
+[90278.156] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Ormus
+[90278.156] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 31 Lhasa
+[90278.265] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 31 Lhasa
+[90278.265] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 31 Lhasa
+[90278.265] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Lhasa
+[90278.265] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Lhasa
+[90278.265] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 32 Milan
+[90278.375] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 32 Milan
+[90278.375] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 32 Milan
+[90278.375] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Milan
+[90278.375] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Milan
+[90278.375] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 33 Belgrade
+[90278.484] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 33 Belgrade
+[90278.484] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 33 Belgrade
+[90278.484] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Belgrade
+[90278.484] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Belgrade
+[90278.484] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 63 Barbarian
+[90278.593] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 63 Barbarian
+[90278.593] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 63 Barbarian
+[90278.593] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=8192
+[90278.593] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=16385
+[90278.593] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=24578
+[90278.593] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=32771
+[90278.593] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=40964
+[90278.593] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=49157
+[90278.593] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=57350
+[90278.593] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=65543
+[90278.593] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=73736
+[90278.593] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=81929
+[90278.593] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=98315
+[90278.593] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=106508
+[90278.593] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Barbarian
+[90278.593] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Barbarian
+[90278.906] DBG: Game Turn 3
+[90278.906] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 0 Boudicca
+[90349.234] DBG: UpdateMoves() : player.setEndTurn(true) called for player 0 Boudicca
+[90349.343] DBG: UpdateMoves() : player 0 Boudicca running AutoMission (NO_MISSIONAI) on Engineer id=24576
+[90349.343] DBG: UpdateMoves() : player 0 Boudicca running AutoMission (NO_MISSIONAI) on Warrior id=16385
+[90349.343] DBG: UpdateMoves() : player 0 Boudicca running AutoMission (NO_MISSIONAI) on Landsknut id=32770
+[90349.343] DBG: UpdateMoves() : player 0 Boudicca running AutoMission (NO_MISSIONAI) on Iron Rain Walker [I.R.C] id=40963
+[90349.343] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Boudicca
+[90349.343] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Boudicca
+[90349.343] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 1 Askia
+[90349.453] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 1 Askia
+[90349.453] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 1 Askia
+[90349.453] DBG: UpdateMoves() : player 1 Askia running AutoMission (MISSIONAI_EXPLORE) on Warrior id=16385
+[90349.453] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Askia
+[90349.453] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Askia
+[90349.453] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 2 Maria Theresa
+[90349.562] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 2 Maria Theresa
+[90349.562] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 2 Maria Theresa
+[90349.562] DBG: UpdateMoves() : player 2 Maria Theresa running AutoMission (MISSIONAI_EXPLORE) on Spearman id=24576
+[90349.562] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Maria Theresa
+[90349.562] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Maria Theresa
+[90349.562] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 3 Gajah Mada
+[90349.671] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 3 Gajah Mada
+[90349.671] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 3 Gajah Mada
+[90349.671] DBG: UpdateMoves() : player 3 Gajah Mada running AutoMission (MISSIONAI_EXPLORE) on Warrior id=16385
+[90349.671] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Gajah Mada
+[90349.671] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Gajah Mada
+[90349.671] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 4 Bismarck
+[90349.781] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 4 Bismarck
+[90349.781] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 4 Bismarck
+[90349.781] DBG: UpdateMoves() : player 4 Bismarck running AutoMission (MISSIONAI_EXPLORE) on Warrior id=16385
+[90349.781] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Bismarck
+[90349.781] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Bismarck
+[90349.781] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 5 Attila
+[90349.890] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 5 Attila
+[90349.890] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 5 Attila
+[90349.890] DBG: UpdateMoves() : player 5 Attila running AutoMission (MISSIONAI_EXPLORE) on Warrior id=16385
+[90349.890] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Attila
+[90349.890] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Attila
+[90349.890] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 22 Buenos Aires
+[90350.000] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 22 Buenos Aires
+[90350.000] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 22 Buenos Aires
+[90350.000] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Buenos Aires
+[90350.000] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Buenos Aires
+[90350.000] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 23 Singapore
+[90350.109] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 23 Singapore
+[90350.109] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 23 Singapore
+[90350.109] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Singapore
+[90350.109] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Singapore
+[90350.109] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 25 Mogadishu
+[90350.218] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 25 Mogadishu
+[90350.218] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 25 Mogadishu
+[90350.218] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Mogadishu
+[90350.218] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Mogadishu
+[90350.218] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 26 Kabul
+[90350.328] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 26 Kabul
+[90350.328] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 26 Kabul
+[90350.328] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Kabul
+[90350.328] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Kabul
+[90350.328] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 27 La Venta
+[90350.437] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 27 La Venta
+[90350.437] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 27 La Venta
+[90350.437] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for La Venta
+[90350.437] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player La Venta
+[90350.437] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 28 Colombo
+[90350.546] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 28 Colombo
+[90350.546] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 28 Colombo
+[90350.546] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Colombo
+[90350.546] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Colombo
+[90350.546] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 29 Wittenberg
+[90350.656] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 29 Wittenberg
+[90350.656] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 29 Wittenberg
+[90350.656] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Wittenberg
+[90350.656] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Wittenberg
+[90350.656] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 30 Ormus
+[90350.765] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 30 Ormus
+[90350.765] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 30 Ormus
+[90350.765] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Ormus
+[90350.765] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Ormus
+[90350.765] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 31 Lhasa
+[90350.875] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 31 Lhasa
+[90350.875] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 31 Lhasa
+[90350.875] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Lhasa
+[90350.875] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Lhasa
+[90350.875] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 32 Milan
+[90350.984] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 32 Milan
+[90350.984] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 32 Milan
+[90350.984] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Milan
+[90350.984] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Milan
+[90350.984] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 33 Belgrade
+[90351.093] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 33 Belgrade
+[90351.093] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 33 Belgrade
+[90351.093] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Belgrade
+[90351.093] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Belgrade
+[90351.093] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 63 Barbarian
+[90351.203] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 63 Barbarian
+[90351.203] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 63 Barbarian
+[90351.203] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=8192
+[90351.203] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=16385
+[90351.203] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=24578
+[90351.203] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=32771
+[90351.203] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=40964
+[90351.203] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=49157
+[90351.203] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=57350
+[90351.203] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=65543
+[90351.203] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=73736
+[90351.203] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=81929
+[90351.203] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=114698
+[90351.203] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=98315
+[90351.203] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=106508
+[90351.203] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Barbarian
+[90351.203] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Barbarian
+[90351.312] DBG: Game Turn 4
+[90351.312] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 0 Boudicca
+[90437.625] DBG: UpdateMoves() : player.setEndTurn(true) called for player 0 Boudicca
+[90437.734] DBG: UpdateMoves() : player 0 Boudicca running AutoMission (NO_MISSIONAI) on Engineer id=24576
+[90437.734] DBG: UpdateMoves() : player 0 Boudicca running AutoMission (NO_MISSIONAI) on Warrior id=16385
+[90437.734] DBG: UpdateMoves() : player 0 Boudicca running AutoMission (NO_MISSIONAI) on Landsknut id=32770
+[90437.734] DBG: UpdateMoves() : player 0 Boudicca running AutoMission (NO_MISSIONAI) on Iron Rain Walker [I.R.C] id=40963
+[90437.734] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Boudicca
+[90437.734] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Boudicca
+[90437.734] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 1 Askia
+[90437.843] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 1 Askia
+[90437.843] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 1 Askia
+[90437.843] DBG: UpdateMoves() : player 1 Askia running AutoMission (MISSIONAI_EXPLORE) on Warrior id=16385
+[90437.843] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Askia
+[90437.843] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Askia
+[90437.843] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 2 Maria Theresa
+[90437.953] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 2 Maria Theresa
+[90437.953] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 2 Maria Theresa
+[90437.953] DBG: UpdateMoves() : player 2 Maria Theresa running AutoMission (MISSIONAI_EXPLORE) on Spearman id=24576
+[90437.953] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Maria Theresa
+[90437.953] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Maria Theresa
+[90437.953] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 3 Gajah Mada
+[90438.062] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 3 Gajah Mada
+[90438.062] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 3 Gajah Mada
+[90438.062] DBG: UpdateMoves() : player 3 Gajah Mada running AutoMission (MISSIONAI_EXPLORE) on Warrior id=16385
+[90438.062] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Gajah Mada
+[90438.062] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Gajah Mada
+[90438.062] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 4 Bismarck
+[90438.171] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 4 Bismarck
+[90438.171] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 4 Bismarck
+[90438.171] DBG: UpdateMoves() : player 4 Bismarck running AutoMission (MISSIONAI_EXPLORE) on Warrior id=16385
+[90438.171] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Bismarck
+[90438.171] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Bismarck
+[90438.171] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 5 Attila
+[90438.281] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 5 Attila
+[90438.281] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 5 Attila
+[90438.281] DBG: UpdateMoves() : player 5 Attila running AutoMission (MISSIONAI_EXPLORE) on Warrior id=16385
+[90438.281] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Attila
+[90438.281] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Attila
+[90438.281] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 22 Buenos Aires
+[90438.390] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 22 Buenos Aires
+[90438.390] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 22 Buenos Aires
+[90438.390] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Buenos Aires
+[90438.390] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Buenos Aires
+[90438.390] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 23 Singapore
+[90438.500] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 23 Singapore
+[90438.500] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 23 Singapore
+[90438.500] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Singapore
+[90438.500] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Singapore
+[90438.500] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 25 Mogadishu
+[90438.609] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 25 Mogadishu
+[90438.609] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 25 Mogadishu
+[90438.609] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Mogadishu
+[90438.609] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Mogadishu
+[90438.609] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 26 Kabul
+[90438.718] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 26 Kabul
+[90438.718] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 26 Kabul
+[90438.718] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Kabul
+[90438.718] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Kabul
+[90438.718] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 27 La Venta
+[90438.828] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 27 La Venta
+[90438.828] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 27 La Venta
+[90438.828] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for La Venta
+[90438.828] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player La Venta
+[90438.828] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 28 Colombo
+[90438.937] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 28 Colombo
+[90438.937] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 28 Colombo
+[90438.937] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Colombo
+[90438.937] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Colombo
+[90438.937] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 29 Wittenberg
+[90439.046] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 29 Wittenberg
+[90439.046] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 29 Wittenberg
+[90439.046] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Wittenberg
+[90439.046] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Wittenberg
+[90439.046] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 30 Ormus
+[90439.156] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 30 Ormus
+[90439.156] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 30 Ormus
+[90439.156] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Ormus
+[90439.156] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Ormus
+[90439.156] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 31 Lhasa
+[90439.265] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 31 Lhasa
+[90439.265] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 31 Lhasa
+[90439.265] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Lhasa
+[90439.265] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Lhasa
+[90439.265] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 32 Milan
+[90439.375] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 32 Milan
+[90439.375] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 32 Milan
+[90439.375] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Milan
+[90439.375] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Milan
+[90439.375] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 33 Belgrade
+[90439.484] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 33 Belgrade
+[90439.484] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 33 Belgrade
+[90439.484] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Belgrade
+[90439.484] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Belgrade
+[90439.484] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 63 Barbarian
+[90439.593] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 63 Barbarian
+[90439.593] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 63 Barbarian
+[90439.593] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=8192
+[90439.593] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=16385
+[90439.593] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=24578
+[90439.593] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=32771
+[90439.593] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=49157
+[90439.593] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=57350
+[90439.593] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=65543
+[90439.593] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=73736
+[90439.593] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=81929
+[90439.593] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=114698
+[90439.593] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=98315
+[90439.593] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=106508
+[90439.593] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=122893
+[90439.593] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Barbarian
+[90439.593] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Barbarian
+[90439.906] DBG: Game Turn 5
+[90439.906] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 0 Boudicca
+[90530.359] DBG: UpdateMoves() : player.setEndTurn(true) called for player 0 Boudicca
+[90530.468] DBG: UpdateMoves() : player 0 Boudicca running AutoMission (NO_MISSIONAI) on Engineer id=24576
+[90530.468] DBG: UpdateMoves() : player 0 Boudicca running AutoMission (NO_MISSIONAI) on Warrior id=16385
+[90530.468] DBG: UpdateMoves() : player 0 Boudicca running AutoMission (NO_MISSIONAI) on Landsknut id=32770
+[90530.468] DBG: UpdateMoves() : player 0 Boudicca running AutoMission (NO_MISSIONAI) on Iron Rain Walker [I.R.C] id=40963
+[90530.468] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Boudicca
+[90530.468] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Boudicca
+[90530.468] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 1 Askia
+[90530.578] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 1 Askia
+[90530.578] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 1 Askia
+[90530.578] DBG: UpdateMoves() : player 1 Askia running AutoMission (MISSIONAI_EXPLORE) on Warrior id=16385
+[90530.578] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Askia
+[90530.578] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Askia
+[90530.578] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 2 Maria Theresa
+[90530.687] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 2 Maria Theresa
+[90530.687] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 2 Maria Theresa
+[90530.687] DBG: UpdateMoves() : player 2 Maria Theresa running AutoMission (MISSIONAI_EXPLORE) on Spearman id=24576
+[90530.687] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Maria Theresa
+[90530.687] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Maria Theresa
+[90530.687] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 3 Gajah Mada
+[90532.437] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 3 Gajah Mada
+[90532.437] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 3 Gajah Mada
+[90532.437] DBG: UpdateMoves() : player 3 Gajah Mada running AutoMission (MISSIONAI_EXPLORE) on Warrior id=16385
+[90532.437] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Gajah Mada
+[90532.437] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Gajah Mada
+[90532.437] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 4 Bismarck
+[90532.546] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 4 Bismarck
+[90532.546] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 4 Bismarck
+[90532.546] DBG: UpdateMoves() : player 4 Bismarck running AutoMission (MISSIONAI_EXPLORE) on Warrior id=16385
+[90532.546] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Bismarck
+[90532.546] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Bismarck
+[90532.546] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 5 Attila
+[90532.656] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 5 Attila
+[90532.656] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 5 Attila
+[90532.656] DBG: UpdateMoves() : player 5 Attila running AutoMission (MISSIONAI_EXPLORE) on Warrior id=16385
+[90532.656] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Attila
+[90532.656] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Attila
+[90532.656] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 22 Buenos Aires
+[90532.765] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 22 Buenos Aires
+[90532.765] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 22 Buenos Aires
+[90532.765] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Buenos Aires
+[90532.765] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Buenos Aires
+[90532.765] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 23 Singapore
+[90532.875] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 23 Singapore
+[90532.875] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 23 Singapore
+[90532.875] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Singapore
+[90532.875] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Singapore
+[90532.875] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 25 Mogadishu
+[90532.984] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 25 Mogadishu
+[90532.984] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 25 Mogadishu
+[90532.984] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Mogadishu
+[90532.984] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Mogadishu
+[90532.984] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 26 Kabul
+[90533.093] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 26 Kabul
+[90533.093] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 26 Kabul
+[90533.093] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Kabul
+[90533.093] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Kabul
+[90533.093] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 27 La Venta
+[90533.203] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 27 La Venta
+[90533.203] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 27 La Venta
+[90533.203] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for La Venta
+[90533.203] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player La Venta
+[90533.203] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 28 Colombo
+[90533.312] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 28 Colombo
+[90533.312] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 28 Colombo
+[90533.312] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Colombo
+[90533.312] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Colombo
+[90533.312] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 29 Wittenberg
+[90533.421] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 29 Wittenberg
+[90533.421] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 29 Wittenberg
+[90533.421] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Wittenberg
+[90533.421] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Wittenberg
+[90533.421] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 30 Ormus
+[90533.531] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 30 Ormus
+[90533.531] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 30 Ormus
+[90533.531] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Ormus
+[90533.531] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Ormus
+[90533.531] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 31 Lhasa
+[90533.640] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 31 Lhasa
+[90533.640] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 31 Lhasa
+[90533.640] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Lhasa
+[90533.640] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Lhasa
+[90533.640] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 32 Milan
+[90533.750] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 32 Milan
+[90533.750] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 32 Milan
+[90533.750] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Milan
+[90533.750] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Milan
+[90533.750] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 33 Belgrade
+[90533.859] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 33 Belgrade
+[90533.859] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 33 Belgrade
+[90533.859] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Belgrade
+[90533.859] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Belgrade
+[90533.859] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 63 Barbarian
+[90533.968] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 63 Barbarian
+[90533.968] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 63 Barbarian
+[90533.968] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=16385
+[90533.968] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=32771
+[90533.968] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=49157
+[90533.968] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=57350
+[90533.968] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=65543
+[90533.968] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=73736
+[90533.968] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=81929
+[90533.968] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=114698
+[90533.968] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=98315
+[90533.968] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=106508
+[90533.968] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=122893
+[90533.968] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Barbarian
+[90533.968] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Barbarian
+[90534.078] DBG: Game Turn 6
+[90534.078] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 0 Boudicca
+[90611.953] DBG: UpdateMoves() : player.setEndTurn(true) called for player 0 Boudicca
+[90612.062] DBG: UpdateMoves() : player 0 Boudicca running AutoMission (NO_MISSIONAI) on Engineer id=24576
+[90612.062] DBG: UpdateMoves() : player 0 Boudicca running AutoMission (NO_MISSIONAI) on Landsknut id=32770
+[90612.062] DBG: UpdateMoves() : player 0 Boudicca running AutoMission (NO_MISSIONAI) on Iron Rain Walker [I.R.C] id=40963
+[90612.062] DBG: UpdateMoves() : player 0 Boudicca running AutoMission (NO_MISSIONAI) on Pictish Warrior id=49156
+[90612.062] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Boudicca
+[90612.062] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Boudicca
+[90612.062] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 1 Askia
+[90612.171] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 1 Askia
+[90612.171] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 1 Askia
+[90612.171] DBG: UpdateMoves() : player 1 Askia running AutoMission (MISSIONAI_EXPLORE) on Warrior id=16385
+[90612.171] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Askia
+[90612.171] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Askia
+[90612.171] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 2 Maria Theresa
+[90612.281] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 2 Maria Theresa
+[90612.281] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 2 Maria Theresa
+[90612.281] DBG: UpdateMoves() : player 2 Maria Theresa running AutoMission (MISSIONAI_EXPLORE) on Spearman id=24576
+[90612.281] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Maria Theresa
+[90612.281] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Maria Theresa
+[90612.281] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 3 Gajah Mada
+[90614.031] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 3 Gajah Mada
+[90614.031] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 3 Gajah Mada
+[90614.031] DBG: UpdateMoves() : player 3 Gajah Mada running AutoMission (MISSIONAI_EXPLORE) on Warrior id=16385
+[90614.031] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Gajah Mada
+[90614.031] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Gajah Mada
+[90614.031] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 4 Bismarck
+[90614.140] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 4 Bismarck
+[90614.140] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 4 Bismarck
+[90614.140] DBG: UpdateMoves() : player 4 Bismarck running AutoMission (MISSIONAI_EXPLORE) on Warrior id=16385
+[90614.140] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Bismarck
+[90614.140] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Bismarck
+[90614.140] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 5 Attila
+[90614.250] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 5 Attila
+[90614.250] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 5 Attila
+[90614.250] DBG: UpdateMoves() : player 5 Attila running AutoMission (MISSIONAI_EXPLORE) on Warrior id=16385
+[90614.250] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Attila
+[90614.250] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Attila
+[90614.250] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 22 Buenos Aires
+[90614.359] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 22 Buenos Aires
+[90614.359] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 22 Buenos Aires
+[90614.359] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Buenos Aires
+[90614.359] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Buenos Aires
+[90614.359] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 23 Singapore
+[90614.468] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 23 Singapore
+[90614.468] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 23 Singapore
+[90614.468] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Singapore
+[90614.468] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Singapore
+[90614.468] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 25 Mogadishu
+[90614.578] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 25 Mogadishu
+[90614.578] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 25 Mogadishu
+[90614.578] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Mogadishu
+[90614.578] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Mogadishu
+[90614.578] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 26 Kabul
+[90614.687] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 26 Kabul
+[90614.687] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 26 Kabul
+[90614.687] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Kabul
+[90614.687] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Kabul
+[90614.687] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 27 La Venta
+[90614.796] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 27 La Venta
+[90614.796] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 27 La Venta
+[90614.796] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for La Venta
+[90614.796] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player La Venta
+[90614.796] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 28 Colombo
+[90614.906] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 28 Colombo
+[90614.906] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 28 Colombo
+[90614.906] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Colombo
+[90614.906] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Colombo
+[90614.906] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 29 Wittenberg
+[90615.015] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 29 Wittenberg
+[90615.015] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 29 Wittenberg
+[90615.015] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Wittenberg
+[90615.015] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Wittenberg
+[90615.015] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 30 Ormus
+[90615.125] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 30 Ormus
+[90615.125] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 30 Ormus
+[90615.125] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Ormus
+[90615.125] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Ormus
+[90615.125] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 31 Lhasa
+[90615.234] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 31 Lhasa
+[90615.234] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 31 Lhasa
+[90615.234] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Lhasa
+[90615.234] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Lhasa
+[90615.234] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 32 Milan
+[90615.343] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 32 Milan
+[90615.343] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 32 Milan
+[90615.343] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Milan
+[90615.343] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Milan
+[90615.343] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 33 Belgrade
+[90615.453] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 33 Belgrade
+[90615.453] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 33 Belgrade
+[90615.453] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Belgrade
+[90615.453] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Belgrade
+[90615.453] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 63 Barbarian
+[90615.562] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 63 Barbarian
+[90615.562] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 63 Barbarian
+[90615.562] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=16385
+[90615.562] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=32771
+[90615.562] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=49157
+[90615.562] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=57350
+[90615.562] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=65543
+[90615.562] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=73736
+[90615.562] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=114698
+[90615.562] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=98315
+[90615.562] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=106508
+[90615.562] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=122893
+[90615.562] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Barbarian
+[90615.562] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Barbarian
+[90615.875] DBG: Game Turn 7
+[90615.875] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 0 Boudicca
+[90700.750] DBG: UpdateMoves() : player.setEndTurn(true) called for player 0 Boudicca
+[90700.859] DBG: UpdateMoves() : player 0 Boudicca running AutoMission (NO_MISSIONAI) on Engineer id=24576
+[90700.859] DBG: UpdateMoves() : player 0 Boudicca running AutoMission (NO_MISSIONAI) on Landsknut id=32770
+[90700.859] DBG: UpdateMoves() : player 0 Boudicca running AutoMission (NO_MISSIONAI) on Iron Rain Walker [I.R.C] id=40963
+[90700.859] DBG: UpdateMoves() : player 0 Boudicca running AutoMission (NO_MISSIONAI) on Pictish Warrior id=49156
+[90700.859] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Boudicca
+[90700.859] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Boudicca
+[90700.859] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 1 Askia
+[90700.968] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 1 Askia
+[90700.968] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 1 Askia
+[90700.968] DBG: UpdateMoves() : player 1 Askia running AutoMission (MISSIONAI_EXPLORE) on Warrior id=16385
+[90700.968] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Askia
+[90700.968] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Askia
+[90700.968] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 2 Maria Theresa
+[90701.078] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 2 Maria Theresa
+[90701.078] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 2 Maria Theresa
+[90701.078] DBG: UpdateMoves() : player 2 Maria Theresa running AutoMission (MISSIONAI_EXPLORE) on Spearman id=24576
+[90701.078] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Maria Theresa
+[90701.078] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Maria Theresa
+[90701.078] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 3 Gajah Mada
+[90701.187] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 3 Gajah Mada
+[90701.187] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 3 Gajah Mada
+[90701.187] DBG: UpdateMoves() : player 3 Gajah Mada running AutoMission (MISSIONAI_EXPLORE) on Warrior id=16385
+[90701.187] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Gajah Mada
+[90701.187] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Gajah Mada
+[90701.187] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 4 Bismarck
+[90701.296] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 4 Bismarck
+[90701.296] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 4 Bismarck
+[90701.296] DBG: UpdateMoves() : player 4 Bismarck running AutoMission (MISSIONAI_EXPLORE) on Warrior id=16385
+[90701.296] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Bismarck
+[90701.296] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Bismarck
+[90701.296] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 5 Attila
+[90701.406] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 5 Attila
+[90701.406] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 5 Attila
+[90701.406] DBG: UpdateMoves() : player 5 Attila running AutoMission (MISSIONAI_EXPLORE) on Warrior id=16385
+[90701.406] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Attila
+[90701.406] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Attila
+[90701.406] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 22 Buenos Aires
+[90701.515] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 22 Buenos Aires
+[90701.515] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 22 Buenos Aires
+[90701.515] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Buenos Aires
+[90701.515] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Buenos Aires
+[90701.515] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 23 Singapore
+[90701.625] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 23 Singapore
+[90701.625] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 23 Singapore
+[90701.625] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Singapore
+[90701.625] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Singapore
+[90701.625] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 25 Mogadishu
+[90701.734] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 25 Mogadishu
+[90701.734] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 25 Mogadishu
+[90701.734] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Mogadishu
+[90701.734] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Mogadishu
+[90701.734] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 26 Kabul
+[90701.843] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 26 Kabul
+[90701.843] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 26 Kabul
+[90701.843] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Kabul
+[90701.843] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Kabul
+[90701.843] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 27 La Venta
+[90701.953] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 27 La Venta
+[90701.953] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 27 La Venta
+[90701.953] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for La Venta
+[90701.953] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player La Venta
+[90701.953] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 28 Colombo
+[90702.062] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 28 Colombo
+[90702.062] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 28 Colombo
+[90702.062] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Colombo
+[90702.062] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Colombo
+[90702.062] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 29 Wittenberg
+[90702.171] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 29 Wittenberg
+[90702.171] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 29 Wittenberg
+[90702.171] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Wittenberg
+[90702.171] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Wittenberg
+[90702.171] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 30 Ormus
+[90702.281] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 30 Ormus
+[90702.281] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 30 Ormus
+[90702.281] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Ormus
+[90702.281] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Ormus
+[90702.281] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 31 Lhasa
+[90702.390] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 31 Lhasa
+[90702.390] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 31 Lhasa
+[90702.390] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Lhasa
+[90702.390] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Lhasa
+[90702.390] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 32 Milan
+[90702.500] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 32 Milan
+[90702.500] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 32 Milan
+[90702.500] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Milan
+[90702.500] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Milan
+[90702.500] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 33 Belgrade
+[90702.609] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 33 Belgrade
+[90702.609] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 33 Belgrade
+[90702.609] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Belgrade
+[90702.609] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Belgrade
+[90702.609] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 63 Barbarian
+[90702.718] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 63 Barbarian
+[90702.718] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 63 Barbarian
+[90702.718] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=16385
+[90702.718] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=32771
+[90702.718] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=49157
+[90702.718] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=57350
+[90702.718] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=65543
+[90702.718] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=73736
+[90702.718] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=131081
+[90702.718] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=114698
+[90702.718] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=98315
+[90702.718] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=106508
+[90702.718] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=122893
+[90702.718] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Barbarian
+[90702.718] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Barbarian
+[90702.828] DBG: Game Turn 8
+[90702.828] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 0 Boudicca
+[90751.609] DBG: UpdateMoves() : player.setEndTurn(true) called for player 0 Boudicca
+[90751.718] DBG: UpdateMoves() : player 0 Boudicca running AutoMission (NO_MISSIONAI) on Engineer id=24576
+[90751.718] DBG: UpdateMoves() : player 0 Boudicca running AutoMission (NO_MISSIONAI) on Landsknut id=32770
+[90751.718] DBG: UpdateMoves() : player 0 Boudicca AutoMission did not use up all movement points for Landsknut id=32770
+[90751.718] DBG: UpdateMoves() : player 0 Boudicca running AutoMission (NO_MISSIONAI) on Iron Rain Walker [I.R.C] id=40963
+[90751.718] DBG: UpdateMoves() : player 0 Boudicca running AutoMission (NO_MISSIONAI) on Pictish Warrior id=49156
+[90751.718] DBG: UpdateMoves() : player 0 Boudicca running AutoMission (NO_MISSIONAI) on Engineer id=24576
+[90751.718] DBG: UpdateMoves() : player 0 Boudicca running AutoMission (NO_MISSIONAI) on Landsknut id=32770
+[90751.718] DBG: UpdateMoves() : player 0 Boudicca running AutoMission (NO_MISSIONAI) on Iron Rain Walker [I.R.C] id=40963
+[90751.718] DBG: UpdateMoves() : player 0 Boudicca running AutoMission (NO_MISSIONAI) on Pictish Warrior id=49156
+[90751.718] DBG: UpdateMoves() : player 0 Boudicca running AutoMission (NO_MISSIONAI) on Engineer id=24576
+[90751.718] DBG: UpdateMoves() : player 0 Boudicca running AutoMission (NO_MISSIONAI) on Landsknut id=32770
+[90751.718] DBG: UpdateMoves() : player 0 Boudicca running AutoMission (NO_MISSIONAI) on Iron Rain Walker [I.R.C] id=40963
+[90751.718] DBG: UpdateMoves() : player 0 Boudicca running AutoMission (NO_MISSIONAI) on Pictish Warrior id=49156
+[90766.812] DBG: UpdateMoves() : player.setEndTurn(true) called for player 0 Boudicca
+[90766.921] DBG: UpdateMoves() : player 0 Boudicca running AutoMission (NO_MISSIONAI) on Engineer id=24576
+[90766.921] DBG: UpdateMoves() : player 0 Boudicca running AutoMission (NO_MISSIONAI) on Landsknut id=32770
+[90766.921] DBG: UpdateMoves() : player 0 Boudicca running AutoMission (NO_MISSIONAI) on Iron Rain Walker [I.R.C] id=40963
+[90766.921] DBG: UpdateMoves() : player 0 Boudicca running AutoMission (NO_MISSIONAI) on Pictish Warrior id=49156
+[90766.921] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Boudicca
+[90766.921] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Boudicca
+[90766.921] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 1 Askia
+[90767.031] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 1 Askia
+[90767.031] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 1 Askia
+[90767.031] DBG: UpdateMoves() : player 1 Askia running AutoMission (MISSIONAI_EXPLORE) on Warrior id=16385
+[90767.031] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Askia
+[90767.031] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Askia
+[90767.031] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 2 Maria Theresa
+[90767.140] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 2 Maria Theresa
+[90767.140] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 2 Maria Theresa
+[90767.140] DBG: UpdateMoves() : player 2 Maria Theresa running AutoMission (MISSIONAI_EXPLORE) on Spearman id=24576
+[90767.140] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Maria Theresa
+[90767.140] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Maria Theresa
+[90767.140] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 3 Gajah Mada
+[90767.250] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 3 Gajah Mada
+[90767.250] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 3 Gajah Mada
+[90767.250] DBG: UpdateMoves() : player 3 Gajah Mada running AutoMission (MISSIONAI_EXPLORE) on Warrior id=16385
+[90767.250] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Gajah Mada
+[90767.250] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Gajah Mada
+[90767.250] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 4 Bismarck
+[90767.359] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 4 Bismarck
+[90767.359] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 4 Bismarck
+[90767.359] DBG: UpdateMoves() : player 4 Bismarck running AutoMission (MISSIONAI_EXPLORE) on Warrior id=16385
+[90767.359] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Bismarck
+[90767.359] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Bismarck
+[90767.359] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 5 Attila
+[90767.468] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 5 Attila
+[90767.468] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 5 Attila
+[90767.468] DBG: UpdateMoves() : player 5 Attila running AutoMission (MISSIONAI_EXPLORE) on Warrior id=16385
+[90767.468] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Attila
+[90767.468] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Attila
+[90767.468] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 22 Buenos Aires
+[90767.578] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 22 Buenos Aires
+[90767.578] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 22 Buenos Aires
+[90767.578] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Buenos Aires
+[90767.578] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Buenos Aires
+[90767.578] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 23 Singapore
+[90767.687] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 23 Singapore
+[90767.687] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 23 Singapore
+[90767.687] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Singapore
+[90767.687] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Singapore
+[90767.687] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 25 Mogadishu
+[90767.796] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 25 Mogadishu
+[90767.796] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 25 Mogadishu
+[90767.796] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Mogadishu
+[90767.796] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Mogadishu
+[90767.796] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 26 Kabul
+[90767.906] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 26 Kabul
+[90767.906] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 26 Kabul
+[90767.906] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Kabul
+[90767.906] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Kabul
+[90767.906] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 27 La Venta
+[90768.015] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 27 La Venta
+[90768.015] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 27 La Venta
+[90768.015] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for La Venta
+[90768.015] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player La Venta
+[90768.015] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 28 Colombo
+[90768.125] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 28 Colombo
+[90768.125] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 28 Colombo
+[90768.125] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Colombo
+[90768.125] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Colombo
+[90768.125] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 29 Wittenberg
+[90768.234] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 29 Wittenberg
+[90768.234] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 29 Wittenberg
+[90768.234] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Wittenberg
+[90768.234] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Wittenberg
+[90768.234] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 30 Ormus
+[90768.343] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 30 Ormus
+[90768.343] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 30 Ormus
+[90768.343] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Ormus
+[90768.343] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Ormus
+[90768.343] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 31 Lhasa
+[90768.453] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 31 Lhasa
+[90768.453] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 31 Lhasa
+[90768.453] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Lhasa
+[90768.453] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Lhasa
+[90768.453] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 32 Milan
+[90768.562] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 32 Milan
+[90768.562] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 32 Milan
+[90768.562] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Milan
+[90768.562] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Milan
+[90768.562] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 33 Belgrade
+[90768.671] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 33 Belgrade
+[90768.671] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 33 Belgrade
+[90768.671] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Belgrade
+[90768.671] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Belgrade
+[90768.671] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 63 Barbarian
+[90768.781] DBG: UpdateMoves() : player.AI_unitUpdate() called for player 63 Barbarian
+[90768.781] DBG: UpdateMoves() : player.setAutoMoves(true) called for player 63 Barbarian
+[90768.781] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=16385
+[90768.781] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=32771
+[90768.781] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=49157
+[90768.781] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=57350
+[90768.781] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=65543
+[90768.781] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=73736
+[90768.781] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=131081
+[90768.781] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=114698
+[90768.781] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=98315
+[90768.781] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=106508
+[90768.781] DBG: UpdateMoves() : player 63 Barbarian running AutoMission (NO_MISSIONAI) on Brute id=122893
+[90768.781] DBG: CheckPlayerTurnDeactivate() : auto-moves complete for Barbarian
+[90768.781] DBG: changeNumGameTurnActive(-1) m_iNumActive=0 : setTurnActive() for player Barbarian
+[90769.093] DBG: Game Turn 9
+[90769.093] DBG: changeNumGameTurnActive(1) m_iNumActive=1 : setTurnActive() for player 0 Boudicca

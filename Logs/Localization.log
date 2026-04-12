@@ -1,1 +1,187 @@
-[87489.875] WRN: A resource bundle lookup returned a result from the root locale (not an error).
+[90013.343] WRN: A resource bundle lookup returned a result from the root locale (not an error).
+[90171.015] ERR: Missing argument 1. (You have found cultural artifacts which awe your citizens! You have received {1_Num} [ICON_CULTURE] Culture!)
+[90171.015] ERR: Failed to evaluate parameter 1. You have found cultural artifacts which awe your citizens! You have received {1_Num} [ICON_CULTURE] Culture!
+[90171.015] ERR: Missing argument 1. (You have found an ancient oracle. The priestess has blessed you with a divine revelation. You have received {1_Num} [ICON_PEACE] Faith.)
+[90171.015] ERR: Failed to evaluate parameter 1. You have found an ancient oracle. The priestess has blessed you with a divine revelation. You have received {1_Num} [ICON_PEACE] Faith.
+[90171.015] ERR: Missing argument 1. (You have found a secret religious community. The preacher foretells the arrival of a Great Prophet. You have received {1_Num} [ICON_PEACE] Faith.)
+[90171.015] ERR: Failed to evaluate parameter 1. You have found a secret religious community. The preacher foretells the arrival of a Great Prophet. You have received {1_Num} [ICON_PEACE] Faith.
+[90171.015] ERR: Missing argument 1. (In the ruins you find the treasures of an ancient empire! You have received {1_Num} [ICON_GOLD] Gold!)
+[90171.015] ERR: Failed to evaluate parameter 1. In the ruins you find the treasures of an ancient empire! You have received {1_Num} [ICON_GOLD] Gold!
+[90175.453] ERR: Missing argument 1. (You have found cultural artifacts which awe your citizens! You have received {1_Num} [ICON_CULTURE] Culture!)
+[90175.453] ERR: Failed to evaluate parameter 1. You have found cultural artifacts which awe your citizens! You have received {1_Num} [ICON_CULTURE] Culture!
+[90175.453] ERR: Missing argument 1. (You have found an ancient oracle. The priestess has blessed you with a divine revelation. You have received {1_Num} [ICON_PEACE] Faith.)
+[90175.453] ERR: Failed to evaluate parameter 1. You have found an ancient oracle. The priestess has blessed you with a divine revelation. You have received {1_Num} [ICON_PEACE] Faith.
+[90175.453] ERR: Missing argument 1. (You have found a secret religious community. The preacher foretells the arrival of a Great Prophet. You have received {1_Num} [ICON_PEACE] Faith.)
+[90175.453] ERR: Failed to evaluate parameter 1. You have found a secret religious community. The preacher foretells the arrival of a Great Prophet. You have received {1_Num} [ICON_PEACE] Faith.
+[90175.453] ERR: Missing argument 1. (In the ruins you find the treasures of an ancient empire! You have received {1_Num} [ICON_GOLD] Gold!)
+[90175.453] ERR: Failed to evaluate parameter 1. In the ruins you find the treasures of an ancient empire! You have received {1_Num} [ICON_GOLD] Gold!
+[90201.703] ERR: Missing argument 1. (You have found cultural artifacts which awe your citizens! You have received {1_Num} [ICON_CULTURE] Culture!)
+[90201.703] ERR: Failed to evaluate parameter 1. You have found cultural artifacts which awe your citizens! You have received {1_Num} [ICON_CULTURE] Culture!
+[90201.703] ERR: Missing argument 1. (You have found an ancient oracle. The priestess has blessed you with a divine revelation. You have received {1_Num} [ICON_PEACE] Faith.)
+[90201.703] ERR: Failed to evaluate parameter 1. You have found an ancient oracle. The priestess has blessed you with a divine revelation. You have received {1_Num} [ICON_PEACE] Faith.
+[90201.703] ERR: Missing argument 1. (You have found a secret religious community. The preacher foretells the arrival of a Great Prophet. You have received {1_Num} [ICON_PEACE] Faith.)
+[90201.703] ERR: Failed to evaluate parameter 1. You have found a secret religious community. The preacher foretells the arrival of a Great Prophet. You have received {1_Num} [ICON_PEACE] Faith.
+[90201.703] ERR: Missing argument 1. (In the ruins you find the treasures of an ancient empire! You have received {1_Num} [ICON_GOLD] Gold!)
+[90201.703] ERR: Failed to evaluate parameter 1. In the ruins you find the treasures of an ancient empire! You have received {1_Num} [ICON_GOLD] Gold!
+[90201.921] ERR: Missing argument 1. (You have found cultural artifacts which awe your citizens! You have received {1_Num} [ICON_CULTURE] Culture!)
+[90201.921] ERR: Failed to evaluate parameter 1. You have found cultural artifacts which awe your citizens! You have received {1_Num} [ICON_CULTURE] Culture!
+[90201.921] ERR: Missing argument 1. (You have found an ancient oracle. The priestess has blessed you with a divine revelation. You have received {1_Num} [ICON_PEACE] Faith.)
+[90201.921] ERR: Failed to evaluate parameter 1. You have found an ancient oracle. The priestess has blessed you with a divine revelation. You have received {1_Num} [ICON_PEACE] Faith.
+[90201.921] ERR: Missing argument 1. (You have found a secret religious community. The preacher foretells the arrival of a Great Prophet. You have received {1_Num} [ICON_PEACE] Faith.)
+[90201.921] ERR: Failed to evaluate parameter 1. You have found a secret religious community. The preacher foretells the arrival of a Great Prophet. You have received {1_Num} [ICON_PEACE] Faith.
+[90201.921] ERR: Missing argument 1. (In the ruins you find the treasures of an ancient empire! You have received {1_Num} [ICON_GOLD] Gold!)
+[90201.921] ERR: Failed to evaluate parameter 1. In the ruins you find the treasures of an ancient empire! You have received {1_Num} [ICON_GOLD] Gold!
+[90201.921] ERR: Missing argument 1. (You have found cultural artifacts which awe your citizens! You have received {1_Num} [ICON_CULTURE] Culture!)
+[90201.921] ERR: Failed to evaluate parameter 1. You have found cultural artifacts which awe your citizens! You have received {1_Num} [ICON_CULTURE] Culture!
+[90263.296] ERR: Missing argument 1. (You have found cultural artifacts which awe your citizens! You have received {1_Num} [ICON_CULTURE] Culture!)
+[90263.296] ERR: Failed to evaluate parameter 1. You have found cultural artifacts which awe your citizens! You have received {1_Num} [ICON_CULTURE] Culture!
+[90263.296] ERR: Missing argument 1. (You have found an ancient oracle. The priestess has blessed you with a divine revelation. You have received {1_Num} [ICON_PEACE] Faith.)
+[90263.296] ERR: Failed to evaluate parameter 1. You have found an ancient oracle. The priestess has blessed you with a divine revelation. You have received {1_Num} [ICON_PEACE] Faith.
+[90263.296] ERR: Missing argument 1. (You have found a secret religious community. The preacher foretells the arrival of a Great Prophet. You have received {1_Num} [ICON_PEACE] Faith.)
+[90263.296] ERR: Failed to evaluate parameter 1. You have found a secret religious community. The preacher foretells the arrival of a Great Prophet. You have received {1_Num} [ICON_PEACE] Faith.
+[90263.296] ERR: Missing argument 1. (In the ruins you find the treasures of an ancient empire! You have received {1_Num} [ICON_GOLD] Gold!)
+[90263.296] ERR: Failed to evaluate parameter 1. In the ruins you find the treasures of an ancient empire! You have received {1_Num} [ICON_GOLD] Gold!
+[90263.296] ERR: Missing argument 1. (You have found cultural artifacts which awe your citizens! You have received {1_Num} [ICON_CULTURE] Culture!)
+[90263.296] ERR: Failed to evaluate parameter 1. You have found cultural artifacts which awe your citizens! You have received {1_Num} [ICON_CULTURE] Culture!
+[90270.531] ERR: Missing argument 1. (You have found cultural artifacts which awe your citizens! You have received {1_Num} [ICON_CULTURE] Culture!)
+[90270.531] ERR: Failed to evaluate parameter 1. You have found cultural artifacts which awe your citizens! You have received {1_Num} [ICON_CULTURE] Culture!
+[90270.531] ERR: Missing argument 1. (You have found an ancient oracle. The priestess has blessed you with a divine revelation. You have received {1_Num} [ICON_PEACE] Faith.)
+[90270.531] ERR: Failed to evaluate parameter 1. You have found an ancient oracle. The priestess has blessed you with a divine revelation. You have received {1_Num} [ICON_PEACE] Faith.
+[90270.531] ERR: Missing argument 1. (You have found a secret religious community. The preacher foretells the arrival of a Great Prophet. You have received {1_Num} [ICON_PEACE] Faith.)
+[90270.531] ERR: Failed to evaluate parameter 1. You have found a secret religious community. The preacher foretells the arrival of a Great Prophet. You have received {1_Num} [ICON_PEACE] Faith.
+[90270.531] ERR: Missing argument 1. (In the ruins you find the treasures of an ancient empire! You have received {1_Num} [ICON_GOLD] Gold!)
+[90270.531] ERR: Failed to evaluate parameter 1. In the ruins you find the treasures of an ancient empire! You have received {1_Num} [ICON_GOLD] Gold!
+[90276.843] ERR: Missing argument 1. (You have found cultural artifacts which awe your citizens! You have received {1_Num} [ICON_CULTURE] Culture!)
+[90276.843] ERR: Failed to evaluate parameter 1. You have found cultural artifacts which awe your citizens! You have received {1_Num} [ICON_CULTURE] Culture!
+[90276.843] ERR: Missing argument 1. (You have found an ancient oracle. The priestess has blessed you with a divine revelation. You have received {1_Num} [ICON_PEACE] Faith.)
+[90276.843] ERR: Failed to evaluate parameter 1. You have found an ancient oracle. The priestess has blessed you with a divine revelation. You have received {1_Num} [ICON_PEACE] Faith.
+[90276.843] ERR: Missing argument 1. (You have found a secret religious community. The preacher foretells the arrival of a Great Prophet. You have received {1_Num} [ICON_PEACE] Faith.)
+[90276.843] ERR: Failed to evaluate parameter 1. You have found a secret religious community. The preacher foretells the arrival of a Great Prophet. You have received {1_Num} [ICON_PEACE] Faith.
+[90276.843] ERR: Missing argument 1. (In the ruins you find the treasures of an ancient empire! You have received {1_Num} [ICON_GOLD] Gold!)
+[90276.843] ERR: Failed to evaluate parameter 1. In the ruins you find the treasures of an ancient empire! You have received {1_Num} [ICON_GOLD] Gold!
+[90276.953] ERR: Missing argument 1. (You have found cultural artifacts which awe your citizens! You have received {1_Num} [ICON_CULTURE] Culture!)
+[90276.953] ERR: Failed to evaluate parameter 1. You have found cultural artifacts which awe your citizens! You have received {1_Num} [ICON_CULTURE] Culture!
+[90276.953] ERR: Missing argument 1. (You have found an ancient oracle. The priestess has blessed you with a divine revelation. You have received {1_Num} [ICON_PEACE] Faith.)
+[90276.953] ERR: Failed to evaluate parameter 1. You have found an ancient oracle. The priestess has blessed you with a divine revelation. You have received {1_Num} [ICON_PEACE] Faith.
+[90276.953] ERR: Missing argument 1. (You have found a secret religious community. The preacher foretells the arrival of a Great Prophet. You have received {1_Num} [ICON_PEACE] Faith.)
+[90276.953] ERR: Failed to evaluate parameter 1. You have found a secret religious community. The preacher foretells the arrival of a Great Prophet. You have received {1_Num} [ICON_PEACE] Faith.
+[90276.953] ERR: Missing argument 1. (In the ruins you find the treasures of an ancient empire! You have received {1_Num} [ICON_GOLD] Gold!)
+[90276.953] ERR: Failed to evaluate parameter 1. In the ruins you find the treasures of an ancient empire! You have received {1_Num} [ICON_GOLD] Gold!
+[90322.718] ERR: Missing argument 1. (You have found cultural artifacts which awe your citizens! You have received {1_Num} [ICON_CULTURE] Culture!)
+[90322.718] ERR: Failed to evaluate parameter 1. You have found cultural artifacts which awe your citizens! You have received {1_Num} [ICON_CULTURE] Culture!
+[90322.718] ERR: Missing argument 1. (You have found an ancient oracle. The priestess has blessed you with a divine revelation. You have received {1_Num} [ICON_PEACE] Faith.)
+[90322.718] ERR: Failed to evaluate parameter 1. You have found an ancient oracle. The priestess has blessed you with a divine revelation. You have received {1_Num} [ICON_PEACE] Faith.
+[90322.718] ERR: Missing argument 1. (You have found a secret religious community. The preacher foretells the arrival of a Great Prophet. You have received {1_Num} [ICON_PEACE] Faith.)
+[90322.718] ERR: Failed to evaluate parameter 1. You have found a secret religious community. The preacher foretells the arrival of a Great Prophet. You have received {1_Num} [ICON_PEACE] Faith.
+[90322.718] ERR: Missing argument 1. (In the ruins you find the treasures of an ancient empire! You have received {1_Num} [ICON_GOLD] Gold!)
+[90322.718] ERR: Failed to evaluate parameter 1. In the ruins you find the treasures of an ancient empire! You have received {1_Num} [ICON_GOLD] Gold!
+[90349.781] ERR: Missing argument 1. (You have found cultural artifacts which awe your citizens! You have received {1_Num} [ICON_CULTURE] Culture!)
+[90349.781] ERR: Failed to evaluate parameter 1. You have found cultural artifacts which awe your citizens! You have received {1_Num} [ICON_CULTURE] Culture!
+[90349.781] ERR: Missing argument 1. (You have found an ancient oracle. The priestess has blessed you with a divine revelation. You have received {1_Num} [ICON_PEACE] Faith.)
+[90349.781] ERR: Failed to evaluate parameter 1. You have found an ancient oracle. The priestess has blessed you with a divine revelation. You have received {1_Num} [ICON_PEACE] Faith.
+[90349.781] ERR: Missing argument 1. (You have found a secret religious community. The preacher foretells the arrival of a Great Prophet. You have received {1_Num} [ICON_PEACE] Faith.)
+[90349.781] ERR: Failed to evaluate parameter 1. You have found a secret religious community. The preacher foretells the arrival of a Great Prophet. You have received {1_Num} [ICON_PEACE] Faith.
+[90349.781] ERR: Missing argument 1. (In the ruins you find the treasures of an ancient empire! You have received {1_Num} [ICON_GOLD] Gold!)
+[90349.781] ERR: Failed to evaluate parameter 1. In the ruins you find the treasures of an ancient empire! You have received {1_Num} [ICON_GOLD] Gold!
+[90349.781] ERR: Missing argument 1. (In the ruins you find the treasures of an ancient empire! You have received {1_Num} [ICON_GOLD] Gold!)
+[90349.781] ERR: Failed to evaluate parameter 1. In the ruins you find the treasures of an ancient empire! You have received {1_Num} [ICON_GOLD] Gold!
+[90360.812] ERR: Missing argument 1. (Your people have started worshipping a pantheon of gods. They have chosen the belief: {1_BeliefName} ({@2_BeliefDesc}))
+[90360.812] ERR: Failed to evaluate parameter 1. Your people have started worshipping a pantheon of gods. They have chosen the belief: {1_BeliefName} ({@2_BeliefDesc})
+[90410.625] ERR: Missing argument 1. (You have found cultural artifacts which awe your citizens! You have received {1_Num} [ICON_CULTURE] Culture!)
+[90410.625] ERR: Failed to evaluate parameter 1. You have found cultural artifacts which awe your citizens! You have received {1_Num} [ICON_CULTURE] Culture!
+[90410.625] ERR: Missing argument 1. (You have found an ancient oracle. The priestess has blessed you with a divine revelation. You have received {1_Num} [ICON_PEACE] Faith.)
+[90410.625] ERR: Failed to evaluate parameter 1. You have found an ancient oracle. The priestess has blessed you with a divine revelation. You have received {1_Num} [ICON_PEACE] Faith.
+[90410.625] ERR: Missing argument 1. (You have found a secret religious community. The preacher foretells the arrival of a Great Prophet. You have received {1_Num} [ICON_PEACE] Faith.)
+[90410.625] ERR: Failed to evaluate parameter 1. You have found a secret religious community. The preacher foretells the arrival of a Great Prophet. You have received {1_Num} [ICON_PEACE] Faith.
+[90410.625] ERR: Missing argument 1. (In the ruins you find the treasures of an ancient empire! You have received {1_Num} [ICON_GOLD] Gold!)
+[90410.625] ERR: Failed to evaluate parameter 1. In the ruins you find the treasures of an ancient empire! You have received {1_Num} [ICON_GOLD] Gold!
+[90410.625] ERR: Missing argument 1. (You have found cultural artifacts which awe your citizens! You have received {1_Num} [ICON_CULTURE] Culture!)
+[90410.625] ERR: Failed to evaluate parameter 1. You have found cultural artifacts which awe your citizens! You have received {1_Num} [ICON_CULTURE] Culture!
+[90412.953] ERR: Missing argument 1. (You have found cultural artifacts which awe your citizens! You have received {1_Num} [ICON_CULTURE] Culture!)
+[90412.953] ERR: Failed to evaluate parameter 1. You have found cultural artifacts which awe your citizens! You have received {1_Num} [ICON_CULTURE] Culture!
+[90412.953] ERR: Missing argument 1. (You have found an ancient oracle. The priestess has blessed you with a divine revelation. You have received {1_Num} [ICON_PEACE] Faith.)
+[90412.953] ERR: Failed to evaluate parameter 1. You have found an ancient oracle. The priestess has blessed you with a divine revelation. You have received {1_Num} [ICON_PEACE] Faith.
+[90412.953] ERR: Missing argument 1. (You have found a secret religious community. The preacher foretells the arrival of a Great Prophet. You have received {1_Num} [ICON_PEACE] Faith.)
+[90412.953] ERR: Failed to evaluate parameter 1. You have found a secret religious community. The preacher foretells the arrival of a Great Prophet. You have received {1_Num} [ICON_PEACE] Faith.
+[90412.953] ERR: Missing argument 1. (In the ruins you find the treasures of an ancient empire! You have received {1_Num} [ICON_GOLD] Gold!)
+[90412.953] ERR: Failed to evaluate parameter 1. In the ruins you find the treasures of an ancient empire! You have received {1_Num} [ICON_GOLD] Gold!
+[90428.500] ERR: Missing argument 1. (You have found cultural artifacts which awe your citizens! You have received {1_Num} [ICON_CULTURE] Culture!)
+[90428.500] ERR: Failed to evaluate parameter 1. You have found cultural artifacts which awe your citizens! You have received {1_Num} [ICON_CULTURE] Culture!
+[90428.500] ERR: Missing argument 1. (You have found an ancient oracle. The priestess has blessed you with a divine revelation. You have received {1_Num} [ICON_PEACE] Faith.)
+[90428.500] ERR: Failed to evaluate parameter 1. You have found an ancient oracle. The priestess has blessed you with a divine revelation. You have received {1_Num} [ICON_PEACE] Faith.
+[90428.500] ERR: Missing argument 1. (You have found a secret religious community. The preacher foretells the arrival of a Great Prophet. You have received {1_Num} [ICON_PEACE] Faith.)
+[90428.500] ERR: Failed to evaluate parameter 1. You have found a secret religious community. The preacher foretells the arrival of a Great Prophet. You have received {1_Num} [ICON_PEACE] Faith.
+[90428.500] ERR: Missing argument 1. (In the ruins you find the treasures of an ancient empire! You have received {1_Num} [ICON_GOLD] Gold!)
+[90428.500] ERR: Failed to evaluate parameter 1. In the ruins you find the treasures of an ancient empire! You have received {1_Num} [ICON_GOLD] Gold!
+[90428.500] ERR: Missing argument 1. (In the ruins you find the treasures of an ancient empire! You have received {1_Num} [ICON_GOLD] Gold!)
+[90428.500] ERR: Failed to evaluate parameter 1. In the ruins you find the treasures of an ancient empire! You have received {1_Num} [ICON_GOLD] Gold!
+[90471.062] ERR: Missing argument 1. (You have found cultural artifacts which awe your citizens! You have received {1_Num} [ICON_CULTURE] Culture!)
+[90471.062] ERR: Failed to evaluate parameter 1. You have found cultural artifacts which awe your citizens! You have received {1_Num} [ICON_CULTURE] Culture!
+[90471.062] ERR: Missing argument 1. (You have found an ancient oracle. The priestess has blessed you with a divine revelation. You have received {1_Num} [ICON_PEACE] Faith.)
+[90471.062] ERR: Failed to evaluate parameter 1. You have found an ancient oracle. The priestess has blessed you with a divine revelation. You have received {1_Num} [ICON_PEACE] Faith.
+[90471.062] ERR: Missing argument 1. (You have found a secret religious community. The preacher foretells the arrival of a Great Prophet. You have received {1_Num} [ICON_PEACE] Faith.)
+[90471.062] ERR: Failed to evaluate parameter 1. You have found a secret religious community. The preacher foretells the arrival of a Great Prophet. You have received {1_Num} [ICON_PEACE] Faith.
+[90471.062] ERR: Missing argument 1. (In the ruins you find the treasures of an ancient empire! You have received {1_Num} [ICON_GOLD] Gold!)
+[90471.062] ERR: Failed to evaluate parameter 1. In the ruins you find the treasures of an ancient empire! You have received {1_Num} [ICON_GOLD] Gold!
+[90471.062] ERR: Missing argument 1. (You have found cultural artifacts which awe your citizens! You have received {1_Num} [ICON_CULTURE] Culture!)
+[90471.062] ERR: Failed to evaluate parameter 1. You have found cultural artifacts which awe your citizens! You have received {1_Num} [ICON_CULTURE] Culture!
+[90540.953] ERR: Missing argument 1. (You have found cultural artifacts which awe your citizens! You have received {1_Num} [ICON_CULTURE] Culture!)
+[90540.953] ERR: Failed to evaluate parameter 1. You have found cultural artifacts which awe your citizens! You have received {1_Num} [ICON_CULTURE] Culture!
+[90540.953] ERR: Missing argument 1. (You have found an ancient oracle. The priestess has blessed you with a divine revelation. You have received {1_Num} [ICON_PEACE] Faith.)
+[90540.953] ERR: Failed to evaluate parameter 1. You have found an ancient oracle. The priestess has blessed you with a divine revelation. You have received {1_Num} [ICON_PEACE] Faith.
+[90540.953] ERR: Missing argument 1. (You have found a secret religious community. The preacher foretells the arrival of a Great Prophet. You have received {1_Num} [ICON_PEACE] Faith.)
+[90540.953] ERR: Failed to evaluate parameter 1. You have found a secret religious community. The preacher foretells the arrival of a Great Prophet. You have received {1_Num} [ICON_PEACE] Faith.
+[90540.953] ERR: Missing argument 1. (In the ruins you find the treasures of an ancient empire! You have received {1_Num} [ICON_GOLD] Gold!)
+[90540.953] ERR: Failed to evaluate parameter 1. In the ruins you find the treasures of an ancient empire! You have received {1_Num} [ICON_GOLD] Gold!
+[90589.453] ERR: Missing argument 1. (You have found cultural artifacts which awe your citizens! You have received {1_Num} [ICON_CULTURE] Culture!)
+[90589.453] ERR: Failed to evaluate parameter 1. You have found cultural artifacts which awe your citizens! You have received {1_Num} [ICON_CULTURE] Culture!
+[90589.453] ERR: Missing argument 1. (You have found an ancient oracle. The priestess has blessed you with a divine revelation. You have received {1_Num} [ICON_PEACE] Faith.)
+[90589.453] ERR: Failed to evaluate parameter 1. You have found an ancient oracle. The priestess has blessed you with a divine revelation. You have received {1_Num} [ICON_PEACE] Faith.
+[90589.453] ERR: Missing argument 1. (You have found a secret religious community. The preacher foretells the arrival of a Great Prophet. You have received {1_Num} [ICON_PEACE] Faith.)
+[90589.453] ERR: Failed to evaluate parameter 1. You have found a secret religious community. The preacher foretells the arrival of a Great Prophet. You have received {1_Num} [ICON_PEACE] Faith.
+[90589.453] ERR: Missing argument 1. (In the ruins you find the treasures of an ancient empire! You have received {1_Num} [ICON_GOLD] Gold!)
+[90589.453] ERR: Failed to evaluate parameter 1. In the ruins you find the treasures of an ancient empire! You have received {1_Num} [ICON_GOLD] Gold!
+[90612.171] ERR: Missing argument 1. (You have found cultural artifacts which awe your citizens! You have received {1_Num} [ICON_CULTURE] Culture!)
+[90612.171] ERR: Failed to evaluate parameter 1. You have found cultural artifacts which awe your citizens! You have received {1_Num} [ICON_CULTURE] Culture!
+[90612.171] ERR: Missing argument 1. (You have found an ancient oracle. The priestess has blessed you with a divine revelation. You have received {1_Num} [ICON_PEACE] Faith.)
+[90612.171] ERR: Failed to evaluate parameter 1. You have found an ancient oracle. The priestess has blessed you with a divine revelation. You have received {1_Num} [ICON_PEACE] Faith.
+[90612.171] ERR: Missing argument 1. (You have found a secret religious community. The preacher foretells the arrival of a Great Prophet. You have received {1_Num} [ICON_PEACE] Faith.)
+[90612.171] ERR: Failed to evaluate parameter 1. You have found a secret religious community. The preacher foretells the arrival of a Great Prophet. You have received {1_Num} [ICON_PEACE] Faith.
+[90612.171] ERR: Missing argument 1. (In the ruins you find the treasures of an ancient empire! You have received {1_Num} [ICON_GOLD] Gold!)
+[90612.171] ERR: Failed to evaluate parameter 1. In the ruins you find the treasures of an ancient empire! You have received {1_Num} [ICON_GOLD] Gold!
+[90691.515] ERR: Missing argument 1. (You have found cultural artifacts which awe your citizens! You have received {1_Num} [ICON_CULTURE] Culture!)
+[90691.515] ERR: Failed to evaluate parameter 1. You have found cultural artifacts which awe your citizens! You have received {1_Num} [ICON_CULTURE] Culture!
+[90691.515] ERR: Missing argument 1. (You have found an ancient oracle. The priestess has blessed you with a divine revelation. You have received {1_Num} [ICON_PEACE] Faith.)
+[90691.515] ERR: Failed to evaluate parameter 1. You have found an ancient oracle. The priestess has blessed you with a divine revelation. You have received {1_Num} [ICON_PEACE] Faith.
+[90691.515] ERR: Missing argument 1. (You have found a secret religious community. The preacher foretells the arrival of a Great Prophet. You have received {1_Num} [ICON_PEACE] Faith.)
+[90691.515] ERR: Failed to evaluate parameter 1. You have found a secret religious community. The preacher foretells the arrival of a Great Prophet. You have received {1_Num} [ICON_PEACE] Faith.
+[90691.515] ERR: Missing argument 1. (In the ruins you find the treasures of an ancient empire! You have received {1_Num} [ICON_GOLD] Gold!)
+[90691.515] ERR: Failed to evaluate parameter 1. In the ruins you find the treasures of an ancient empire! You have received {1_Num} [ICON_GOLD] Gold!
+[90691.515] ERR: Missing argument 1. (You have found cultural artifacts which awe your citizens! You have received {1_Num} [ICON_CULTURE] Culture!)
+[90691.515] ERR: Failed to evaluate parameter 1. You have found cultural artifacts which awe your citizens! You have received {1_Num} [ICON_CULTURE] Culture!
+[90759.781] ERR: Missing argument 1. (You have found cultural artifacts which awe your citizens! You have received {1_Num} [ICON_CULTURE] Culture!)
+[90759.781] ERR: Failed to evaluate parameter 1. You have found cultural artifacts which awe your citizens! You have received {1_Num} [ICON_CULTURE] Culture!
+[90759.781] ERR: Missing argument 1. (You have found an ancient oracle. The priestess has blessed you with a divine revelation. You have received {1_Num} [ICON_PEACE] Faith.)
+[90759.781] ERR: Failed to evaluate parameter 1. You have found an ancient oracle. The priestess has blessed you with a divine revelation. You have received {1_Num} [ICON_PEACE] Faith.
+[90759.781] ERR: Missing argument 1. (You have found a secret religious community. The preacher foretells the arrival of a Great Prophet. You have received {1_Num} [ICON_PEACE] Faith.)
+[90759.781] ERR: Failed to evaluate parameter 1. You have found a secret religious community. The preacher foretells the arrival of a Great Prophet. You have received {1_Num} [ICON_PEACE] Faith.
+[90759.781] ERR: Missing argument 1. (In the ruins you find the treasures of an ancient empire! You have received {1_Num} [ICON_GOLD] Gold!)
+[90759.781] ERR: Failed to evaluate parameter 1. In the ruins you find the treasures of an ancient empire! You have received {1_Num} [ICON_GOLD] Gold!
+[90771.546] ERR: Missing argument 1. (You have found cultural artifacts which awe your citizens! You have received {1_Num} [ICON_CULTURE] Culture!)
+[90771.546] ERR: Failed to evaluate parameter 1. You have found cultural artifacts which awe your citizens! You have received {1_Num} [ICON_CULTURE] Culture!
+[90771.546] ERR: Missing argument 1. (You have found an ancient oracle. The priestess has blessed you with a divine revelation. You have received {1_Num} [ICON_PEACE] Faith.)
+[90771.546] ERR: Failed to evaluate parameter 1. You have found an ancient oracle. The priestess has blessed you with a divine revelation. You have received {1_Num} [ICON_PEACE] Faith.
+[90771.546] ERR: Missing argument 1. (You have found a secret religious community. The preacher foretells the arrival of a Great Prophet. You have received {1_Num} [ICON_PEACE] Faith.)
+[90771.546] ERR: Failed to evaluate parameter 1. You have found a secret religious community. The preacher foretells the arrival of a Great Prophet. You have received {1_Num} [ICON_PEACE] Faith.
+[90771.546] ERR: Missing argument 1. (In the ruins you find the treasures of an ancient empire! You have received {1_Num} [ICON_GOLD] Gold!)
+[90771.546] ERR: Failed to evaluate parameter 1. In the ruins you find the treasures of an ancient empire! You have received {1_Num} [ICON_GOLD] Gold!
+[90798.000] ERR: Missing argument 1. (You have found cultural artifacts which awe your citizens! You have received {1_Num} [ICON_CULTURE] Culture!)
+[90798.000] ERR: Failed to evaluate parameter 1. You have found cultural artifacts which awe your citizens! You have received {1_Num} [ICON_CULTURE] Culture!
+[90798.000] ERR: Missing argument 1. (You have found an ancient oracle. The priestess has blessed you with a divine revelation. You have received {1_Num} [ICON_PEACE] Faith.)
+[90798.000] ERR: Failed to evaluate parameter 1. You have found an ancient oracle. The priestess has blessed you with a divine revelation. You have received {1_Num} [ICON_PEACE] Faith.
+[90798.000] ERR: Missing argument 1. (You have found a secret religious community. The preacher foretells the arrival of a Great Prophet. You have received {1_Num} [ICON_PEACE] Faith.)
+[90798.000] ERR: Failed to evaluate parameter 1. You have found a secret religious community. The preacher foretells the arrival of a Great Prophet. You have received {1_Num} [ICON_PEACE] Faith.
+[90798.000] ERR: Missing argument 1. (In the ruins you find the treasures of an ancient empire! You have received {1_Num} [ICON_GOLD] Gold!)
+[90798.000] ERR: Failed to evaluate parameter 1. In the ruins you find the treasures of an ancient empire! You have received {1_Num} [ICON_GOLD] Gold!
+[90798.000] ERR: Missing argument 1. (In the ruins you find the treasures of an ancient empire! You have received {1_Num} [ICON_GOLD] Gold!)
+[90798.000] ERR: Failed to evaluate parameter 1. In the ruins you find the treasures of an ancient empire! You have received {1_Num} [ICON_GOLD] Gold!

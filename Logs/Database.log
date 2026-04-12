@@ -1,8 +1,14 @@
-[90006.781] *** SKIPPING Game Database Validation. ****
-[90006.781] You can enable it by setting 'ValidateGameDatabase = 1' in config.ini
-[90006.984] **** Validating Prefetch Process *****
-[90006.984] **** Validation Success *****
-[90006.984] SetGlobalActionInfo
+[90002.281] columns StrategicViewType, TileType are not unique
+[90002.281] While executing - 'INSERT INTO ArtDefine_StrategicView(StrategicViewType, TileType, Asset) VALUES(?,?,?)'
+[90003.187] no such table: ContentPackage.LocalizedText
+[90003.187] no such table: ContentPackage.LocalizedText
+[90003.187] no such table: ContentPackage.LocalizedText
+[90003.656] no such table: ContentPackage.LocalizedText
+[90004.343] columns StrategicViewType, TileType are not unique
+[90004.343] While executing - 'INSERT INTO ArtDefine_StrategicView(StrategicViewType, TileType, Asset) VALUES(?,?,?)'
+[90004.718] no such table: ContentPackage.LocalizedText
+[90004.718] no such table: ContentPackage.LocalizedText
+[90004.718] no such table: ContentPackage.LocalizedText
 [90006.984] 
 -- SQLite Memory Statistics --
 Memory Usage:
@@ -25,11 +31,6 @@ Scratch:	6640
 Prepared Statements:
 Current:		6
 ------------------------------
-[90007.000] *** SKIPPING Game Database Validation. ****
-[90007.000] You can enable it by setting 'ValidateGameDatabase = 1' in config.ini
-[90007.203] **** Validating Prefetch Process *****
-[90007.203] **** Validation Success *****
-[90007.203] SetGlobalActionInfo
 [90007.203] 
 -- SQLite Memory Statistics --
 Memory Usage:
@@ -52,11 +53,6 @@ Scratch:	6640
 Prepared Statements:
 Current:		6
 ------------------------------
-[90024.218] *** SKIPPING Game Database Validation. ****
-[90024.218] You can enable it by setting 'ValidateGameDatabase = 1' in config.ini
-[90024.437] **** Validating Prefetch Process *****
-[90024.437] **** Validation Success *****
-[90024.437] SetGlobalActionInfo
 [90024.437] 
 -- SQLite Memory Statistics --
 Memory Usage:
@@ -79,3 +75,5 @@ Scratch:	6640
 Prepared Statements:
 Current:		8
 ------------------------------
+[90030.546] no such column: Type
+[90030.546] In Query - select * from Natural_Wonder_Placement where Type = ? LIMIT 1
