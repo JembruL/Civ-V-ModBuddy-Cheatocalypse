@@ -22,12 +22,8 @@ local lastPositions = {}
 local lastMoves = {}
 
 GameEvents.UnitPrekill.Add(function(playerID, unitID, unitType, bDelay, x, y)
-    if lastPositions[playerID] then
-        lastPositions[playerID][unitID] = nil
-    end
-    if lastMoves[playerID] then
-        lastMoves[playerID][unitID] = nil
-    end
+    if lastPositions[playerID] then lastPositions[playerID][unitID] = nil end
+    if lastMoves[playerID] then lastMoves[playerID][unitID] = nil end
 end)
 
 -- ===========================================================================
@@ -39,7 +35,6 @@ function ParadropOverride(playerID, unitID, x, y)
     local player = Players[playerID]
     if not player then return end
 
-    -- HARD FILTER: HUMAN ONLY
     if not player:IsHuman() then
         lastPositions[playerID] = lastPositions[playerID] or {}
         lastPositions[playerID][unitID] = {x = x, y = y}
@@ -49,54 +44,36 @@ function ParadropOverride(playerID, unitID, x, y)
     local unit = player:GetUnitByID(unitID)
     if not unit then return end
 
-    local prev = nil
-    if lastPositions[playerID] then
-        prev = lastPositions[playerID][unitID]
-    end
+    local prev     = lastPositions[playerID] and lastPositions[playerID][unitID]
+    local prevMoves = lastMoves[playerID] and lastMoves[playerID][unitID]
 
-    -- ambil move sebelumnya
-    local prevMoves = nil
-    if lastMoves[playerID] then
-        prevMoves = lastMoves[playerID][unitID]
-    end
-
-    -- FILTER LAYER (WAJIB DUA-DUANYA ADA + MASTER FLAG)
     if unit:IsHasPromotion(promoMaster)
     and unit:IsHasPromotion(promoParadrop)
     and unit:IsHasPromotion(promoFlag)
     and prev and prevMoves then
 
-        local distance = Map.PlotDistance(prev.x, prev.y, x, y)
+        local distance     = Map.PlotDistance(prev.x, prev.y, x, y)
         local currentMoves = unit:GetMoves()
 
-        -- =========================================================
-        -- FIX: VALID PARADROP DETECTION
-        -- SYARAT:
-        -- 1. lompat jauh (distance)
-        -- 2. move berkurang drastis (engine consume)
-        -- =========================================================
         if distance >= 5 and currentMoves < prevMoves then
 
-            -- reset movement
-			unit:SetMoves(unit:MaxMoves())
+            -- STEP 1: Pastikan Blitz aktif dulu SEBELUM restore moves
+            -- Ini yang membuka ranged attack setelah state reset
+            if not unit:IsHasPromotion(promoBlitz) then
+                unit:SetHasPromotion(promoBlitz, true)
+            end
 
-			-- HARD RESET COMBAT STATE (CRITICAL FIX)
-			--unit:SetHasPromotion(promoBlitz, false)
-			--unit:SetHasPromotion(promoBlitz, true)
+            -- STEP 2: Restore moves
+            unit:SetMoves(unit:MaxMoves())
 
-			-- Engine akan izinkan attack jika moves > 0 dan unit punya PROMOTION_CAN_MOVE_AFTER_ATTACKING
-			unit:SetMoves(unit:MaxMoves())
-
-			-- optional heal
-			unit:ChangeDamage(-10)
+            -- STEP 3: Heal minor
+            unit:ChangeDamage(-10)
         end
     end
 
-    -- update posisi terakhir
     lastPositions[playerID] = lastPositions[playerID] or {}
     lastPositions[playerID][unitID] = {x = x, y = y}
 
-    -- update move terakhir
     lastMoves[playerID] = lastMoves[playerID] or {}
     lastMoves[playerID][unitID] = unit:GetMoves()
 end
@@ -109,21 +86,13 @@ GameEvents.UnitSetXY.Add(ParadropOverride)
 function CleanupParadropBoost(playerID)
 
     local player = Players[playerID]
-    if not player then return end
-
-    -- HARD FILTER: HUMAN ONLY
-    if not player:IsHuman() then return end
+    if not player or not player:IsHuman() then return end
 
     for unit in player:Units() do
-        if unit:IsHasPromotion(promoBlitz) then
-
-            -- hanya unit dalam ecosystem Cheatocalypse
-            if unit:IsHasPromotion(promoMaster)
-            and unit:IsHasPromotion(promoFlag) then
-
-                unit:SetHasPromotion(promoBlitz, false)
-
-            end
+        if unit:IsHasPromotion(promoBlitz)
+        and unit:IsHasPromotion(promoMaster)
+        and unit:IsHasPromotion(promoFlag) then
+            unit:SetHasPromotion(promoBlitz, false)
         end
     end
 end

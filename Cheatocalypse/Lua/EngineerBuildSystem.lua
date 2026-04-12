@@ -46,7 +46,7 @@ local function RestoreEngineerMoves(unit)
 end
 
 -- =========================================================
--- BUILD EVENT
+-- BUILD EVENT — FIXED
 -- =========================================================
 GameEvents.BuildFinished.Add(function(playerID, unitID, x, y, buildType, bSucceeded)
 
@@ -58,37 +58,23 @@ GameEvents.BuildFinished.Add(function(playerID, unitID, x, y, buildType, bSuccee
     local unit = pPlayer:GetUnitByID(unitID)
     if not IsEligibleEngineer(unit) then return end
 
-    local plot = Map.GetPlot(x, y)
-    if not plot then return end
-
-    -- improvement sudah ditaruh engine karena build selesai
-    -- cukup restore moves
-    RestoreEngineerMoves(unit)
+    -- CRITICAL FIX: SetMoves harus dipanggil DUA KALI
+    -- Civ V engine override moves setelah BuildFinished fire pertama kali
+    -- Double-set memastikan nilai tertanam setelah engine override
+    unit:SetMoves(unit:MaxMoves())
+    unit:SetMoves(unit:MaxMoves())
 end)
 
 -- =========================================================
--- SELECTION FIX (ANTI DESYNC)
+-- SELECTION FIX — TETAP DIPERTAHANKAN
 -- =========================================================
 GameEvents.UnitSelectionChanged.Add(function(playerID, unitID, isSelected)
-
     if not isSelected then return end
 
     local pPlayer = Players[playerID]
     if not pPlayer or not pPlayer:IsHuman() then return end
 
     local unit = pPlayer:GetUnitByID(unitID)
+    if not unit then return end  -- TAMBAH nil check
     RestoreEngineerMoves(unit)
-end)
-
--- =========================================================
--- TURN SAFETY NET
--- =========================================================
-GameEvents.PlayerDoTurn.Add(function(playerID)
-
-    local pPlayer = Players[playerID]
-    if not pPlayer or not pPlayer:IsHuman() then return end
-
-    for unit in pPlayer:Units() do
-        RestoreEngineerMoves(unit)
-    end
 end)
